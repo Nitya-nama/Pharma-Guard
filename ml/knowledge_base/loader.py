@@ -131,3 +131,42 @@ class KnowledgeBase:
         print("Clinical Variants :", len(self.clinical_variants))
 
         print("Drug ATC :", len(self.drug_atc))
+        
+    def get_drugs_by_atc_prefix(self, prefix):
+
+        prefix = prefix.upper()
+
+        matches = self.drug_master[
+
+            self.drug_master["atc_code"]
+
+            .astype(str)
+
+            .str.startswith(prefix)
+
+        ]
+
+        return matches.to_dict(
+            "records"
+        )    
+    
+    def get_drug_genes(self, drug_name):
+
+        return self.drug_gene_lookup.get(
+
+            drug_name.strip().lower(),
+
+            []
+
+        )
+
+
+    def get_gene_variants(self, gene):
+
+        return self.gene_variant_lookup.get(
+
+            gene.strip().upper(),
+
+            []
+
+        )    
