@@ -1,0 +1,3223 @@
+drug_name,gene,level_of_evidence
+Lornoxicam,CYP2C9,1A
+Siponimod,CYP2C9,1A
+Capecitabine,DPYD,1A
+Dexlansoprazole,CYP2C19,1A
+Warfarin,CYP2C9,1A
+"Atazanavir,Atazanavir / Ritonavir",UGT1A1,1A
+Azathioprine,TPMT,1A
+Fluorouracil,DPYD,1A
+Warfarin,CYP4F2,1A
+Gefitinib,EGFR,1A
+Phenprocoumon,VKORC1,1A
+Mercaptopurine,NUDT15,1A
+Hydrocodone,CYP2D6,1A
+Tropisetron,CYP2D6,1A
+Ibuprofen,CYP2C9,1A
+Desipramine,CYP2D6,1A
+Rasburicase,G6PD,1A
+Flurbiprofen,CYP2C9,1A
+Trimipramine,CYP2D6,1A
+Tenoxicam,CYP2C9,1A
+Celecoxib,CYP2C9,1A
+Piroxicam,CYP2C9,1A
+Ivacaftor / Lumacaftor,CFTR,1A
+Ivacaftor / Tezacaftor,CFTR,1A
+Flucloxacillin,HLA-B,1A
+Phenytoin,CYP2C9,1A
+Irinotecan,UGT1A1,1A
+Trimipramine,CYP2C19,1A
+Azathioprine,NUDT15,1A
+Efavirenz,CYP2B6,1A
+Abacavir,HLA-B,1A
+Acenocoumarol,VKORC1,1A
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin,Telaprevir","IFNL3,IFNL4",1A
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin","IFNL3,IFNL4",1A
+"Boceprevir,Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin","IFNL3,IFNL4",1A
+"Folfiri,Irinotecan",UGT1A1,1A
+Warfarin,,1A
+Amitriptyline,CYP2D6,1A
+Clomipramine,CYP2D6,1A
+Imipramine,CYP2D6,1A
+Codeine,CYP2D6,1A
+Doxepin,CYP2D6,1A
+Nortriptyline,CYP2D6,1A
+Voriconazole,CYP2C19,1A
+Lansoprazole,CYP2C19,1A
+Clopidogrel,CYP2C19,1A
+Pantoprazole,CYP2C19,1A
+Atomoxetine,CYP2D6,1A
+Flecainide,CYP2D6,1A
+Paroxetine,CYP2D6,1A
+Tamoxifen,CYP2D6,1A
+Metoprolol,CYP2D6,1A
+Haloperidol,CYP2D6,1A
+Propafenone,CYP2D6,1A
+Risperidone,CYP2D6,1A
+Clomipramine,CYP2C19,1A
+Escitalopram,CYP2C19,1A
+Imipramine,CYP2C19,1A
+Omeprazole,CYP2C19,1A
+Zuclopenthixol,CYP2D6,1A
+Tegafur,DPYD,1A
+Tobramycin,MT-RNR1,1A
+Amikacin,MT-RNR1,1A
+Aminoglycoside Antibacterials,MT-RNR1,1A
+Streptomycin,MT-RNR1,1A
+Kanamycin,MT-RNR1,1A
+Gentamicin,MT-RNR1,1A
+Ondansetron,CYP2D6,1A
+Aripiprazole,CYP2D6,1A
+Tramadol,CYP2D6,1A
+Warfarin,VKORC1,1A
+Fluvastatin,CYP2C9,1A
+"Simvastatin,Simvastatin Acid",SLCO1B1,1A
+Lovastatin,SLCO1B1,1A
+Simvastatin,SLCO1B1,1A
+Atorvastatin,SLCO1B1,1A
+"Lovastatin,Lovastatin Acid",SLCO1B1,1A
+Rosuvastatin,SLCO1B1,1A
+Pitavastatin,SLCO1B1,1A
+Pravastatin,SLCO1B1,1A
+Rosuvastatin,ABCG2,1A
+Fluvastatin,SLCO1B1,1A
+Oxcarbazepine,HLA-B,1A
+Allopurinol,ABCG2,1A
+Citalopram,CYP2C19,1A
+Thioguanine,TPMT,1A
+Mercaptopurine,TPMT,1A
+Phenytoin,HLA-B,1A
+Carbamazepine,HLA-B,1A
+Lamotrigine,HLA-B,1A
+Vortioxetine,CYP2D6,1A
+Sertraline,CYP2C19,1A
+Sertraline,CYP2B6,1A
+Venlafaxine,CYP2D6,1A
+Doxepin,CYP2C19,1A
+Amitriptyline,CYP2C19,1A
+"Desflurane,Enflurane,Halothane,Isoflurane,Methoxyflurane,Sevoflurane,Succinylcholine",RYR1,1A
+Enflurane,CACNA1S,1A
+Succinylcholine,CACNA1S,1A
+Halothane,CACNA1S,1A
+Sevoflurane,CACNA1S,1A
+Isoflurane,CACNA1S,1A
+Desflurane,CACNA1S,1A
+Methoxyflurane,CACNA1S,1A
+Tacrolimus,CYP3A5,1A
+Neomycin,MT-RNR1,1A
+Quetiapine,CYP3A4,1A
+Fluvoxamine,CYP2D6,1A
+Meloxicam,CYP2C9,1A
+Allopurinol,HLA-B,1A
+Sacituzumab Govitecan,UGT1A1,1A
+Elexacaftor / Tezacaftor / Ivacaftor,CFTR,1A
+Ivacaftor,CFTR,1A
+"Elexacaftor / Tezacaftor / Ivacaftor,Ivacaftor",CFTR,1A
+Carbamazepine,HLA-A,1A
+Warfarin,VKORC1,1B
+"Folfiri,Irinotecan",UGT1A1,1B
+Tacrolimus,CYP3A5,1B
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",IFNL4,1B
+"Interferons,Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",IFNL3,1B
+Acenocoumarol,CYP2C9,1B
+Sn-38,UGT1A1,1B
+Nicotine,CYP2A6,1B
+"Drugs For Treatment Of Tuberculosis,Isoniazid",NAT2,1B
+Dextromethorphan,CYP2D6,1B
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",IFNL3,2A
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin,Telaprevir",IFNL3,2A
+Warfarin,VKORC1,2A
+Methotrexate,SLC19A1,2A
+Dapsone,HLA-B,2A
+Nevirapine,CYP2B6,2A
+Rosuvastatin,ABCG2,2A
+Irinotecan,UGT1A1,2A
+Tacrolimus,CYP3A4,2A
+Tacrolimus,CYP3A5,2A
+Methazolamide,HLA-B,2A
+Warfarin,CYP2C9,2A
+Phenprocoumon,VKORC1,2A
+Acenocoumarol,VKORC1,2A
+Tramadol,CYP2D6,2A
+Acenocoumarol,CYP4F2,2A
+Salmeterol,ADRB2,2A
+Hmg-Coa Reductase Inhibitors,SLCO1B1,2A
+Captopril,ACE,2A
+Mirtazapine,CYP2D6,2A
+Rabeprazole,CYP2C19,2A
+Methadone,CYP2B6,2A
+Acenocoumarol,CYP2C9,2A
+Carbamazepine,HLA-B,2A
+Oxycodone,CYP2D6,2A
+Methotrexate,MTHFR,2A
+Sulfamethoxazole / Trimethoprim,HLA-B,2A
+Antiepileptics,HLA-B,2A
+Fentanyl,CYP3A4,2A
+Isoniazid,NAT2,2A
+Bupropion,CYP2B6,2A
+Debrisoquine,CYP2D6,2A
+"Clobazam,Norclobazam",CYP2C19,2A
+Methazolamide,HLA-C,2B
+Clopidogrel,CES1,2B
+Carbamazepine,SCN1A,2B
+Allopurinol,HLA-C,2B
+Methotrexate,ATIC,2B
+Nevirapine,HLA-DRB1,2B
+Platinum Compounds,XRCC1,2B
+Erlotinib,EGFR,2B
+Nicotine,CHRNA5,2B
+Nevirapine,HLA-C,2B
+Ethanol,ALDH2,2B
+Aspirin,HLA-DPB1,2B
+Atorvastatin,APOE,2B
+"Peginterferon Alfa-2B,Ribavirin",ITPA,2B
+Hydrochlorothiazide,ADD1,2B
+Gefitinib,EGFR,2B
+Rituximab,FCGR3A,2B
+Hormonal Contraceptives For Systemic Use,F2,2B
+Sulfamethoxazole / Trimethoprim,HLA-C,2B
+Allopurinol,HLA-A,2B
+"Anthracyclines And Related Substances,Daunorubicin,Doxorubicin",SLC28A3,2B
+Hormonal Contraceptives For Systemic Use,F5,2B
+Etanercept,TNF,2B
+Etoposide,,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CSRP3,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,ARAP2,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CST5,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,MAFB,3
+Mephenytoin,CYP2C19,3
+Diuretics,ADD1,3
+Clozapine,DRD3,3
+Valproic Acid,"UGT1A10,UGT1A6,UGT1A7,UGT1A8,UGT1A9",3
+Methotrexate,SLC19A1,3
+Aspirin,PTGS2,3
+Phenytoin,ABCB1,3
+"Dexamethasone,Doxorubicin,Vincristine",ABCB1,3
+Dicloxacillin,ABCB1,3
+Capecitabine,ABCB1,3
+Tenofovir,ABCC2,3
+"Cisplatin,Cyclophosphamide",ERCC1,3
+"Cisplatin,Cyclophosphamide",GSTP1,3
+"Fluorouracil,Leucovorin,Oxaliplatin",ERCC2,3
+Doxorubicin,ABCB1,3
+Digoxin,ABCB1,3
+"Ace Inhibitors, Plain",PTGER3,3
+"Antivirals For Treatment Of Hiv Infections, Combinations,Ritonavir",APOE,3
+Docetaxel,SLCO1B3,3
+"Ace Inhibitors, Plain",MME,3
+Tamoxifen,ESR2,3
+"Ace Inhibitors, Plain",BDKRB2,3
+Warfarin,STX4,3
+Trastuzumab,ERBB2,3
+Warfarin,VKORC1,3
+Paclitaxel,ABCB1,3
+Nevirapine,HLA-C,3
+Fluvastatin,SLCO1B1,3
+Troglitazone,,3
+Tamoxifen,ESR1,3
+Methotrexate,,3
+"Antidepressants,Mirtazapine,Venlafaxine",TPH2,3
+Methotrexate,"ADORA2A,SPECC1L",3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,MOB3B,3
+"Platinum Compounds,Taxanes",ABCB1,3
+Topoisomerase I Inhibitors,EGFR,3
+Geldanamycin,EGFR,3
+Methamphetamine,DTNBP1,3
+Montelukast,ALOX5,3
+Montelukast,LTA4H,3
+"Olanzapine,Risperidone",HTR2A,3
+Olanzapine,ADRB3,3
+"Olanzapine,Perphenazine",RGS4,3
+Risperidone,RGS4,3
+Olanzapine,LEP,3
+Cetuximab,CCND1,3
+Clozapine,DTNBP1,3
+Cyclosporine,ABCB1,3
+Risperidone,ABCB1,3
+Amiodarone,KCNH2,3
+Methotrexate,GGH,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,C9ORF72,3
+Doxorubicin,CBR3,3
+Daunorubicin,NRP2,3
+Paclitaxel,CYP3A4,3
+"Antipsychotics,Olanzapine,Perphenazine,Quetiapine,Ziprasidone",RGS4,3
+Propofol,UGT1A9,3
+"Prednisone,Tacrolimus",ABCB1,3
+Carbamazepine,"BAG6,PRRC2A",3
+Erlotinib,EGFR,3
+Rofecoxib,PTGS2,3
+Sildenafil,ACE,3
+Acenocoumarol,CYP2C9,3
+"Amlodipine,Chlorthalidone",NPPA,3
+Beta Blocking Agents,PPARA,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,GBP6,3
+Anthracyclines And Related Substances,CAT,3
+Repaglinide,SLCO1B1,3
+Paclitaxel,CYP2C8,3
+"Fluvoxamine,Milnacipran,Paroxetine",HTR1A,3
+Haloperidol,DTNBP1,3
+Iloperidone,NRG3,3
+Iloperidone,NUBPL,3
+Iloperidone,CELF4,3
+Iloperidone,CERKL,3
+Verapamil,NOS1AP,3
+Measles Vaccines,TLR3,3
+Methamphetamine,PICK1,3
+"Docetaxel,Thalidomide",CHST3,3
+Docetaxel,PIK3CA,3
+Antipsychotics,"CLCN6,MTHFR",3
+"Bisphosphonates,Clodronate,Etidronic Acid,Risedronate,Tiludronate",IL1B,3
+Cyclophosphamide,CYP2B6,3
+Risperidone,DRD3,3
+Risperidone,HTR2A,3
+Methotrexate,TYMS,3
+"Carboplatin,Paclitaxel",DSCAM,3
+Doxorubicin,ABCC2,3
+"Docetaxel,Thalidomide",PPARD,3
+"Docetaxel,Thalidomide",ABCC6,3
+Platinum Compounds,"ERCC1,POLR1G,PPP1R13L",3
+"Antidepressants,Citalopram,Fluoxetine",SERPINE1,3
+Cyclophosphamide,CYP3A4,3
+Pramipexole,DRD3,3
+Rifampin,NR1I2,3
+Risperidone,COMT,3
+Risperidone,GRM3,3
+Ritonavir,APOC3,3
+Rosiglitazone,LPIN1,3
+"Sulfonamides, Urea Derivatives",TCF7L2,3
+Montelukast,ABCC1,3
+Methotrexate,ABCC1,3
+Methotrexate,ABCG2,3
+Irbesartan,APOB,3
+"Atorvastatin,Pravastatin,Simvastatin",HTR3B,3
+Caffeine,CYP1A2,3
+Methotrexate,FPGS,3
+Nitrous Oxide,MTHFR,3
+"Atorvastatin,Hmg-Coa Reductase Inhibitors,Pravastatin,Simvastatin",HTR7,3
+Methotrexate,NALCN,3
+Methotrexate,ARID5B,3
+Methotrexate,MTHFR,3
+"Antipsychotics,Clozapine,Olanzapine",DRD2,3
+Antihypertensives And Diuretics In Combination,NOS3,3
+"Antidepressants,Desipramine,Fluoxetine",BDNF,3
+Repaglinide,TCF7L2,3
+Phenytoin,EPHX1,3
+Fexofenadine,ABCB1,3
+"Docetaxel,Thalidomide",CYP4B1,3
+"Docetaxel,Thalidomide",SLC10A2,3
+"Docetaxel,Thalidomide",SPG7,3
+"Docetaxel,Thalidomide",ATP7A,3
+"Docetaxel,Thalidomide",NAT2,3
+"Docetaxel,Thalidomide",SULT1C4,3
+"Docetaxel,Thalidomide","RPL13,SNORD68,SPG7",3
+Docetaxel,PRDX4,3
+Docetaxel,EPHX1,3
+Docetaxel,XRCC4,3
+Paroxetine,ADM,3
+Clodronate,VDR,3
+Methotrexate,ADORA2A,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil,Methotrexate",NOS3,3
+"Budesonide,Flunisolide,Fluticasone Propionate,Glucocorticoids,Nedocromil,Triamcinolone",GLCCI1,3
+Verapamil,"KCNIP1,KCNMB1",3
+Duloxetine,DRD3,3
+Leflunomide,ESR1,3
+"Conjugated Estrogens,Medroxyprogesterone",ESR1,3
+"Atenolol,Verapamil",CACNA1C,3
+Metoprolol,GRK4,3
+Tenofovir,ABCC10,3
+"Interferon Alfa-2A, Recombinant,Peginterferon Alfa-2B",IDO1,3
+"Interferon Beta-1A,Interferon Beta-1B",HLA-DQA1,3
+"Antiinflammatory Agents, Non-Steroids",AGT,3
+"Amoxicillin,Clavulanate",HLA-DQB1,3
+Coumarin,CYP2A6,3
+Nicotine,CYP2A6,3
+Antipsychotics,COMT,3
+"Cyclophosphamide,Doxorubicin",CYP2B6,3
+"Antihypertensives,Antihypertensives And Diuretics In Combination,Diuretics",NOS3,3
+Efavirenz,CYP3A4,3
+Repaglinide,CYP2C8,3
+"Atorvastatin,Hmg-Coa Reductase Inhibitors,Rosuvastatin",COQ2,3
+Cerivastatin,RYR2,3
+Amiodarone,NOS1AP,3
+Methotrexate,SHMT1,3
+"Calcium Channel Blockers,Nitrendipine",KCNH2,3
+Venlafaxine,GABRQ,3
+Metoprolol,CYP2D6,3
+"Mirtazapine,Venlafaxine",TPH2,3
+"Citalopram,Fluoxetine",GSK3B,3
+Lithium,CACNG2,3
+Antidepressants,FKBP5,3
+Zoledronate,FDPS,3
+"Antidepressants,Selective Serotonin Reuptake Inhibitors,Venlafaxine",GABRA6,3
+"Antidepressants,Selective Serotonin Reuptake Inhibitors,Venlafaxine",GABRP,3
+"Antidepressants,Selective Serotonin Reuptake Inhibitors,Venlafaxine",GRIA3,3
+"Antidepressants,Benzodiazepine Derivatives,Mirtazapine,Selective Serotonin Reuptake Inhibitors",GAL,3
+"Escitalopram,Nortriptyline",BDNF,3
+Cangrelor,P2RY12,3
+Lithium,CRY1,3
+"Amitriptyline,Citalopram,Paroxetine,Venlafaxine",ABCB1,3
+Lithium,DRD1,3
+Lithium,GSK3B,3
+Lithium,,3
+Lithium,"OR52J2P,OR52J3",3
+"Citalopram,Escitalopram",,3
+"Cisplatin,Cyclophosphamide",GSTM3,3
+Mycophenolate Mofetil,IL12A,3
+Pitrakinra,IL4R,3
+Methadone,BDNF,3
+Lithium,"NR1D1,THRA",3
+Mycophenolate Mofetil,IMPDH1,3
+Methadone,NTRK2,3
+"Artesunate,Primaquine,Pyrimethamine,Sulfadoxine","G6PD,IKBKG",3
+Methadone,ANKK1,3
+Methadone,DRD2,3
+Methadone,NGF,3
+"Lithium,Valproic Acid",,3
+Lithium,TPH1,3
+Cytarabine,CDA,3
+Nicotine,CHRNA4,3
+Muraglitazar,ADRB1,3
+Olanzapine,GNB3,3
+Olanzapine,HTR2A,3
+Nortriptyline,ABCB1,3
+Olanzapine,DRD3,3
+Oxaliplatin,ABCB1,3
+Nitroprusside,ACE,3
+Acetylcholine,ACE,3
+Nifedipine,SLC14A2,3
+Olanzapine,CYP1A2,3
+Midazolam,CYP3A4,3
+Nemonapride,ANKK1,3
+Verapamil,ABCB1,3
+Spironolactone,ACE,3
+Sumatriptan,GNB3,3
+"Cisplatin,Cyclophosphamide,Doxorubicin,Methotrexate,Vincristine",ABCC3,3
+Paroxetine,CYP1A2,3
+Paroxetine,BDNF,3
+Prasugrel,CYP2C19,3
+"Cyclosporine,Mycophenolate Mofetil",ABCB1,3
+Fluorouracil,WNT5B,3
+Repaglinide,NEUROD1,3
+Repaglinide,PAX4,3
+Bucindolol,ADRA2C,3
+Sulfamethoxazole,GCLC,3
+Alkylating Agents,EGFR,3
+Atenolol,LDLR,3
+Tolbutamide,CYP2C9,3
+Losartan,CYP2C9,3
+Muraglitazar,REN,3
+Muraglitazar,EDN1,3
+Aspirin,P2RY1,3
+"Clomipramine,Lithium,Nefazodone,Paroxetine,Venlafaxine",ABCB1,3
+Aspirin,FSIP1,3
+Aspirin,CEP68,3
+Aspirin,PPARG,3
+Aspirin,IL4,3
+Aspirin,ADORA1,3
+Aspirin,GP6,3
+Aspirin,FCER1G,3
+Aspirin,IL1B,3
+Aspirin,TBXA2R,3
+Aspirin,ITGA2,3
+Aspirin,NTRK1,3
+Aspirin,HNMT,3
+Warfarin,CYP2C9,3
+Sunitinib,VEGFA,3
+"Raloxifene,Tamoxifen",,3
+Erythromycin,ABCC2,3
+"Raloxifene,Tamoxifen",ZNF423,3
+Calcium,VDR,3
+Aspirin,F13A1,3
+"Citalopram,Escitalopram",FKBP5,3
+Clopidogrel,CYP2B6,3
+Desipramine,MC1R,3
+Mycophenolate Mofetil,UGT1A9,3
+Doxepin,CYP2C9,3
+Fenofibrate,PPARA,3
+Antidepressants,GRIK4,3
+Hydrochlorothiazide,KCNJ1,3
+Phenytoin,CYP2C9,3
+Fluoxetine,CRHR1,3
+Fluvoxamine,COMT,3
+"Cyclosporine,Mycophenolate Mofetil",IL10,3
+Mycophenolate Mofetil,SLCO1B3,3
+Lovastatin,CETP,3
+Pravastatin,ACE,3
+Fluvastatin,ACE,3
+"Atorvastatin,Quinapril",ACE,3
+Olanzapine,FMO1,3
+Olanzapine,FMO3,3
+Thalidomide,ERCC1,3
+Thalidomide,XRCC5,3
+Warfarin,"PRSS53,VKORC1",3
+Thalidomide,GSTT1,3
+Fluvastatin,SREBF1,3
+Simvastatin,SCAP,3
+Abt-751,UGT1A4,3
+Pravastatin,TLR4,3
+"Folic Acid,Methotrexate",TLR4,3
+"Ace Inhibitors, Plain",AGTR1,3
+Pitavastatin,SLCO1B1,3
+"Ace Inhibitors, Plain",ABO,3
+"Ace Inhibitors, Plain",,3
+Amphetamine,OPRM1,3
+Antipsychotics,CYP2D6,3
+Antipsychotics,RGS2,3
+"Atenolol,Verapamil",NR1H3,3
+Atorvastatin,UGT1A3,3
+Azathioprine,AOX1,3
+"Bevacizumab,Fluorouracil,Irinotecan,Leucovorin",SHMT1,3
+"Bortezomib,Dexamethasone,Melphalan,Prednisone",CTLA4,3
+"Bupropion,Nicotine",DRD1,3
+Pravastatin,MTTP,3
+Atorvastatin,MTTP,3
+Nortriptyline,UST,3
+Zidovudine,UGT2B7,3
+Zidovudine,ABCC4,3
+Simvastatin,ABCB1,3
+Atorvastatin,ABCB1,3
+Losartan,AGTR1,3
+Corticosteroids,DCAF4,3
+Corticosteroids,FKBP5,3
+"Cisplatin,Cyclophosphamide",CYP2E1,3
+Clozapine,HTR3A,3
+Rosuvastatin,SLCO1B1,3
+Dexmedetomidine,PRKCB,3
+Dexmedetomidine,ADRA2A,3
+Disulfiram,DRD2,3
+Disulfiram,ANKK1,3
+Diuretics,PDE4D,3
+"Dolasetron,Granisetron",NOS1AP,3
+"Calcein,Lopinavir",ABCC2,3
+Lopinavir,ABCC2,3
+"Folic Acid,Vitamin B-Complex, Plain",MTRR,3
+Mitotane,CYP2B6,3
+Atorvastatin,ABCG8,3
+Midazolam,POR,3
+Atorvastatin,CYP3A5,3
+"Carboplatin,Paclitaxel",MAD1L1,3
+Simvastatin,CYP3A4,3
+Simvastatin,CYBA,3
+Haloperidol,SLC6A5,3
+Fluvastatin,CETP,3
+Fluvastatin,ABCB1,3
+Simvastatin,CETP,3
+Pravastatin,HMGCR,3
+Simvastatin,HMGCR,3
+"Atorvastatin,Fluvastatin,Hmg-Coa Reductase Inhibitors,Lovastatin,Pravastatin,Simvastatin",HMGCR,3
+Pravastatin,MTHFR,3
+Hmg-Coa Reductase Inhibitors,CXCL5,3
+Atorvastatin,TNF,3
+Simvastatin,F3,3
+Pravastatin,ABCA1,3
+Pravastatin,NPC1L1,3
+"Atorvastatin,Pravastatin,Simvastatin",ABCA1,3
+Atorvastatin,SCARB1,3
+Hmg-Coa Reductase Inhibitors,HMGCR,3
+Pravastatin,LPL,3
+Fenofibrate,APOA1,3
+"Docetaxel,Gemcitabine,Paclitaxel,Platinum Compounds,Vinorelbine",CASP7,3
+Clozapine,ABCB1,3
+Candesartan,AGTR1,3
+"Atenolol,Irbesartan",EDN1,3
+Atenolol,AGT,3
+"Amlodipine,Chlorthalidone,Lisinopril",ACE,3
+Fenofibrate,SCARB1,3
+Irinotecan,SLCO1B1,3
+Irinotecan,ABCC2,3
+Fenofibrate,CRP,3
+Bupropion,SACM1L,3
+Olanzapine,DRD2,3
+Carbamazepine,GABRA1,3
+Repaglinide,KCNQ1,3
+Irinotecan,ABCG2,3
+Fenofibrate,ABCA1,3
+Captopril,ACE2,3
+Benazepril,MTR,3
+Dobutamine,ADRB1,3
+Disulfiram,MTHFR,3
+Enzymes,F12,3
+Atenolol,ADRA2A,3
+"Fentanyl,Morphine,Opioids,Oxycodone",RHBDF2,3
+Citalopram,COL26A1,3
+Efavirenz,HTR2A,3
+Efavirenz,ABCG2,3
+Sirolimus,ABCB1,3
+"Gemcitabine,Platinum Compounds",CASP7,3
+"Paclitaxel,Platinum Compounds",CASP7,3
+Acetaminophen,UGT1A,3
+Iloperidone,CYP2D6,3
+"Capecitabine,Docetaxel",CYP1A1,3
+Mirtazapine,CYP2B6,3
+Olanzapine,HTR2C,3
+Imatinib,ABCC4,3
+"Adalimumab,Etanercept,Infliximab",TNFRSF1A,3
+Tacrolimus,NOD2,3
+Tacrolimus,CYP2C19,3
+Enzymes,A2M,3
+Benazepril,PRCP,3
+Prasugrel,PEAR1,3
+Paroxetine,HTR1B,3
+"Antidepressants,Citalopram,Fluvoxamine,Paroxetine,Sertraline,Venlafaxine",ABCB1,3
+Tramadol,SLC22A1,3
+"Antidepressants,Fluvoxamine,Paroxetine,Selective Serotonin Reuptake Inhibitors,Sertraline",HTR1A,3
+Paroxetine,DRD3,3
+"Citalopram,Fluoxetine,Paroxetine,Sertraline",SRP19,3
+"Citalopram,Fluoxetine,Paroxetine,Sertraline",REEP5,3
+Sertraline,,3
+"Amodiaquine,Pyrimethamine,Sulfadoxine",G6PD,3
+Trimipramine,CYP2C9,3
+Escitalopram,,3
+Escitalopram,CYP1A2,3
+"Clomipramine,Liothyronine,Lithium,Nefazodone,Venlafaxine",HTR1B,3
+Quetiapine,GRIN2B,3
+Risperidone,GRIN2B,3
+"Clomipramine,Nefazodone,Paroxetine,Venlafaxine",FKBP5,3
+"Carboplatin,Cisplatin",AKT1,3
+"Carboplatin,Cisplatin,Fluorouracil",SLC19A1,3
+Cisplatin,GSTM1,3
+Dobutamine,GNAS,3
+Captopril,AGTR1,3
+"Amisulpride,Antipsychotics,Olanzapine,Quetiapine,Risperidone",HTR1A,3
+Antidepressants,TGFBR3,3
+Antipsychotics,ZNF804A,3
+Enalapril,ADRB2,3
+"Benazepril,Imidapril",CYP11B2,3
+Benazepril,AGT,3
+"Bevacizumab,Ranibizumab",VEGFA,3
+Candesartan,CYP11B2,3
+"Carboplatin,Cisplatin",EIF3A,3
+Citalopram,,3
+Flunisolide,TBXT,3
+Gemcitabine,DCK,3
+Rituximab,TGFB1,3
+Sn-38,SLCO1B1,3
+Olanzapine,SV2C,3
+L-Tryptophan,SLC22A2,3
+Memantine,NR1I2,3
+Simvastatin,PPARA,3
+Talinolol,ABCB1,3
+"Carboplatin,Docetaxel,Paclitaxel",OPRM1,3
+"Carboplatin,Docetaxel,Paclitaxel",,3
+"Carboplatin,Docetaxel,Paclitaxel",BCL2,3
+"Carboplatin,Docetaxel,Paclitaxel",SOX10,3
+Salbutamol,,3
+"Citalopram,Escitalopram",GRK5,3
+"Citalopram,Escitalopram",RFK,3
+Hydrochlorothiazide,WNK1,3
+Antipsychotics,HSPG2,3
+Antipsychotics,GABRG3,3
+Risperidone,ADRB2,3
+"Anthracyclines And Related Substances,Taxanes",ABCB1,3
+Hydrochlorothiazide,,3
+Hydrochlorothiazide,PRKCA,3
+Sorafenib,UGT1A9,3
+Bisphosphonates,MEX3C,3
+"Fluorouracil,Oxaliplatin",PARD3B,3
+Antineoplastic Agents,DPYD,3
+"Cisplatin,Irinotecan",DCBLD1,3
+Antineoplastic Agents,SERPINA3,3
+Nortriptyline,SLC39A14,3
+Bisphosphonates,RBMS3,3
+"Cisplatin,Irinotecan",ABCC4,3
+Bisphosphonates,ABCC4,3
+Bisphosphonates,CSRNP3,3
+Bisphosphonates,ALDH1A2,3
+"Lansoprazole,Omeprazole,Rabeprazole",IL1B,3
+Salbutamol,CLOCK,3
+"Thiazides, Plain",SLC12A3,3
+Repaglinide,SLC30A8,3
+"Peginterferon Alfa-2B,Ribavirin",OASL,3
+Azathioprine,TPMT,3
+Aspirin,PEAR1,3
+"Cytarabine,Fludarabine,Gemtuzumab Ozogamicin,Idarubicin",SLC22A12,3
+"Cytarabine,Fludarabine,Gemtuzumab Ozogamicin,Idarubicin",CYP2E1,3
+"Cytarabine,Fludarabine,Gemtuzumab Ozogamicin,Idarubicin",SULT2B1,3
+"Cytarabine,Fludarabine,Gemtuzumab Ozogamicin,Idarubicin",SLCO1B1,3
+"Citalopram,Fluoxetine,Paroxetine,Sertraline",ABCB1,3
+"Amitriptyline,Citalopram,Fluoxetine,Paroxetine,Sertraline,Venlafaxine",ABCB1,3
+Sirolimus,CYP3A4,3
+Timolol,CYP2D6,3
+Didanosine,XDH,3
+Didanosine,NT5C2,3
+Lovastatin,CYP2D6,3
+Irinotecan,SLC19A1,3
+Capecitabine,CDA,3
+Tamoxifen,ABCB1,3
+Nifedipine,CYP3A5,3
+Methacholine,ADRB2,3
+Sipoglitazar,UGT2B15,3
+Cyclosporine,CYP3A4,3
+"Bumetanide,Furosemide,Torasemide",NPPA-AS1,3
+Indinavir,UGT1A1,3
+Fenofibrate,IL6,3
+Imatinib,SLC22A5,3
+Carvedilol,UGT1A1,3
+"Cladribine,Cytarabine",RRM2,3
+"Cladribine,Cytarabine",RRM2B,3
+"Cladribine,Cytarabine",RRM1,3
+Fluorouracil,ABCC11,3
+Bisphosphonates,SFRP5,3
+Methotrexate,DHFR,3
+"Adalimumab,Etanercept,Infliximab,Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors",PTPRC,3
+"Antiinflammatory Agents, Non-Steroids",CDKN2B-AS1,3
+Debrisoquine,CYP2D6,3
+"Cisplatin,Fluorouracil,Oxaliplatin",VEGFA,3
+Zonisamide,HLA-A,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",IFNL3,3
+Antipsychotics,BDNF-AS,3
+Antipsychotics,BDNF,3
+Cyclophosphamide,VEGFA,3
+Montelukast,SLCO2B1,3
+Gemcitabine,SLC29A1,3
+"Carboplatin,Cisplatin",SLC31A1,3
+Bisphosphonates,TBC1D32,3
+"Fluorouracil,Oxaliplatin",,3
+"Carboplatin,Cisplatin,Docetaxel,Erlotinib,Gefitinib,Paclitaxel",MAP3K1,3
+"Cyclophosphamide,Doxorubicin",SLC22A16,3
+"Cisplatin,Irinotecan",,3
+"Atorvastatin,Simvastatin",ABCC2,3
+Sildenafil,VEGFA,3
+Methotrexate,TNFAIP3,3
+Losartan,STK39,3
+"Bupropion,Nicotine",EPB41,3
+Antipsychotics,HTR2A,3
+"Carboplatin,Cyclophosphamide,Thiotepa",ALDH1A1,3
+Irinotecan,TOP1,3
+Eculizumab,C5,3
+Exemestane,,3
+Capecitabine,,3
+Glyburide,G6PD,3
+Chloramphenicol,G6PD,3
+Phenazopyridine,G6PD,3
+Nitrofurantoin,G6PD,3
+Morphine,ABCB1,3
+Gemcitabine,CDA,3
+Ondansetron,SLC6A4,3
+Clomipramine,SLC6A4,3
+Enalapril,NR3C2,3
+"Antidepressants,Antiepileptics,Beta Blocking Agents,Calcium Channel Blockers",ACE,3
+Opioids,COMT,3
+"Cisplatin,Cyclophosphamide",EPHX1,3
+"Cisplatin,Cyclophosphamide",ADH1C,3
+"Cisplatin,Cyclophosphamide",TPMT,3
+"Cisplatin,Cyclophosphamide",MUTYH,3
+"Cisplatin,Cyclophosphamide",NAT2,3
+Platinum,ERCC5,3
+"Cisplatin,Cyclophosphamide",LIG3,3
+"Clozapine,Olanzapine",GCG,3
+Rhodamine 123,ABCB1,3
+"Anastrozole,Letrozole",ESR1,3
+Gemcitabine,SLC28A3,3
+"Cytarabine,Idarubicin",DCK,3
+"Asparaginase,Cyclophosphamide,Cytarabine,Daunorubicin,Dexamethasone,Doxorubicin,Leucovorin,Mercaptopurine,Methotrexate,Pegaspargase,Prednisone,Thioguanine,Vincristine",GATA3,3
+Warfarin,FPGS,3
+Escitalopram,BMP5,3
+Diltiazem,PLCD3,3
+Radiotherapy,TANC1,3
+Heroin,GRM3,3
+Dimercaprol,G6PD,3
+Ciprofloxacin,G6PD,3
+Aspirin,G6PD,3
+Sulfadoxine,G6PD,3
+Sulfasalazine,G6PD,3
+Allopurinol,HLA-DRB1,3
+Atorvastatin,MYLIP,3
+Methotrexate,ATIC,3
+"Gemcitabine,Paclitaxel",SLC29A1,3
+Vincristine,CAPG,3
+Vincristine,ABCB1,3
+Vincristine,ACTG1,3
+Allopurinol,HLA-C,3
+Allopurinol,,3
+Allopurinol,PSORS1C3,3
+Allopurinol,POU5F1,3
+Irinotecan,KCNQ5,3
+Imatinib,BCL2L11,3
+Tacrolimus,PPARA,3
+Platinum Compounds,ATP7B,3
+Repaglinide,NR1I2,3
+Opioids,OPRD1,3
+Opioids,GAL,3
+Opioids,OPRM1,3
+Atenolol,PTGS2,3
+Atenolol,PLA2G4A,3
+Atenolol,GALNT2,3
+Atenolol,ABCB1,3
+Atenolol,FTO,3
+"Anastrozole,Exemestane",,3
+"Analgesics,Antiinflammatory Agents, Non-Steroids,Ergot Alkaloids,Opioids,Sumatriptan",HTR2A,3
+"Analgesics,Antiinflammatory Agents, Non-Steroids,Ergot Alkaloids,Opioids,Sumatriptan",DBH,3
+"Analgesics,Antiinflammatory Agents, Non-Steroids,Ergot Alkaloids,Opioids,Sumatriptan",BDNF,3
+"Analgesics,Antiinflammatory Agents, Non-Steroids,Ergot Alkaloids,Opioids,Sumatriptan",DRD2,3
+Allopurinol,HLA-A,3
+Itopride,FMO3,3
+Hmg-Coa Reductase Inhibitors,HLA-G,3
+Allopurinol,HLA-B,3
+"Azathioprine,Mercaptopurine",HLA-DRB1,3
+"Azathioprine,Mercaptopurine",HLA-DQA1,3
+"Azathioprine,Mercaptopurine",,3
+Clopidogrel,ITGB3,3
+Trichloroethylene,HLA-B,3
+Oxcarbazepine,HLA-B,3
+Carbamazepine,HLA-B,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",HLA-B,3
+Antiepileptics,HLA-B,3
+Acetazolamide,HLA-B,3
+Carbamazepine,ABCC2,3
+Acenocoumarol,VKORC1,3
+"Amoxicillin,Clavulanate",HLA-B,3
+Sulfasalazine,HLA-B,3
+Phenprocoumon,PPARA,3
+Simvastatin,UGT1A9,3
+Cocaine,CNR1,3
+Risperidone,NR1I2,3
+Bevacizumab,CFH,3
+Tamoxifen,,3
+Tamoxifen,E2F7,3
+Antidepressants,CREB1,3
+Olanzapine,GSTM3,3
+Olanzapine,ANKK1,3
+Olanzapine,CYP2C9,3
+Olanzapine,TPMT,3
+Olanzapine,UGT1A1,3
+Galantamine,CYP2D6,3
+Platinum Compounds,XBP1,3
+Fluoxetine,HTR1A,3
+Docetaxel,ABCC2,3
+Deferiprone,UGT1A6,3
+"Clozapine,Olanzapine",TBC1D1,3
+Ethanol,ADH1B,3
+Metformin,SLC22A1,3
+Pemetrexed,DHFR,3
+Mycophenolate Mofetil,SLCO1B1,3
+Atomoxetine,SLC6A2,3
+Olanzapine,ABCB1,3
+Bevacizumab,CXCL8,3
+Mycophenolate Mofetil,CYP2C8,3
+Gemcitabine,DAPK1,3
+Rituximab,IL2,3
+Citalopram,BDNF,3
+"Efavirenz,Nelfinavir",ABCB1,3
+Doxorubicin,GSTA1,3
+"Bevacizumab,Pegaptanib,Ranibizumab",VEGFA,3
+Ustekinumab,HLA-C,3
+Capecitabine,DPYD,3
+Capecitabine,ENOSF1,3
+Methamphetamine,GRIN1,3
+"Dextroamphetamine,Methylphenidate",DRD1,3
+"Fluticasone Propionate,Montelukast",,3
+"Fluticasone Propionate,Montelukast",CA10,3
+Escitalopram,IL11,3
+Fluorouracil,EGFR,3
+Methylphenidate,DRD3,3
+Egfr Inhibitors,EGFR,3
+"Cetuximab,Irinotecan,Panitumumab",AREG,3
+"Cetuximab,Irinotecan,Panitumumab",EGFR,3
+Irinotecan,UGT1A1,3
+Sunitinib,CYP3A5,3
+Aspirin,HLA-DPB1,3
+Tiotropium,ADRB2,3
+Topiramate,GRIK1,3
+Docetaxel,ORM2,3
+"Sulfonamides, Urea Derivatives",KCNJ11,3
+"Benazepril,Imidapril",AGT,3
+Deferasirox,ABCC2,3
+Platinum Compounds,ERCC3,3
+Platinum Compounds,XPA,3
+Platinum Compounds,ERCC4,3
+Platinum Compounds,APLF,3
+Platinum Compounds,ERCC2,3
+Platinum Compounds,CXXC4,3
+Platinum Compounds,WNT5B,3
+Platinum Compounds,WIF1,3
+Platinum Compounds,AXIN2,3
+Methotrexate,MTR,3
+Antidepressants,CRHR1,3
+Citalopram,NEDD4L,3
+Rosiglitazone,PAX4,3
+Pemetrexed,GGH,3
+Pemetrexed,FOLR3,3
+Pemetrexed,SLC19A1,3
+"Capecitabine,Fluorouracil",EXO1,3
+"Capecitabine,Fluorouracil",UMPS,3
+"Capecitabine,Fluorouracil",REV3L,3
+Carvedilol,ADRB2,3
+"Capecitabine,Fluorouracil",ABCB1,3
+"Capecitabine,Fluorouracil",DLG5,3
+"Capecitabine,Fluorouracil",PTEN,3
+"Capecitabine,Fluorouracil",CYP19A1,3
+Aspirin,CHIA,3
+Acetaminophen,"UGT1A,UGT1A9",3
+Aspirin,SLC30A9,3
+Aspirin,HLA-DPB2,3
+Aspirin,,3
+Aspirin,TSC1,3
+Aspirin,THRA,3
+Metformin,CAPN10,3
+Latanoprost,PTGS1,3
+Latanoprost,ABCC4,3
+Pioglitazone,ADIPOQ,3
+Valproic Acid,SOD2,3
+Imatinib,SLC22A4,3
+Metformin,,3
+Metformin,SP1,3
+Metformin,PPARA,3
+Hmg-Coa Reductase Inhibitors,CELSR2,3
+Hmg-Coa Reductase Inhibitors,SLCO1B1,3
+Hmg-Coa Reductase Inhibitors,,3
+"Insulin Recombinant,Zinc Acetate",SLC30A8,3
+"Interferon Alfa-2A, Recombinant,Interferon Alfa-2B, Recombinant,Ribavirin",FTO,3
+Clonidine,GNB3,3
+Imatinib,GSTT1,3
+"Antihypertensives,Beta Blocking Agents",GRK5,3
+Nevirapine,CYP2B6,3
+Risperidone,HRH3,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TNFRSF10A,3
+Irinotecan,UGT1A6,3
+Haloperidol,COMT,3
+"Lamivudine,Lopinavir,Ritonavir,Zidovudine",ABCC1,3
+Eculizumab,CR1,3
+Docetaxel,VEGFA,3
+Imatinib,ABCG2,3
+Levodopa,HOMER1,3
+Warfarin,GGCX,3
+Imatinib,CYP2B6,3
+Corticosteroids,HDAC1,3
+Tacrolimus,,3
+Sulfasalazine,ABCG2,3
+Imatinib,SLC22A1,3
+Sn-38,UGT1A9,3
+"Donepezil,Galantamine,Rivastigmine",CHRNA7,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IL1B,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IL1RN,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TLR9,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TLR2,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CD14,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IL17A,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TNFAIP3,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IL6,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TLR4,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CNPY4,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TNFRSF1A,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IFNG,3
+Tacrolimus,KCNQ1,3
+Tacrolimus,IL10,3
+Tacrolimus,ABCB1,3
+Gemcitabine,CMPK1,3
+Hmg-Coa Reductase Inhibitors,ABCB1,3
+Methylphenobarbital,CYP2C19,3
+Vitamin E,CYP4F2,3
+Succinylcholine,BCHE,3
+Isoproterenol,ADRB2,3
+Clozapine,NTRK2,3
+Clozapine,FKBP5,3
+Nevirapine,TRAF3IP2,3
+Aspirin,TAPBP,3
+"Dasatinib,Imatinib",ABCG2,3
+"Dasatinib,Imatinib,Nilotinib",ABCG2,3
+Phenprocoumon,STX4,3
+Phenprocoumon,CYP2C9,3
+Nicotine,FMO1,3
+Xk469,AOX1,3
+Tamoxifen,RRAS2,3
+"Gemcitabine,Platinum Compounds",RRM1,3
+Celecoxib,ALOX12,3
+Nicotine,UGT2B10,3
+Aspirin,PTGIR,3
+Tenofovir,OCRL,3
+Gemcitabine,,3
+Escitalopram,HTR1B,3
+Citalopram,PAPLN,3
+Verapamil,NR1H3,3
+Nevirapine,CYP2C19,3
+Hmg-Coa Reductase Inhibitors,CFAP44,3
+Aspirin,PTGER2,3
+"Peginterferon Alfa-2A,Ribavirin",VDR,3
+Levodopa,DBH,3
+Timolol,,3
+"Antiinflammatory Agents, Non-Steroids",PTGS1,3
+Warfarin,THBD,3
+Radiotherapy,CDK1,3
+Paclitaxel,FGD4,3
+Radiotherapy,PRKCE,3
+"Ace Inhibitors, Plain,Angiotensin Ii Antagonists,Beta Blocking Agents,Digoxin,Diuretics,Spironolactone",NOS3,3
+Enalapril,BDKRB2,3
+"Enalapril,Imidapril,Lisinopril",BDKRB2,3
+Bisphosphonates,KCNT2,3
+Sildenafil,NOS3,3
+"Adalimumab,Etanercept,Infliximab,Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors",TRAF1,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TNF,3
+Methadone,ALDH5A1,3
+Risperidone,CCL2,3
+Phenobarbital,ABCB1,3
+Venlafaxine,CYP2C19,3
+Etravirine,CYP2C19,3
+Gemcitabine,ALG10,3
+Rosuvastatin,FMO3,3
+"Ace Inhibitors, Plain",ACE,3
+"Interferons,Ribavirin",BCL2,3
+"Adalimumab,Etanercept,Infliximab",IL6,3
+Timolol,ADRB1,3
+Clopidogrel,,3
+Warfarin,EPHX1,3
+Fluoxetine,ABCB1,3
+Paroxetine,GDNF,3
+"Olanzapine,Quetiapine,Risperidone,Ziprasidone",,3
+Haloperidol,,3
+Vardenafil,CYP3A5,3
+Aspirin,PTGER3,3
+Aspirin,ACE,3
+Aspirin,TLR3,3
+Aspirin,AGT,3
+"Olanzapine,Quetiapine,Risperidone,Ziprasidone",EIF2AK4,3
+Haloperidol,EIF2AK4,3
+Celecoxib,IL23R,3
+Mycophenolate Mofetil,UGT2B7,3
+Methotrexate,SLC16A7,3
+Metformin,SLC47A2,3
+Sunitinib,FLT4,3
+Simvastatin,SLCO1B1,3
+"Topiramate,Zonisamide",CA12,3
+"Cytarabine,Idarubicin",NT5C3A,3
+Enalapril,,3
+Selective Serotonin Reuptake Inhibitors,DRD2,3
+Fluoxetine,,3
+Celecoxib,PTGES,3
+Fexofenadine,SLCO2B1,3
+Warfarin,HNF4A,3
+Olanzapine,AHR,3
+Citalopram,TPH2,3
+Thiazolidinediones,AQP2,3
+Hmg-Coa Reductase Inhibitors,ADAMTS1,3
+Hydrochlorothiazide,TCF7L2,3
+Celecoxib,PTGER4,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TNFRSF1B,3
+Naltrexone,OPRD1,3
+Entacapone,COMT,3
+Citalopram,CACNA1C,3
+Nicotine,GRIN3A,3
+Aspirin,COL26A1,3
+Methamphetamine,ARRB2,3
+Estradiol,,3
+"Methylprednisolone,Prednisolone",ABCB1,3
+Etoposide,ABCB1,3
+Imatinib,SLCO1A2,3
+Hydrochlorothiazide,GPR83,3
+Candesartan,GPR83,3
+Citalopram,RORA,3
+Citalopram,DTNBP1,3
+"Citalopram,Escitalopram",GLDC,3
+Citalopram,CRHR2,3
+Pravastatin,IL1B,3
+Tacrolimus,CYP3A5,3
+Simvastatin,LEPR,3
+Methotrexate,SLCO1B1,3
+Lovastatin,SLCO1B1,3
+Rifampin,SLCO1B1,3
+Atorvastatin,SLCO1B1,3
+Paroxetine,COMT,3
+Selective Serotonin Reuptake Inhibitors,SLC1A1,3
+Olanzapine,CHAT,3
+"Clozapine,Olanzapine,Risperidone",DRD2,3
+Olanzapine,CYP3A43,3
+Influenza Vaccines,HLA-DQB1,3
+Clozapine,HLA-DRB3,3
+Ticlopidine,HLA-B,3
+Methylene Blue,G6PD,3
+Ticlopidine,HLA-C,3
+Pazopanib,UGT1A1,3
+Methotrexate,SLC22A11,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",MICB,3
+"Deleobuvir,Faldaprevir","IFNL3,IFNL4",3
+Propofol,CYP2B6,3
+Antithymocyte Globulin,FCGR3A,3
+Pertussis Vaccines,TLR4,3
+Daunorubicin,NOS3,3
+Melphalan,SLC7A5,3
+Naltrexone,DBH,3
+"Clozapine,Olanzapine",MTHFR,3
+Salvianolic Acid B,NOS3,3
+"Capecitabine,Radiotherapy",AREG,3
+"Capecitabine,Radiotherapy",ERCC1,3
+Cotinine,NAT1,3
+Rocuronium,SLCO1B1,3
+Methotrexate,ABCC4,3
+Adalimumab,ATG16L1,3
+Valproic Acid,LEPR,3
+Valproic Acid,ANKK1,3
+Bilirubin,UGT1A,3
+Irinotecan,UGT1A,3
+Paclitaxel,SOD2,3
+Paclitaxel,ERCC1,3
+Docetaxel,ERCC1,3
+Atorvastatin,POR,3
+Clozapine,HTR1A,3
+Clozapine,COMT,3
+Tacrolimus,HSD11B1,3
+Haloperidol,ABCB5,3
+"Interferon Beta-1A,Interferon Beta-1B",CD58,3
+Cisplatin,GSTP1,3
+Anastrozole,UGT1A4,3
+Bupropion,CYP2C19,3
+Benazepril,MTHFR,3
+Daptomycin,ABCB1,3
+Hydrochlorothiazide,ILKAP,3
+Hydrochlorothiazide,TET2,3
+Hydrochlorothiazide,FBXL17,3
+Hydrochlorothiazide,CSMD1,3
+Hydrochlorothiazide,SLIT1,3
+Hydrochlorothiazide,DIAPH3,3
+Hydrochlorothiazide,UGGT2,3
+Hydrochlorothiazide,ANKFN1,3
+Metformin,SLC22A3,3
+"Epirubicin,Fluorouracil,Oxaliplatin",PON1,3
+"Anthracyclines And Related Substances,Cyclophosphamide,Doxorubicin,Epirubicin,Fluorouracil,Methotrexate,Oxaliplatin,Platinum Compounds",NOS3,3
+Fentanyl,,3
+Erlotinib,CYP1A2,3
+Olanzapine,BDNF,3
+Antipsychotics,IL1B,3
+Fentanyl,KCNJ6,3
+Valproic Acid,POLG,3
+"Bevacizumab,Capecitabine,Fluorouracil,Irinotecan,Leucovorin,Oxaliplatin",VEGFA,3
+Montelukast,,3
+Montelukast,GALNT17,3
+Montelukast,MLLT3,3
+"Anastrozole,Letrozole",TNFSF11,3
+"Anastrozole,Letrozole",TNFRSF11B,3
+Cytarabine,ABCB1,3
+Metformin,SLC22A2,3
+Bupropion,CYP2B6,3
+"Aripiprazole,Clozapine,Haloperidol,Olanzapine,Quetiapine,Risperidone",FAAH,3
+"Clozapine,Olanzapine,Risperidone",CNR1,3
+"Maprotiline,Opipramol",CYP2D6,3
+Ketamine,CYP2B6,3
+Anthracyclines And Related Substances,ECT2L,3
+Asparaginase,HLA-DRB1,3
+Asparaginase,NFATC2,3
+Vancomycin,,3
+"Ace Inhibitors, Plain",KCNIP4,3
+"Carboplatin,Taxanes",GSR,3
+"Carboplatin,Taxanes",ATP7B,3
+"Carboplatin,Taxanes",SCN10A,3
+"Drugs Used In Nicotine Dependence,Nicotine,Varenicline",CHRNA5,3
+Sunitinib,CXCL8,3
+Sunitinib,IL13,3
+"Atenolol,Bisoprolol",,3
+Atenolol,,3
+"Trandolapril,Verapamil",PTPRD,3
+Codeine,UGT2B7,3
+Sunitinib,NR1I2,3
+Fluorouracil,LGR5,3
+"Adrenergics, Inhalants",,3
+Nicotine,,3
+Metformin,FMO5,3
+Atorvastatin,FDPS,3
+Carbamazepine,NR1I2,3
+Citalopram,GRIA3,3
+Beta Blocking Agents,GNB3,3
+"Follitropin Beta,Thyrotropin Alfa,Urofollitropin",FSHR,3
+Efavirenz,CYP2B6,3
+"Farglitazar,Glyburide",SCNN1B,3
+Calcium Channel Blockers,TANC2,3
+Methadone,CYP3A4,3
+Efavirenz,IL10,3
+Cilostazol,CYP3A5,3
+Cyclophosphamide,CYP2C19,3
+Varenicline,CHRNA4,3
+Opium Alkaloids And Derivatives,CHRNA3,3
+"Fluorouracil,Irinotecan,Leucovorin",ABCC5,3
+"Fluorouracil,Irinotecan,Leucovorin",,3
+"Fluorouracil,Irinotecan,Leucovorin",ABCG1,3
+"Amlodipine,Chlorthalidone,Lisinopril",AGT,3
+"Acetaminophen,Aspirin,Diclofenac,Propionic Acid Derivatives,Pyrazolones",PLA2G4A,3
+"Acetaminophen,Aspirin,Diclofenac,Propionic Acid Derivatives,Pyrazolones",TNFRSF11A,3
+"Acetaminophen,Aspirin,Diclofenac,Propionic Acid Derivatives,Pyrazolones",PLCG1,3
+Amodiaquine,CYP2C8,3
+"Antidepressants,Citalopram,Clomipramine,Lithium,Nefazodone,Paroxetine,Venlafaxine",FKBP5,3
+Clopidogrel,CYP1A2,3
+Clopidogrel,P2RY12,3
+"Aspirin,Beta Blocking Agents,Clopidogrel,Hmg-Coa Reductase Inhibitors",NOS3,3
+"Aspirin,Clopidogrel",ITGA2,3
+"Aspirin,Clopidogrel",PTGS1,3
+"Aspirin,Clopidogrel",PEAR1,3
+Clopidogrel,CES1P1,3
+"Aspirin,Clopidogrel",CYP4F2,3
+Antipsychotics,,3
+"Capecitabine,Fluorouracil",HLA-G,3
+Letrozole,CYP19A1,3
+"Hmg-Coa Reductase Inhibitors,Letrozole",CYP19A1,3
+Warfarin,NQO1,3
+Sorafenib,VEGFA,3
+Sorafenib,KDR,3
+Sorafenib,ABCB1,3
+"Donepezil,Galantamine,Rivastigmine",CHAT,3
+"Desloratadine,Mizolastine",FCER1A,3
+Efavirenz,ABCC2,3
+"Capecitabine,Fluorouracil,Leucovorin,Oxaliplatin",SELE,3
+"Exemestane,Letrozole",ESR1,3
+Letrozole,ESR1,3
+Agomelatine,ABCB1,3
+Venlafaxine,ABCB1,3
+Selective Serotonin Reuptake Inhibitors,ABCB1,3
+Atenolol,LRRC15,3
+Metoprolol,LRRC15,3
+Hydrochlorothiazide,LRRC15,3
+Rivastigmine,CHAT,3
+Galantamine,CHAT,3
+Donepezil,CHAT,3
+Telmisartan,GNB3,3
+Quetiapine,DRD3,3
+Modafinil,ABCB1,3
+Silibinin,ABCB1,3
+Amisulpride,DRD2,3
+Corticosteroids,ST13,3
+Fluvoxamine,FGF2,3
+Antipsychotics,ADCY2,3
+Antipsychotics,NRG1,3
+"Cyclosporine,Mycophenolate Mofetil,Sirolimus,Tacrolimus",UGT1A8,3
+"Adalimumab,Infliximab",FCGR2A,3
+Infliximab,FCGR3A,3
+Sunitinib,ABCB1,3
+Antihypertensives,ATP2B1,3
+Antipsychotics,GRM3,3
+Antipsychotics,NRXN1,3
+Atorvastatin,HMGCR,3
+Bevacizumab,ARMS2,3
+Drugs For Treatment Of Tuberculosis,CYP2E1,3
+Ethanol,CAT,3
+Hepatitis Vaccines,IL13,3
+Hepatitis Vaccines,IL4R,3
+Imiquimod,TLR7,3
+Infliximab,TNF,3
+Voriconazole,CYP3A4,3
+Regadenoson,AMPD1,3
+Pegloticase,G6PD,3
+"Atorvastatin,Rifampin",SLCO1B1,3
+Lovastatin,CYP3A5,3
+Pravastatin,ADAMTS1,3
+Peginterferon Alfa-2B,HLA-DPA1,3
+Phenytoin,HLA-B,3
+Selective Beta-2-Adrenoreceptor Agonists,VDR,3
+"Adalimumab,Certolizumab Pegol,Etanercept,Glucocorticoids,Infliximab,Methotrexate",ATP5F1E,3
+Clozapine,GRIN2B,3
+"Adalimumab,Certolizumab Pegol,Etanercept,Glucocorticoids,Infliximab,Methotrexate",HLA-E,3
+Selective Serotonin Reuptake Inhibitors,PLCB1,3
+Olanzapine,GIPR,3
+"Capecitabine,Fluorouracil,Tegafur",TYMS,3
+Selective Serotonin Reuptake Inhibitors,,3
+"Exemestane,Letrozole",CYP19A1,3
+Platinum Compounds,HOTAIR,3
+Enalapril,SLCO1B1,3
+Platinum Compounds,MALAT1,3
+Platinum Compounds,H19,3
+Milnacipran,ADRA2A,3
+Platinum Compounds,,3
+"Antipsychotics,Risperidone",LEP,3
+Exemestane,ESR1,3
+Cisplatin,REV3L,3
+Cyclophosphamide,GSTA1,3
+Milnacipran,HTR1A,3
+Risperidone,GRID2,3
+"Cyclophosphamide,Dexamethasone,Lenalidomide,Thalidomide",CTNNB1,3
+"Lenalidomide,Thalidomide",CTNNB1,3
+Risperidone,GRM7,3
+Cisplatin,REV1,3
+Clopidogrel,IRS1,3
+"Infliximab,Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors",TNFRSF1B,3
+Asparaginase,SOD2,3
+"Interferon Beta-1A,Interferon Beta-1B",,3
+"Interferon Beta-1A,Interferon Beta-1B",FHIT,3
+"Interferon Beta-1A,Interferon Beta-1B",GAPVD1,3
+"Ace Inhibitors, Plain,Angiotensin Ii Antagonists,Beta Blocking Agents,Digoxin,Diuretics,Spironolactone",ADRB2,3
+Terbutaline,ADRB2,3
+"Atenolol,Metoprolol",ADRB2,3
+Platinum Compounds,ABCB1,3
+Voriconazole,ABCB1,3
+Nifedipine,ADRA1A,3
+Phenprocoumon,EPHX1,3
+Gemcitabine,SLC28A2,3
+"Carboplatin,Cisplatin,Gemcitabine",NRAS,3
+Infliximab,IL1B,3
+"Carboplatin,Cisplatin,Docetaxel,Gemcitabine,Paclitaxel",RAF1,3
+"Carboplatin,Cisplatin,Gemcitabine",,3
+"Carboplatin,Cisplatin,Docetaxel,Paclitaxel",MAP3K1,3
+"Carboplatin,Cisplatin,Docetaxel,Gemcitabine,Paclitaxel",ACSS2,3
+"Carboplatin,Cisplatin,Docetaxel,Paclitaxel",,3
+"Carboplatin,Cisplatin,Gemcitabine",GPX5,3
+Phenprocoumon,PROC,3
+Catecholamines,ADRB1,3
+Risperidone,,3
+Gemcitabine,RRM1,3
+Enalapril,NOS3,3
+Gemcitabine,SLC28A1,3
+Tamoxifen,ABCC2,3
+Ramipril,ACE,3
+Nitrendipine,AGTR1,3
+Angiotensin Ii,AGTR1,3
+Perindopril,AGTR1,3
+Quinapril,AGT,3
+Icotinib,CYP2C19,3
+Nevirapine,ABCC10,3
+Nevirapine,CCHCR1,3
+Nevirapine,TCF19,3
+Nevirapine,POLR3G,3
+Nevirapine,,3
+"Bevacizumab,Pemetrexed",GGH,3
+Tipifarnib,ABCB1,3
+Bupropion,DRD2,3
+Nicotine,DRD2,3
+Valproic Acid,GRIN2B,3
+Gefitinib,EGFR,3
+"Cetuximab,Irinotecan,Leucovorin,Tegafur",EGFR,3
+Methamphetamine,DAOA,3
+Salbutamol,DUSP1,3
+Methamphetamine,HTR1A,3
+Ethanol,TAS2R16,3
+"Catecholamines,Metformin",SLC22A3,3
+Nicotine,POR,3
+Atenolol,PROX1,3
+"Conjugated Estrogens,Medroxyprogesterone",VDR,3
+Irinotecan,UGT1A9,3
+Fluvastatin,CYP3A4,3
+"Fluvastatin,Simvastatin",LIPC,3
+Pravastatin,LIPC,3
+Lovastatin,LDLR,3
+"Atorvastatin,Simvastatin",PON1,3
+Pravastatin,ABCC2,3
+Nelfinavir,CYP2C19,3
+Atorvastatin,LEPR,3
+"Efavirenz,Lopinavir,Nucleoside And Nucleotide Reverse Transcriptase Inhibitors,Ritonavir",,3
+Gemcitabine,FKBP5,3
+Cefotaxime,SLC22A8,3
+Hydrochlorothiazide,NEDD4L,3
+Cocaine,DRD2,3
+"Pravastatin,Simvastatin",RHOA,3
+"Asparaginase,Dexamethasone,Methotrexate",PYGL,3
+"Ace Inhibitors, Plain",AGT,3
+Imatinib,ULK3,3
+Corticosteroids,TBX21,3
+Flupirtine,HLA-DRB1,3
+Allopurinol,HLA-DQB1,3
+Flupirtine,HLA-DQB1,3
+Nicotine,DDC,3
+Clozapine,DRD1,3
+Cannabinoids,FAAH,3
+Tamoxifen,CYP3A4,3
+Fenofibrate,LPL,3
+"Thiazides, Plain",ACE,3
+"Thiazides, Plain",AGTR1,3
+"Thiazides, Plain",GNB3,3
+"Antiepileptics,Carbamazepine",ABCB1,3
+Antiepileptics,ABCB1,3
+Olanzapine,PPARG,3
+"Atorvastatin,Simvastatin",CYP3A4,3
+"Ethambutol,Isoniazid,Pyrazinamide,Rifampin",NAT2,3
+Atorvastatin,PON1,3
+Methylphenidate,ADGRL3,3
+Aspirin,NAT2,3
+Fluorouracil,IGFBP3,3
+Fluorouracil,,3
+Tamoxifen,CYP2C19,3
+Perindopril,BDKRB1,3
+Aspirin,TBXAS1,3
+Antipsychotics,LEPR,3
+Sorafenib,,3
+Sorafenib,NOS3,3
+Tegafur,CYP2A6,3
+Lithium,OR52E2,3
+Lithium,ASIC2,3
+Somatropin Recombinant,COL1A1,3
+Testosterone,UGT1A4,3
+Nevirapine,CYP2D6,3
+Methadone,UGT2B7,3
+Topotecan,ABCG2,3
+Difluorodeoxyuridine,CDA,3
+Gemcitabine,NT5C3A,3
+Gemcitabine,SH2D5,3
+Gemcitabine,TENT4A,3
+Gemcitabine,DCTD,3
+Gemcitabine,CDC5L,3
+Exemestane,AKR1C3,3
+Exemestane,AKR1C4,3
+Corticosteroids,TAAR6,3
+"Bufuralol,Dextromethorphan",CYP2D6,3
+"Carboplatin,Paclitaxel",SLCO1B3,3
+"Atazanavir,Lopinavir,Ritonavir,Tenofovir",ABCC2,3
+"Cladribine,Fluorouracil,Gemcitabine",NT5C1A,3
+Dimethyl Fumarate,GSTP1,3
+"Amlodipine,Chlorthalidone,Lisinopril",,3
+Valproic Acid,COL1A1,3
+Ranibizumab,NRP1,3
+Topiramate,INSR,3
+Asparaginase,CPA2,3
+Antipsychotics,ABCB1,3
+Tolperisone,CYP2D6,3
+Cotinine,,3
+Phenobarbital,HLA-B,3
+Cotinine,PSMA4,3
+Cotinine,CHRNA3,3
+Atenolol,PRKCB,3
+Sulfinpyrazone,UGT1A9,3
+Efavirenz,NR1I3,3
+Carbamazepine,UGT2B7,3
+Carbamazepine,ABCB1,3
+Carbamazepine,CYP3A4,3
+"Bupropion,Drugs Used In Nicotine Dependence",CYP2A6,3
+Dipeptidyl Peptidase 4 (Dpp-4) Inhibitors,CDKAL1,3
+Docetaxel,VAC14,3
+Fluorouracil,DPYD,3
+Fluorouracil,TYMS,3
+Rivastigmine,BCHE,3
+Donepezil,CYP2D6,3
+Irbesartan,CYP2C9,3
+Rivastigmine,ACHE,3
+Ritonavir,ABCB1,3
+"Cyclophosphamide,Cytarabine,Daunorubicin,Mercaptopurine,Methotrexate,Prednisone,Vincristine",DROSHA,3
+Endoxifen,,3
+"Anastrozole,Exemestane",MAP4K4,3
+Antineoplastic Agents,RBFOX1,3
+Enalapril,VEGFA,3
+"Bevacizumab,Capecitabine,Oxaliplatin",MGAT4A,3
+"Bevacizumab,Capecitabine,Cetuximab,Oxaliplatin",MGAT4A,3
+"Citalopram,Escitalopram",ERICH3,3
+Brivaracetam,CYP2C19,3
+Irinotecan,NR1I2,3
+"Cisplatin,Gemcitabine",CMPK1,3
+"Cisplatin,Gemcitabine",RRM1,3
+Mycophenolic Acid,UGT1A9,3
+"Antiinflammatory Agents, Non-Steroids,Aspirin",,3
+Docetaxel,NR1I2,3
+Docetaxel,,3
+Docetaxel,RXRA,3
+Antiepileptics,,3
+"Cyclophosphamide,Cytarabine,Daunorubicin,Dexamethasone,Doxorubicin,Methotrexate,Pegaspargase,Prednisone,Thioguanine,Vincristine",,3
+Cisplatin,LRP2,3
+Busulfan,GSTA1,3
+Calcium Channel Blockers,NUMA1,3
+Calcium Channel Blockers,PICALM,3
+Hmg-Coa Reductase Inhibitors,SREBF1,3
+Docetaxel,HNF4A,3
+Docetaxel,NR1I3,3
+Indinavir,CYP3A4,3
+"Lansoprazole,Tacrolimus",ABCB1,3
+"Cytarabine,Daunorubicin,Etoposide,Mitoxantrone",SLCO1B1,3
+"Doxorubicin,Doxorubicinol",SLC22A16,3
+Antipsychotics,DRD2,3
+Antidepressants,HTR2A,3
+"Alemtuzumab,Chlorambucil,Cyclophosphamide,Fludarabine,Prednisone,Rituximab,Vincristine",CXCL12,3
+Photodynamic Therapy,F13A1,3
+Interferons,STAT3,3
+Antidepressants,,3
+Cyclosporine,CTLA4,3
+Antidepressants,FHIT,3
+Antidepressants,MTRF1L,3
+Antidepressants,RGS17,3
+Antidepressants,PON2,3
+Antidepressants,CTNNA3,3
+Antidepressants,CACNA1A,3
+Nicotine,DRD1,3
+Adalimumab,HFE,3
+Pravastatin,LDLR,3
+Adalimumab,TF,3
+Dexamethasone,SERPINE1,3
+Ticagrelor,UGT2B7,3
+Ticagrelor,CYP3A4,3
+Ticagrelor,SLCO1B1,3
+Mercaptopurine,TPMT,3
+"Chlorpromazine,Clozapine,Haloperidol,Olanzapine,Quetiapine,Risperidone,Trifluoperazine",EPM2A,3
+Adalimumab,CRP,3
+Adalimumab,ATG5,3
+Rasagiline,DRD2,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CERS6,3
+Telaprevir,CYP24A1,3
+Bisoprolol,ACY3,3
+Losartan,NPHS1,3
+Mycophenolic Acid,ABCC2,3
+Mycophenolic Acid,SLCO1B1,3
+Tamoxifen,NCOA1,3
+Tamoxifen,LRMDA,3
+Bupropion,GALR1,3
+Nicotine,GALR1,3
+Codeine,ABCB1,3
+Hydrochlorothiazide,DOT1L,3
+Nicotine,CHRM2,3
+Dabigatran,ABCB1,3
+Dabigatran,CES1,3
+Aspirin,SLC6A12,3
+"Amantadine,Anticholinergics,Dopamine Agonists,Levodopa,Selegiline",SLC22A1,3
+Fenofibrate,APOB,3
+Cotinine,CHRNA5,3
+Opium Alkaloids And Derivatives,CHRNA5,3
+"Nicotine,Opium Alkaloids And Derivatives",CHRNA5,3
+Nicotine,CHRNB2,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",SLC29A1,3
+Stavudine,TNF,3
+Nicotine,CHRNB4,3
+Nicotine,CHRNA3,3
+Nicotine,CHRNA5,3
+Deferasirox,CYP1A2,3
+Deferasirox,CYP1A1,3
+"Amiodarone,Antibiotics,Antipsychotics,Diuretics,Quinidine,Sotalol",KCNE1,3
+Methamphetamine,DRD3,3
+"Fluoxetine,Sertraline",ACE,3
+"Bumetanide,Furosemide,Torasemide",GNB3,3
+"Bumetanide,Furosemide,Torasemide",ADD1,3
+"Fluorouracil,Leucovorin,Oxaliplatin",ABCC2,3
+"Carboplatin,Cisplatin",PIK3CA,3
+"Carboplatin,Cisplatin",PTEN,3
+"Carboplatin,Cisplatin",,3
+"Bleomycin,Dacarbazine,Doxorubicin,Vinblastine",GSTM1,3
+"Irinotecan,Oxaliplatin,Tegafur / Gimeracil / Oteracil",UGT1A7,3
+"Irinotecan,Oxaliplatin,Tegafur / Gimeracil / Oteracil",UGT1A6,3
+"Peginterferon Alfa-2B,Ribavirin",CYP27B1,3
+"Peginterferon Alfa-2B,Ribavirin",,3
+"Docetaxel,Epirubicin",MDM4,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",CYP1B1,3
+"Bevacizumab,Fluorouracil,Irinotecan,Leucovorin",RGS5,3
+"Cyclophosphamide,Docetaxel",VEGFA,3
+"Peginterferon Alfa-2B,Protease Inhibitors,Ribavirin",SLC28A2,3
+"Doxorubicin,Methotrexate,Prednisolone,Vincristine",ABCB1,3
+"Cyclophosphamide,Epirubicin,Paclitaxel",CYP1B1,3
+"Bleomycin,Cyclophosphamide,Doxorubicin,Prednisone,Rituximab,Vincristine,Vindesine",ABCB1,3
+"Interferons,Ribavirin",IL18,3
+"Mercaptopurine,Methotrexate",PACSIN2,3
+"Peginterferon Alfa-2B,Ribavirin",SLC6A4,3
+"Peginterferon Alfa-2B,Ribavirin",IL6,3
+"Cisplatin,Fluorouracil,Mitoxantrone",GALNT14,3
+"Mercaptopurine,Methotrexate",FOLH1,3
+"Antivirals For Treatment Of Hiv Infections, Combinations,Drugs For Treatment Of Tuberculosis",CYP2B6,3
+"Antivirals For Treatment Of Hiv Infections, Combinations,Drugs For Treatment Of Tuberculosis",ABCB1,3
+"Cyclosporine,Dicloxacillin",ABCB1,3
+"Cyclophosphamide,Fluorouracil,Methotrexate",FGFR4,3
+Dihydropyridine Derivatives,NOS1AP,3
+Ethanol,CHRNA3,3
+"Capecitabine,Oxaliplatin",PTGS2,3
+Methadone,GNB3,3
+Methamphetamine,ESR1,3
+Amphetamine,DRD2,3
+Methadone,KCNJ6,3
+Analgesics,KCNJ6,3
+Flucloxacillin,NR1I2,3
+Repaglinide,NOS1AP,3
+Ethanol,CHRNA5,3
+Cocaine,CHRNA5,3
+Repaglinide,IGF2BP2,3
+Clozapine,SLC6A3,3
+Rosuvastatin,CRP,3
+Rosuvastatin,,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",LDLR,3
+"Capecitabine,Oxaliplatin",VEGFA,3
+"Antidepressants,Citalopram","CREB1,METTL21A",3
+"Doxorubicin,Doxorubicinol",CBR1,3
+Doxorubicin,CBR1,3
+Carbamazepine,"HSPA1A,HSPA1L",3
+Gemcitabine,ESR2,3
+Repaglinide,KCNJ11,3
+"Bumetanide,Furosemide,Torasemide",SLC12A3,3
+Tacrolimus,CAPN10,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin,Simeprevir",IFNL3,3
+"Atorvastatin,Bisphosphonates",FDPS,3
+Alendronate,MVK,3
+"Interferon Beta-1A,Interferon Beta-1B",ZNF697,3
+"Anastrozole,Exemestane",TUBB1,3
+"Atazanavir,Ritonavir",UGT1A1,3
+Aspirin,ZBTB22,3
+"Carboplatin,Taxanes",VEGFA,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B",CXCL10,3
+"Carboplatin,Lonafarnib,Paclitaxel",FNTB,3
+Cotinine,CHRNB4,3
+"Atazanavir,Ritonavir",UGT1A7,3
+"Atazanavir,Ritonavir",UGT1A3,3
+"Cyclophosphamide,Cytarabine,Daunorubicin,Dexamethasone,Doxorubicin,Methotrexate,Pegaspargase,Prednisone,Thioguanine,Vincristine",DOK5,3
+"Cyclophosphamide,Cytarabine,Daunorubicin,Dexamethasone,Doxorubicin,Methotrexate,Pegaspargase,Prednisone,Thioguanine,Vincristine",BMP7,3
+"Cyclophosphamide,Cytarabine,Daunorubicin,Dexamethasone,Doxorubicin,Methotrexate,Pegaspargase,Prednisone,Thioguanine,Vincristine",LINC00251,3
+Letrozole,ESR2,3
+Efavirenz,HNF4A,3
+Platinum Compounds,EIF3A,3
+Antidepressants,RAPGEF5,3
+Antidepressants,CRH,3
+Antidepressants,PARP11,3
+Antidepressants,NBEA,3
+Ticagrelor,CYP3A43,3
+Busulfan,GSTM1,3
+Olanzapine,PMCH,3
+"Anastrozole,Exemestane,Letrozole",CYP19A1,3
+Exemestane,CYP19A1,3
+Antipsychotics,INSIG2,3
+Midazolam,VDR,3
+Asparaginase,GRIA1,3
+Aripiprazole,TAAR6,3
+"Cyclosporine,Mycophenolate Mofetil",TNF,3
+Triamcinolone,HCG22,3
+Aspirin,TGFB1,3
+"Peginterferon Alfa-2A,Ribavirin",ITPA,3
+Olanzapine,CYP1A1,3
+Olanzapine,IL1A,3
+Montelukast,LTC4S,3
+Valproic Acid,UGT1A6,3
+Rosuvastatin,CYP3A5,3
+Carbamazepine,"LTA,TNF",3
+Leflunomide,DHODH,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,PON1,3
+Erythromycin,CYP3A4,3
+Carbamazepine,HSPA1L,3
+Selective Beta-2-Adrenoreceptor Agonists,ARG1,3
+Bupropion,COMT,3
+"Cisplatin,Cyclophosphamide",GSTA1,3
+"Cisplatin,Irinotecan",UBE2I,3
+Abacavir,"LST1,LTA,LTB",3
+Citalopram,HTR1B,3
+Latanoprost,PTGFR,3
+"Cyclophosphamide,Docetaxel,Doxorubicin,Epirubicin,Fluorouracil",SLCO1B1,3
+Tamoxifen,UGT1A4,3
+Tocilizumab,CD69,3
+Tocilizumab,GALNT18,3
+Cisplatin,"CSNK2A3,GALNT18",3
+Cisplatin,MLLT3,3
+Cisplatin,RARS1,3
+Allopurinol,CYCSP5,3
+Warfarin,CYP2C19,3
+Zafirlukast,CYP2C9,3
+Clozapine,ITIH3,3
+Methotrexate,"ADORA2A,ADORA2A-AS1",3
+Valganciclovir,ABCC4,3
+Valganciclovir,ABCB1,3
+"Axitinib,Sorafenib",HIF1A,3
+Imatinib,CYP3A5,3
+Dalcetrapib,ADCY9,3
+Mercaptopurine,GNMT,3
+Metformin,SLC2A2,3
+Methadone,,3
+Platinum Compounds,IL16,3
+Platinum Compounds,IL1B,3
+Warfarin,POR,3
+Warfarin,DDHD1,3
+Warfarin,NEDD4,3
+Warfarin,ASPH,3
+Sorafenib,SLCO1B1,3
+Sorafenib,ABCC2,3
+Captopril,ACE,3
+Raloxifene,ESR1,3
+Raloxifene,UGT1A8,3
+Clindamycin,HLA-B,3
+Clopidogrel,B4GALT2,3
+Warfarin,CYP4F2,3
+"Ephedrine,Phenylephrine",ADRB2,3
+"Fentanyl,Propofol,Remifentanil,Sevoflurane",ADRB2,3
+Docetaxel,CYP3A4,3
+"Peginterferon Alfa-2A,Ribavirin",SCARB1,3
+Oxcarbazepine,HLA-DRB1,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin,Simeprevir",IFNL4,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin","IFNL3,IFNL4",3
+Antibiotics,LGALS3,3
+Etanercept,CD84,3
+Ustekinumab,IL12B,3
+Rifampin,CUX2,3
+Rifampin,RIPOR2,3
+Rifampin,AGBL4,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",,3
+"Adalimumab,Certolizumab Pegol,Etanercept,Glucocorticoids,Infliximab,Methotrexate",KLRD1,3
+"Adalimumab,Certolizumab Pegol,Etanercept,Glucocorticoids,Infliximab,Methotrexate",KLRC1,3
+Carbamazepine,CYP3A5,3
+Warfarin,STX1B,3
+Warfarin,CYP1A1,3
+Warfarin,DNMT3A,3
+"Azathioprine,Mercaptopurine",ABCC4,3
+"Azathioprine,Mercaptopurine",FTO,3
+Rituximab,,3
+Rosiglitazone,SLCO1B1,3
+"Amitriptyline,Antidepressants,Citalopram,Fluvoxamine,Paroxetine,Sertraline,Venlafaxine",ABCB1,3
+Irinotecan,TGFB1,3
+Irinotecan,TGFBR2,3
+Zileuton,PRORP,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IL23R,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CTLA4,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,SLC12A8,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,FBXL19,3
+Quetiapine,COMT,3
+Furosemide,ABCC4,3
+"Carbamazepine,Phenobarbital,Phenytoin,Valproic Acid",CYP1A1,3
+Granisetron,CYP3A5,3
+Granisetron,CYP1A1,3
+Interferon Beta-1A,HLA-DRB1,3
+Interferon Beta-1A,HLA-B,3
+"Adalimumab,Etanercept,Infliximab",FCGR3A,3
+Gefitinib,ABCB1,3
+Bevacizumab,EDN1,3
+Bevacizumab,VEGFA,3
+Clozapine,GSTM1,3
+Clozapine,GSTT1,3
+Antidepressants,NTRK2,3
+Antipsychotics,GRIK3,3
+Antipsychotics,SLC18A2,3
+"Allopurinol,Febuxostat","UGT1A1,UGT1A10,UGT1A3,UGT1A4,UGT1A5,UGT1A6,UGT1A7,UGT1A8,UGT1A9",3
+"Allopurinol,Febuxostat",AOX1,3
+Bevacizumab,CXCR4,3
+Exemestane,CYP3A4,3
+"Fluorouracil,Leucovorin,Oxaliplatin",ERCC1,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,PGLYRP4,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CTNNA2,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,MAP3K1,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IL12B,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,CDKAL1,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,HLA-C,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,ZNF816,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,IL17RA,3
+Levodopa,DRD2,3
+Lamotrigine,HLA-B,3
+Carbamazepine,HLA-C,3
+Phenytoin,HLA-C,3
+Tocilizumab,IL6R,3
+Tacrolimus,FOXP3,3
+Sn-38,ABCC1,3
+Irinotecan,ABCC1,3
+Ticagrelor,PEAR1,3
+Morphine,UGT2B7,3
+Clozapine,,3
+Rivaroxaban,ABCB1,3
+"Ledipasvir,Sofosbuvir","IFNL3,IFNL4",3
+Sirolimus,POR,3
+Sirolimus,IL10,3
+Hydrochlorothiazide,VASP,3
+Cetuximab,EGFR,3
+Platinum Compounds,GSTP1,3
+"3,4-Methylenedioxymethamphetamine",CYP2B6,3
+Ivacaftor,SLC26A9,3
+Venlafaxine,SLC6A2,3
+Cotinine,UGT2B10,3
+Fluoxetine,HTR1B,3
+"Atenolol,Verapamil",PLEKHH2,3
+Atenolol,DPYS,3
+Capecitabine,CES1,3
+Capecitabine,CES1P1,3
+"Peginterferon Alfa-2B,Ribavirin",CYP2R1,3
+Opioids,FAAH,3
+Morphine,FAAH,3
+Tacrolimus,IL18,3
+Clozapine,C3,3
+Oxcarbazepine,"UGT1A10,UGT1A7,UGT1A8,UGT1A9",3
+"Lenalidomide,Thalidomide",FGF2,3
+Antihypertensives,CLNK,3
+Selective Serotonin Reuptake Inhibitors,ADRA2A,3
+Amisulpride,ANKS1B,3
+Sulindac,FMO3,3
+"Atorvastatin,Fluvastatin,Hmg-Coa Reductase Inhibitors,Pravastatin,Rosuvastatin,Simvastatin",HLA-DRB1,3
+Tacrolimus,CTLA4,3
+Tacrolimus,IL3,3
+Clopidogrel,PEAR1,3
+Rocuronium,SLCO1A2,3
+Anastrozole,ABCB1,3
+Anastrozole,CYP19A1,3
+Phenytoin,CYP2C19,3
+Cisplatin,TPMT,3
+Cisplatin,SLC31A1,3
+Methotrexate,FOXP3,3
+Capecitabine,UMPS,3
+Capecitabine,SLC22A7,3
+Capecitabine,TYMS,3
+Atazanavir,ABCB1,3
+Atazanavir,CYP3A4,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",PIGB,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",,3
+Gemtuzumab Ozogamicin,CD33,3
+"Ethambutol,Isoniazid,Pyrazinamide,Rifampin",CYP2B6,3
+Warfarin,CYP4F11,3
+Cisplatin,COMT,3
+Clopidogrel,ABCB1,3
+Beta Blocking Agents,ADRB1,3
+"Salbutamol,Selective Beta-2-Adrenoreceptor Agonists",CRHR2,3
+Mercaptopurine,NUDT15,3
+Nevirapine,GSTM1,3
+Heparin,HLA-DRB3,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin",EGFR,3
+Everolimus,ABCB1,3
+Everolimus,FGFR4,3
+Everolimus,PIK3R1,3
+Venlafaxine,COMT,3
+Fluorouracil,TPMT,3
+Tacrolimus,C6,3
+Tenofovir,ABCG2,3
+Dolutegravir,ABCG2,3
+Valproic Acid,CYP2C9,3
+"Drugs For Treatment Of Tuberculosis,Isoniazid",ABCB1,3
+Drugs For Treatment Of Tuberculosis,NAT2,3
+"Ethambutol,Isoniazid,Pyrazinamide,Rifampin",TNF,3
+Oseltamivir,CES1,3
+Hormonal Contraceptives For Systemic Use,F11,3
+Hormonal Contraceptives For Systemic Use,KNG1,3
+Glatiramer Acetate,,3
+Hormonal Contraceptives For Systemic Use,SUGCT,3
+Hormonal Contraceptives For Systemic Use,ABO,3
+Hormonal Contraceptives For Systemic Use,CYP2C9,3
+Ethanol,SLC6A3,3
+Methadone,CDH2,3
+"Peginterferon Alfa-2B,Ribavirin",HLA-C,3
+Etanercept,STAT4,3
+Etanercept,PSORS1C1,3
+Antithyroid Preparations,FOXF2,3
+Antithyroid Preparations,HLA-B,3
+Antithyroid Preparations,EHMT2,3
+Isoniazid,BACH1,3
+Salbutamol,ADRB2,3
+Isoniazid,XPO1,3
+Isoniazid,MAFK,3
+Clopidogrel,CES1,3
+Valproic Acid,"UGT1A10,UGT1A3,UGT1A4,UGT1A5,UGT1A6,UGT1A7,UGT1A8,UGT1A9",3
+"Platinum Compounds,Radiotherapy",,3
+Oxcarbazepine,UGT2B7,3
+"Cisplatin,Gemcitabine","ERCC1,POLR1G,PPP1R13L",3
+"Cisplatin,Pemetrexed",ABCC2,3
+"Cisplatin,Gemcitabine","ERCC2,KLC3",3
+Lumefantrine,CYP3A5,3
+Lumefantrine,"CYP3A5,ZSCAN25",3
+Lumefantrine,CYP3A4,3
+Warfarin,VKORC1L1,3
+Midazolam,CYP3A5,3
+"Amisulpride,Aripiprazole,Clozapine,Lithium,Mirtazapine,Olanzapine,Paliperidone,Quetiapine,Risperidone,Valproic Acid",SH2B1,3
+"Amisulpride,Aripiprazole,Clozapine,Lithium,Mirtazapine,Olanzapine,Paliperidone,Quetiapine,Risperidone,Valproic Acid",RABEP1,3
+"Remifentanil,Sevoflurane",ABCB1,3
+Imatinib,ABCB1,3
+"Sirolimus,Temsirolimus",NR1I2,3
+"Sirolimus,Temsirolimus",ABCB1,3
+Lithium,EPHX2,3
+Lithium,GRAMD1B,3
+Lithium,MYO1H,3
+Lithium,FAM178B,3
+Lithium,ZNF804A,3
+Lithium,ADCY1,3
+Lithium,FAM177A1,3
+"Fluorouracil,Platinum Compounds,Radiotherapy",ERCC1,3
+Platinum Compounds,XPC,3
+"Tipiracil Hydrochloride,Trifluridine",SLC29A1,3
+"Sulfonamides, Urea Derivatives",CYP2C9,3
+"Sofosbuvir,Velpatasvir,Voxilaprevir","IFNL3,IFNL4",3
+Metformin,SLC47A1,3
+"Atazanavir,Ritonavir",CYP3A5,3
+Atazanavir,CYP3A5,3
+"Hdl Cholesterol,Letrozole,Triglycerides",CYP19A1,3
+"Metformin,Sulfonamides, Urea Derivatives",KCNJ11,3
+"Carbamazepine,Phenytoin,Valproic Acid",GABRA1,3
+Sunitinib,POR,3
+Sunitinib,SLCO1B3,3
+Cocaine,BCHE,3
+Ustekinumab,TIRAP,3
+Ustekinumab,TLR5,3
+"Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,Ustekinumab",IL1B,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,LY96,3
+"Fluorouracil,Platinum Compounds,Radiotherapy",XRCC4,3
+Ritodrine,CACNA1C,3
+Nevirapine,HLA-B,3
+"Bupropion,Nicotine,Varenicline",CHRNA5,3
+Nevirapine,HLA-DRB1,3
+"Capecitabine,Fluorouracil",TYMP,3
+Deferasirox,ABCG2,3
+"Isoniazid,Rifampin",GSTP1,3
+"Fluorouracil,Platinum Compounds,Radiotherapy","TMEM167A,XRCC4",3
+Atazanavir,NR1I2,3
+"Atorvastatin,Simvastatin",RYR2,3
+Pazopanib,KDR,3
+Deferasirox,UGT1A3,3
+Opioids,DBH,3
+Cyclosporine,CYP3A5,3
+Platinum Compounds,XRCC3,3
+Buprenorphine,OPRD1,3
+Ethanol,DRD2,3
+Allopurinol,NOTCH4,3
+Nicotine,FMO3,3
+Deferasirox,CYP24A1,3
+Aripiprazole,DRD2,3
+"Antiinflammatory Agents, Non-Steroids",IL10,3
+"Antiinflammatory Agents, Non-Steroids",CTLA4,3
+"Acetaminophen,Ibuprofen,Loxoprofen,Salicylamide",,3
+Ketorolac,,3
+Tramadol,ABCB1,3
+Corticosteroids,BCL2L11,3
+Warfarin,GATA4,3
+Warfarin,VDR,3
+Sildenafil,CYP3A4,3
+Somatropin Recombinant,CDK4,3
+"Doxorubicin,Idarubicin",CYBA,3
+"Doxorubicin,Idarubicin",NCF4,3
+"Doxorubicin,Idarubicin",RAC2,3
+Idarubicin,NCF4,3
+Idarubicin,RAC2,3
+Drugs Used In Diabetes,IRS1,3
+Imatinib,EGFR,3
+"3,4-Methylenedioxymethamphetamine",SLC6A2,3
+"Cetuximab,Panitumumab",KRAS,3
+Cyclosporine,POR,3
+Tacrolimus,SUMO4,3
+Omeprazole,ABCB1,3
+Dapoxetine,CYP2D6,3
+"Caffeine,Chlorocresol",RYR1,3
+Tacrolimus,TLR4,3
+Allopurinol,PSORS1C1,3
+Metformin,AMHR2,3
+Opioids,"OPRL1,RGS19",3
+Opioids,"LKAAEAR1,OPRL1",3
+Methylphenidate,PEBP4,3
+Methylphenidate,ZDHHC7,3
+Methylphenidate,ZNF134,3
+Methylphenidate,ARSA,3
+Methylphenidate,SPSB2,3
+Methylphenidate,ZNF211,3
+Methylphenidate,CORO7,3
+Methylphenidate,FXR2,3
+Methylphenidate,ZNF565,3
+Methylphenidate,ELP5,3
+Methylphenidate,CDH23,3
+Methylphenidate,ARHGAP12,3
+Methylphenidate,PIGM,3
+Methylphenidate,CHURC1,3
+Methylphenidate,TRIB3,3
+Methylphenidate,CMTM8,3
+Methylphenidate,PDIA2,3
+Methylphenidate,OPCML,3
+Methylphenidate,ETFDH,3
+Methylphenidate,NFIB,3
+Methylphenidate,ARHGEF28,3
+Methylphenidate,SENP3,3
+Methylphenidate,ESYT2,3
+Methylphenidate,RRP7A,3
+Methylphenidate,HTT,3
+Methylphenidate,FARP2,3
+Methylphenidate,GGH,3
+Methylphenidate,,3
+Methylphenidate,PURA,3
+Duloxetine,,3
+Duloxetine,NRXN1,3
+Duloxetine,ZNF385D,3
+Duloxetine,SKIC3,3
+Duloxetine,TREML4,3
+Duloxetine,INVS,3
+Duloxetine,TEX10,3
+Duloxetine,FCN2,3
+Duloxetine,ANO2,3
+Duloxetine,ATP10A,3
+Duloxetine,MIEF2,3
+Valproic Acid,UGT2B7,3
+Clopidogrel,CYP2C19,3
+Atorvastatin,AGTR1,3
+Atorvastatin,BDKRB2,3
+Aspirin,UGT1A6,3
+Atorvastatin,ABCC2,3
+Lamotrigine,HLA-A,3
+"Granisetron,Palonosetron",ERCC1,3
+Granisetron,ABCB1,3
+"Dexamethasone,Lenalidomide",ABCB1,3
+Methadone,CYP2B6,3
+Heroin,SOD2,3
+Tacrolimus,CYP3A7,3
+Tacrolimus,CYP2J2,3
+Tacrolimus,ABCC2,3
+Tacrolimus,CYP2C8,3
+"Fluvoxamine,Milnacipran,Paroxetine",MDGA2,3
+Acenocoumarol,CALU,3
+"Cotinine,Nicotine",OPRM1,3
+"Chlorothiazide,Hydrochlorothiazide",HMGCS2,3
+"Chlorothiazide,Hydrochlorothiazide",,3
+Antineoplastic Agents,ABCB1,3
+"Cocaine,Heroin",OPRM1,3
+Irinotecan,ABCB1,3
+Ivacaftor,CFTR,3
+Methadone,ABCB1,3
+Oxycodone,UGT2B7,3
+"Analgesics,Antiinflammatory Agents, Non-Steroids,Ergot Alkaloids,Opioids,Sumatriptan",OPRM1,3
+Apixaban,ABCG2,3
+Apixaban,CYP3A5,3
+"Acenocoumarol,Warfarin",APOE,3
+Vitamin K And Analogues,CYP4F2,3
+Ethanol,KLB,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",IRS1,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",GNL3,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",HMMR,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",PERP,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",PPP2R5D,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",CYP2C8,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",TP53AIP1,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",NOS1,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",FOXO1,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",CCNK,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",TP53,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",TOP2A,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",INSR,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",PIK3R2,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",CBR3,3
+"Buprenorphine,Methadone",SLC6A4,3
+"Cocaine,Ethanol,Nicotine",OPRM1,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",RBX1,3
+Metformin,CPA6,3
+Metformin,NBEA,3
+Metformin,PRPF31,3
+"Analgesics,Antiinflammatory Agents, Non-Steroids,Ergot Alkaloids,Opioids,Sumatriptan",COMT,3
+"Diuretics,Hydrochlorothiazide,Thiazides, Plain",NELFCD,3
+"Mercaptopurine,Methotrexate",SLCO1B1,3
+"Propofol,Remifentanil",ABCB1,3
+Bevacizumab,HSP90AB1,3
+Bevacizumab,PRKCA,3
+"Mercaptopurine,Methotrexate",ITPA,3
+"Acenocoumarol,Phenprocoumon",VKORC1,3
+Donepezil,BCHE,3
+"Antidepressants,Citalopram,Paroxetine",BDNF,3
+Gemcitabine,ABCG2,3
+Gemcitabine,POLR2A,3
+Oxazepam,,3
+Warfarin,UGT1A1,3
+Phenytoin,HLA-A,3
+Platinum Compounds,SLC31A1,3
+Pemetrexed,MTHFR,3
+"Atenolol,Hydrochlorothiazide",,3
+"Atenolol,Hydrochlorothiazide",ALDH1A2,3
+Montelukast,UGT1A3,3
+Montelukast,ABCC9,3
+Montelukast,CYP2C8,3
+"Hmg Coa Reductase Inhibitors, Other Combinations",EYS,3
+Hmg-Coa Reductase Inhibitors,EYS,3
+"Cyclophosphamide,Doxorubicin",NQO2,3
+"Cyclophosphamide,Doxorubicin,Prednisone,Rituximab,Vincristine",GSTA1,3
+"Cisplatin,Cyclophosphamide,Doxorubicin,Methotrexate,Vincristine",ABCB1,3
+"Cyclophosphamide,Doxorubicin",ALDH1A1,3
+"Cyclophosphamide,Doxorubicin",CYP2C19,3
+Acetaminophen,SULT1A3,3
+Morphine,SULT1A3,3
+Tapentadol,SULT1A3,3
+"O-Desmethyltramadol,Tramadol",SULT1A3,3
+Acetaminophen,"SULT1A3,SULT1A4",3
+Morphine,"SULT1A3,SULT1A4",3
+Oxcarbazepine,ABCB1,3
+Levetiracetam,HLA-A,3
+Bupropion,ANKK1,3
+"Interferon Beta-1A,Interferon Beta-1B",IRF6,3
+Losartan,ABCB1,3
+Pioglitazone,CYP2C8,3
+"Carboplatin,Docetaxel,Trastuzumab",BARD1,3
+"Fluorouracil,Irinotecan,Leucovorin",ABCG2,3
+"Carboplatin,Docetaxel,Trastuzumab",ERBB3,3
+"Carboplatin,Docetaxel,Trastuzumab",RNF8,3
+"Carboplatin,Docetaxel,Trastuzumab",ERBB2,3
+Etanercept,TNFRSF1B,3
+Fentanyl,UGT2B7,3
+Fentanyl,ATF2,3
+Opioids,IL17A,3
+Fentanyl,ABCB1,3
+Acetylcysteine,TOLLIP,3
+"Opioid Anesthetics,Other General Anesthetics,Volatile Anesthetics",OPRM1,3
+"Opioid Anesthetics,Other General Anesthetics,Volatile Anesthetics",ABCG2,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",CYP1B1,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",ABCG2,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",SLC22A16,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",CYP2C19,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",ABCC2,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",ATM,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",ALDH3A1,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",ERCC1,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",CBR1,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",XRCC1,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",GSTP1,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",ABCB1,3
+Stavudine,SAMHD1,3
+Tacrolimus,"CYP3A5,ZSCAN25",3
+Simvastatin,KIF6,3
+Rosuvastatin,KIF6,3
+Tacrolimus,NR1I2,3
+Cetuximab,RASSF1,3
+Duloxetine,KMT2E,3
+Duloxetine,NCAM1,3
+Phenazepam,CYP2C19,3
+Methotrexate,ITPA,3
+Cetuximab,FCGR2A,3
+Cetuximab,FCGR3A,3
+"Bevacizumab,Carboplatin,Cisplatin,Cyanocobalamin,Folic Acid,Pemetrexed",MTHFR,3
+"Carboplatin,Cisplatin",MTR,3
+Platinum Compounds,MDM2,3
+Platinum Compounds,SLC19A1,3
+Oxaliplatin,PIN1,3
+Irinotecan,PIN1,3
+Dapsone,HLA-DRB1,3
+Dapsone,HLA-A,3
+Risperidone,UGT1A1,3
+Fluorouracil,XRCC1,3
+"Bumetanide,Furosemide,Torasemide",ACE,3
+Clonidine,ADRA2C,3
+"Benazepril,Perindopril",ACE,3
+Thioridazine,CYP2D6,3
+"Chlorthalidone,Lisinopril",MMP3,3
+Ceftriaxone,ABCG2,3
+Ceftriaxone,ABCC2,3
+Methotrexate,"UGT1A1,UGT1A10,UGT1A3,UGT1A4,UGT1A5,UGT1A6,UGT1A7,UGT1A8,UGT1A9",3
+Nevirapine,CYCSP5,3
+Ondansetron,CYP3A5,3
+Acamprosate,GRIN2B,3
+Tocilizumab,FCGR3A,3
+Rituximab,FCGR2A,3
+Maraviroc,CYP3A5,3
+"Drugs For Treatment Of Tuberculosis,Rifampin",RIPOR2,3
+Levodopa,SLC6A3,3
+Methadone,OPRM1,3
+Morphine,IL1B,3
+Imatinib,UGT2A1,3
+Imatinib,ABCB4,3
+Imatinib,ABCC2,3
+Imatinib,CHST1,3
+Imatinib,NQO1,3
+Imatinib,CYP2F1,3
+Imatinib,SLC19A1,3
+Morphine,KCNJ6,3
+Acetaminophen,TRPV1,3
+Acetaminophen,UGT2B15,3
+Methylphenidate,ABCB1,3
+Methylphenidate,TH,3
+Methylphenidate,DRD2,3
+"Bleomycin,Cisplatin,Etoposide",ABCB1,3
+"Bleomycin,Cisplatin,Etoposide",CYP3A4,3
+"Bleomycin,Cisplatin,Etoposide",GSTP1,3
+"Bleomycin,Cisplatin,Etoposide",BLMH,3
+"Bleomycin,Cisplatin,Etoposide",ERCC2,3
+"Bleomycin,Cisplatin,Etoposide",ERCC1,3
+Allopurinol,NTNG1,3
+Allopurinol,GREM2,3
+Allopurinol,MYT1L,3
+Allopurinol,TRIB2,3
+Allopurinol,TBL1XR1,3
+Allopurinol,PKD2,3
+Allopurinol,ABCG2,3
+Morphine,TAOK3,3
+Tacrolimus,KCNJ11,3
+Phenytoin,CFHR4,3
+Methylphenidate,SLC6A2,3
+"Isoniazid,Phenytoin",NAT2,3
+"Cyclosporine,Sirolimus,Tacrolimus",TCF7L2,3
+Tacrolimus,TCF7L2,3
+"Sulfonamides, Urea Derivatives","ABCC8,KCNJ11",3
+Heroin,OPRM1,3
+Nicotine,COMT,3
+Sibutramine,GNB3,3
+Methamphetamine,OPRM1,3
+Ethanol,OPRM1,3
+Cocaine,OPRM1,3
+Disopyramide,KCNH2,3
+Quinidine,KCNH2,3
+Ethanol,CYP2E1,3
+Ethanol,CHRNA4,3
+Nicotine,OPRM1,3
+Heroin,OPRK1,3
+Nicotine,CYP2B6,3
+"Cotinine,Nicotine",CYP2B6,3
+Heroin,GAL,3
+Heroin,HTR3B,3
+Heroin,CSNK1E,3
+Nimodipine,CYP3A5,3
+Nimodipine,CACNA1C,3
+Dextropropoxyphene,CYP3A5,3
+Nicotine,CHRNA7,3
+Ethanol,CRHBP,3
+Bupropion,SLC6A4,3
+Nicotine,"ANKK1,DRD2",3
+Nicotine,CYP2A13,3
+Nicotine,HTR3B,3
+"Azathioprine,Mercaptopurine,Thioguanine",,3
+Varenicline,HYKK,3
+Methamphetamine,BDNF,3
+Modafinil,COMT,3
+Highly Active Antiretroviral Therapy (Haart),OPRM1,3
+"L-Methylfolate,Vitamin B-Complex, Incl. Combinations",MTHFR,3
+Cocaine,GABRA2,3
+Bupropion,ACE,3
+Bupropion,HTR2A,3
+Bupropion,DBH,3
+Bupropion,SLC18A2,3
+Bupropion,FKBP5,3
+Pitavastatin,ABCC2,3
+Pioglitazone,PPARG,3
+Pioglitazone,PTPRD,3
+Risperidone,PPA2,3
+Risperidone,TJP1,3
+Olanzapine,ATP1A2,3
+Olanzapine,SPOPL,3
+Risperidone,TNFRSF11A,3
+Quetiapine,PDE4D,3
+Quetiapine,"MIR582,PDE4D",3
+Everolimus,RPTOR,3
+Prochlorperazine,"ANKK1,DRD2",3
+Prochlorperazine,DRD2,3
+"Amiloride,Spironolactone",CYP4A11,3
+Spironolactone,CYP4A11,3
+Pemetrexed,TYMS,3
+Heroin,OPRD1,3
+Cocaine,OPRD1,3
+"Antidepressants,Antipsychotics,Benzodiazepine Derivatives,Opioids,Sympathomimetics",OPRM1,3
+Opioids,"ANKK1,DRD2",3
+Nicotine,HINT1,3
+Heroin,,3
+"Heroin,Opioids",OPRM1,3
+"Drugs Used In Nicotine Dependence,Nicotine",CHRNA3,3
+Nicotine,"CHRNA3,CHRNA5",3
+"Amphetamine,Cannabinoids,Cocaine,Opioids",KAT2B,3
+"Aripiprazole,Risperidone",DRD2,3
+Cannabinoids,OPRM1,3
+Oxazepam,UGT2B15,3
+Lorazepam,UGT2B15,3
+Ethanol,ACSS2,3
+Risperidone,"HTT,MSANTD1",3
+Risperidone,CYP1B1,3
+Risperidone,"UGT1A10,UGT1A3,UGT1A4,UGT1A5,UGT1A6,UGT1A7,UGT1A8,UGT1A9",3
+Risperidone,CYP2E1,3
+Risperidone,AKT1,3
+Risperidone,HRH4,3
+"Aspirin,Prasugrel","NTRK1,PEAR1",3
+Varenicline,CHRNA5,3
+Bupropion,CHRNA5,3
+"Bupropion,Drugs Used In Nicotine Dependence,Nicotine,Varenicline",CHRNA5,3
+Opioids,TAOK3,3
+Opioids,ABCB1,3
+Oxycodone,ABCB1,3
+Heroin,"BDNF,BDNF-AS",3
+Atenolol,XIRP2,3
+Hydrochlorothiazide,TXNDC11,3
+Ethanol,PIP5K1C,3
+Ethanol,PNPLA3,3
+Fentanyl,ADRB2,3
+Fentanyl,CYP3A5,3
+Sertraline,"GNB3,P3H3",3
+Fentanyl,CYP3A4,3
+"Ethambutol,Isoniazid,Pyrazinamide,Rifampin",CYP2C9,3
+"Ethambutol,Isoniazid,Pyrazinamide,Rifampin",CYP2C19,3
+"Fluorouracil,Leucovorin,Oxaliplatin",MTHFR,3
+"Capecitabine,Fluorouracil,Leucovorin,Oxaliplatin",MTHFR,3
+Ethanol,,3
+"Buprenorphine,Fentanyl,Tramadol",OPRD1,3
+"Buprenorphine,Fentanyl,Tramadol",ARRB2,3
+Deferasirox,CYP27B1,3
+Deferasirox,UGT1A1,3
+Deferasirox,GC,3
+Deferasirox,VDR,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,"SH3BP2,TNFAIP3",3
+Ethanol,MAP2K4,3
+Nicotine,ADGRL3,3
+Imatinib,CYP1A2,3
+Imatinib,"ABCB1,RUNDC3B",3
+Mexiletine,SCN4A,3
+Flecainide,SCN4A,3
+"Flecainide,Mexiletine",SCN4A,3
+Rocuronium,ABCB1,3
+Migalastat,"GLA,HNRNPH2",3
+Migalastat,GLA,3
+"Azathioprine,Mercaptopurine",NUDT15,3
+Fentanyl,P2RX7,3
+Tianeptine,OPRM1,3
+Ibuprofen,CYP2C8,3
+Drugs For Treatment Of Tuberculosis,XPO1,3
+Desmethylnaproxen,SULT1A1,3
+Acetaminophen,SULT1A1,3
+Tapentadol,"NPIPB8,SULT1A1",3
+Desmethylnaproxen,"NPIPB8,SULT1A1",3
+Acetaminophen,"NPIPB8,SULT1A1",3
+Tapentadol,SULT1A1,3
+Conjugated Estrogens,SULT1A1,3
+Cisplatin,AQP1,3
+Ethanol,SRPRB,3
+Acetaldehyde,ADH1A,3
+Abt-751,UGT1A8,3
+Beta Blocking Agents,KL,3
+Calcium Channel Blockers,CACNA1C,3
+Metoprolol,ADRB1,3
+Glucocorticoids,HSD3B1,3
+"Fluorouracil,Irinotecan,Leucovorin","KLC1,XRCC3",3
+"Isoniazid,Rifampin",NOS2,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B","IFNL3,IFNL4",3
+Caffeine,ADORA2A,3
+Sorafenib,SLC15A2,3
+"Aspirin,Clopidogrel,Prasugrel",PEAR1,3
+Rosiglitazone,PLIN1,3
+Acetaldehyde,ADH1B,3
+Antithyroid Preparations,,3
+Methadone,CCL11,3
+Methadone,OPRD1,3
+Fentanyl,MYD88,3
+Methylphenidate,ALDH1L1,3
+Fentanyl,CACNA1E,3
+Cisplatin,SLC22A2,3
+L-Phenylalanine,PAH,3
+Carbocisteine,PAH,3
+"Atenolol,Hydrochlorothiazide,Metoprolol",SLC25A31,3
+Atenolol,ZMAT4,3
+Simvastatin,,3
+Platinum Compounds,SLC22A2,3
+"3,4-Methylenedioxymethamphetamine",CYP2C19,3
+Tolterodine,CYP2D6,3
+Hmg-Coa Reductase Inhibitors,APOE,3
+Pravastatin,APOE,3
+Fluvastatin,APOE,3
+Fenofibrate,APOE,3
+Warfarin,APOE,3
+Simvastatin,APOE,3
+Propranolol,ADRB2,3
+Antihypertensives,PTPRD,3
+Antihypertensives,,3
+Fentanyl,CYP2D6,3
+"O-Desmethyltramadol,Tramadol",,3
+"O-Desmethyltramadol,Tramadol",RGL4,3
+"O-Desmethyltramadol,Tramadol",ICA1,3
+"O-Desmethyltramadol,Tramadol",HCN1,3
+"O-Desmethyltramadol,Tramadol",RFPL4B,3
+Acetaldehyde,PGM1,3
+Mycophenolic Acid,SLCO1B3,3
+Ethanol,OPRK1,3
+Botulinum Toxin Type A,TRPV1,3
+Botulinum Toxin Type A,CALCA,3
+Letermovir,SLCO1B1,3
+Letermovir,UGT1A1,3
+Heroin,DRD2,3
+Opioids,DRD2,3
+"Atenolol,Metoprolol",SLC4A1,3
+"Atenolol,Metoprolol",,3
+Adalimumab,,3
+Cocaine,SYT1,3
+Disulfiram,SLC6A3,3
+Ethanol,RABGAP1L,3
+Atazanavir,SORCS2,3
+Vitamin K1,CYP4F2,3
+Warfarin,APOB,3
+Lopinavir,"CYP3A5,ZSCAN25",3
+Amprenavir,SLCO1B1,3
+Lopinavir,CYP3A4,3
+Hydrochlorothiazide,NUCB2,3
+Metoprolol,,3
+Atenolol,RRP1B,3
+Candesartan,SH2B3,3
+Hydrochlorothiazide,C5ORF56,3
+Candesartan,KCNK3,3
+Hydrochlorothiazide,CSK,3
+Hydrochlorothiazide,PDE3A,3
+Candesartan,SULT1C3,3
+Atenolol,STN1,3
+Atenolol,TBX2,3
+Hydrochlorothiazide,PLCE1,3
+Hydrochlorothiazide,ADO,3
+Hydrochlorothiazide,PRKAG2,3
+Candesartan,"DOT1L,PLEKHJ1",3
+Remifentanil,ABCB1,3
+Opioids,MCOLN1,3
+"Docetaxel,Fec100,Gemcitabine,Trastuzumab,Zoledronate",PPCDC,3
+"Docetaxel,Fec100,Gemcitabine,Trastuzumab,Zoledronate",,3
+"Phenobarbital,Phenytoin",MTHFR,3
+"Beta Blocking Agents, Selective",BST1,3
+Antipsychotics,DGKB,3
+Ethanol,ANKS1B,3
+Heroin,ANKS1B,3
+Methamphetamine,ANKS1B,3
+Oxycodone,OPRD1,3
+Oxycodone,,3
+Cisplatin,ERCC1,3
+Opioids,PDYN,3
+Artemether,CYP2B6,3
+Budesonide,,3
+Ethanol,SLC6A4,3
+"Cisplatin,Fluorouracil,Mitoxantrone",,3
+"Cisplatin,Fluorouracil",GALNT14,3
+Sorafenib,GALNT14,3
+"Carboplatin,Gemcitabine",C6ORF15,3
+"Carboplatin,Gemcitabine",SERPINC1,3
+"Carboplatin,Gemcitabine",ATAT1,3
+"Carboplatin,Gemcitabine",,3
+"Carboplatin,Gemcitabine",PPP1R18,3
+"Carboplatin,Gemcitabine","CDSN,PSORS1C1",3
+"Carboplatin,Gemcitabine",HLA-C,3
+"Carboplatin,Gemcitabine",MUCL3,3
+"Carboplatin,Gemcitabine",HCP5,3
+"Carboplatin,Gemcitabine",PRRC2A,3
+"Carboplatin,Gemcitabine",TNF,3
+"Carboplatin,Gemcitabine",MSH5,3
+"Carboplatin,Gemcitabine",DOCK8,3
+"Carboplatin,Gemcitabine",CYP2C8,3
+"Carboplatin,Gemcitabine",SERPINA5,3
+"Carboplatin,Gemcitabine",XYLT2,3
+"Carboplatin,Gemcitabine",ETS2,3
+Tenofovir Disoproxil Fumarate,SLC28A2,3
+Tenofovir Disoproxil Fumarate,CYP24A1,3
+Tenofovir Disoproxil Fumarate,CYP27B1,3
+Temozolomide,ABCB1,3
+Creatine,MOBP,3
+Desloratadine,HRH1,3
+Cisplatin,OTOS,3
+Cisplatin,ABCC3,3
+Cisplatin,SLC16A5,3
+Efavirenz,ABCB1,3
+Efavirenz,CYP2A6,3
+Ethanol,CACNA1C,3
+Lurasidone,HTR1A,3
+Drugs For Treatment Of Tuberculosis,ABCC2,3
+Interferon Beta-1A,RORA,3
+Gefitinib,RELA,3
+Gefitinib,IKBKB,3
+Gefitinib,IKBKE,3
+Gefitinib,NFKBIA,3
+Gefitinib,"NFKBIB,SIRT2",3
+Gefitinib,NR1H2,3
+Gefitinib,TAB2,3
+Progesterone,CYP2C19,3
+Ethanol,"ANKK1,DRD2",3
+Oxycodone,CYP3A5,3
+Sufentanil,CYP3A5,3
+Sufentanil,ABCB1,3
+Methamphetamine,FAAH,3
+Opioids,ADGRV1,3
+Diclofenac,CYP2C8,3
+Hydralazine / Isosorbide Dinitrate,GNB3,3
+Methadone,GAD1,3
+Methadone,OPRK1,3
+Dipyrone,CYP2C19,3
+Dipyrone,CYP2C9,3
+Opioids,CRYBG2,3
+Opioids,CLCC1,3
+Opioids,POM121L2,3
+Opioids,ZNF165,3
+Opioids,MUC16,3
+Opioids,PDE3A,3
+Opioids,ZNF568,3
+Morphine,ABCC3,3
+Alprazolam,CYP3A4,3
+Cocaine,"CHRNA3,CHRNA5",3
+Opioids,TH,3
+Imatinib,CYP3A4,3
+Amlodipine,CYP3A5,3
+Fesoterodine,CYP3A4,3
+Methadone,"COMT,TXNRD2",3
+Morphine,SLC6A4,3
+Vancomycin,HLA-A,3
+Ethanol,PDE4B,3
+Ethanol,GCKR,3
+Ethanol,THSD7B,3
+Ethanol,CADM2,3
+Ethanol,ADH1C,3
+Ethanol,SLC39A8,3
+Antineoplastic Agents,TP53,3
+Ethanol,DPP6,3
+Ethanol,"MED19,TMX2",3
+Ethanol,SLC4A8,3
+Ethanol,ARID4A,3
+Ethanol,TNRC6A,3
+Ethanol,FTO,3
+Ethanol,FUT2,3
+Ethylmorphine,CYP2D6,3
+Hydrocodone,CYP2D6,3
+Codeine,CYP2D6,3
+Dihydrocodeine,CYP2D6,3
+Methotrexate,HLA-G,3
+Clozapine,UGT1A1,3
+Raloxifene,UGT1A1,3
+Metronidazole,CYP2A6,3
+Tranilast,UGT1A1,3
+Nilotinib,UGT1A1,3
+Oxcarbazepine,HLA-A,3
+Dabigatran,CYP3A5,3
+"Ketoprofen,Tramadol",CYP2D6,3
+Tafenoquine,,3
+Peginterferon Alfa-2A,"IFNL3,IFNL4",3
+Sofosbuvir,"IFNL3,IFNL4",3
+Interferons,"IFNL3,IFNL4",3
+Buprenorphine,PNOC,3
+Methadone,PNOC,3
+Methadone,"CYP2A7P1,CYP2B6",3
+Methadone,COMT,3
+"Carboplatin,Cisplatin,Oxaliplatin,Platinum,Platinum Compounds",ERCC1,3
+Atazanavir,UGT1A1,3
+Antidepressants,"HTR7,RPP30",3
+Selective Serotonin Reuptake Inhibitors,HTR7,3
+Paroxetine,"HTR7,RPP30",3
+Escitalopram,"HTR7,RPP30",3
+"Cisplatin,Oxaliplatin,Platinum,Platinum Compounds","ERCC2,KLC3",3
+Platinum Compounds,TP53,3
+Corticosteroids,CRHR1,3
+Cisplatin,XPC,3
+Cisplatin,"TMEM43,XPC",3
+Dapsone,HLA-B,3
+Sunitinib,ABCG2,3
+Sorafenib,UGT1A1,3
+Methotrexate,ABCC3,3
+Omeprazole,CYP2C19,3
+"Pravastatin,Simvastatin",HMGCR,3
+Lovastatin Acid,SLCO1B1,3
+Clobazam,CYP2C19,3
+Corticosteroids,ADRB2,3
+"Corticosteroids,Selective Beta-2-Adrenoreceptor Agonists",ADRB2,3
+Rosuvastatin,LPA,3
+Carbamazepine,EPHX1,3
+Tegafur,UMPS,3
+"Cisplatin,Oxaliplatin,Platinum Compounds",MTHFR,3
+Lopinavir,SLCO1B1,3
+"Interferon Alfa-2B, Recombinant,Ribavirin",ITPA,3
+"Fluorouracil,Folfox",TYMS,3
+Drugs For Treatment Of Tuberculosis,,3
+"Cisplatin,Oxaliplatin,Platinum Compounds",GSTP1,3
+Nicotine,ANKK1,3
+Risperidone,SLC6A4,3
+Carbamazepine,SCN1A,3
+Warfarin,CALU,3
+Phenprocoumon,CYP4F2,3
+"Diuretics,Hydrochlorothiazide",NEDD4L,3
+Hmg-Coa Reductase Inhibitors,CETP,3
+Cyclophosphamide,SOD2,3
+Tacrolimus,POR,3
+Rosiglitazone,CYP2C8,3
+Sunitinib,FLT3,3
+Methotrexate,MTRR,3
+Bisphosphonates,FDPS,3
+Salbutamol,CRHR2,3
+"Etoposide,Platinum Compounds",DYNC2H1,3
+"Cisplatin,Oxaliplatin,Platinum Compounds",GSTM1,3
+Hydrochlorothiazide,ACE,3
+Nortriptyline,GNB3,3
+Mirtazapine,SLC6A4,3
+"Antidepressants,Selective Serotonin Reuptake Inhibitors",FKBP5,3
+Fluindione,VKORC1,3
+Warfarin,EPHA7,3
+Anthracyclines And Related Substances,CBR3,3
+Anthracyclines And Related Substances,CBR1,3
+Esomeprazole,STAT6,3
+Antipsychotics,HTR2C,3
+Risperidone,HTR2C,3
+Clozapine,HTR2C,3
+Escitalopram,HTR2C,3
+Tamoxifen,CYP19A1,3
+Amitriptyline,CYP2D6,3
+Gemcitabine,NT5C2,3
+Salbutamol,COL22A1,3
+"Furosemide,Spironolactone",ADD1,3
+Cerivastatin,SLCO1B1,3
+Sirolimus,CYP3A5,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,SLCO1C1,3
+"Cyclosporine,Tacrolimus",CRTC2,3
+Selective Serotonin Reuptake Inhibitors,CYP2D6,3
+"Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin,Simeprevir","IFNL3,IFNL4",3
+"Daclatasvir,Peginterferon Alfa-2A,Peginterferon Alfa-2B,Ribavirin","IFNL3,IFNL4",3
+Trastuzumab,FCGR3A,3
+Anthracyclines And Related Substances,HAS3,3
+Trastuzumab,FCGR2A,3
+"Asparaginase,Cyclophosphamide,Daunorubicin,Prednisolone,Vincristine",PNPLA3,3
+"Azathioprine,Mercaptopurine,Thioguanine",NUDT15,3
+Selective Serotonin Reuptake Inhibitors,COMT,3
+Pravastatin,SLCO1B1,3
+Anthracyclines And Related Substances,SLC28A3,3
+"Peginterferon Alfa-2B,Ribavirin",VDR,3
+Irinotecan,SEMA3C,3
+Phenytoin,SCN1A,3
+Sildenafil,GNB3,3
+Rituximab,FCGR3A,3
+Naloxone,OPRM1,3
+Irinotecan,C8ORF34,3
+Gliclazide,KCNJ11,3
+Atenolol,GNB3,3
+Pravastatin,CETP,3
+Alfentanil,OPRM1,3
+"Buprenorphine,Fentanyl,Tramadol",OPRM1,3
+Fentanyl,OPRM1,3
+Hydrocodone,OPRM1,3
+Morphine,OPRM1,3
+Codeine,OPRM1,3
+Sufentanil,OPRM1,3
+"Acetaminophen,Tramadol",OPRM1,3
+"Buprenorphine,Fentanyl,Tramadol",COMT,3
+Buprenorphine,COMT,3
+Fentanyl,COMT,3
+Morphine,COMT,3
+Remifentanil,COMT,3
+Oxycodone,COMT,3
+Oxycodone,OPRM1,3
+Methadone,CYP2D6,3
+"Fluorouracil,Folfiri,Folfox",TYMS,3
+Acetaldehyde,ALDH2,3
+Ethanol,ALDH2,3
+Ivacaftor / Lumacaftor,CFTR,3
+Esomeprazole,CYP2C19,3
+Platinum Compounds,NQO1,3
+Aspirin,GP1BA,3
+Hmg-Coa Reductase Inhibitors,LPA,3
+Cetuximab,EGF,3
+Antipsychotics,MC4R,3
+Aspirin,LTC4S,3
+Aspirin,PTGS1,3
+"Carbimazole,Methimazole",HLA-B,3
+Cyclophosphamide,GSTP1,3
+Ondansetron,ABCB1,3
+Hydrochlorothiazide,YEATS4,3
+Propafenone,CYP2D6,3
+Lamotrigine,UGT1A4,3
+Paroxetine,HTR1A,3
+Nevirapine,ABCB1,3
+Olanzapine,SLC22A1,3
+Olanzapine,CYP3A5,3
+Olanzapine,APOC3,3
+Tamoxifen,CYP2D6,3
+Atomoxetine,CYP2D6,3
+"Atorvastatin,Lovastatin,Simvastatin",APOA5,3
+Alendronate,VDR,3
+"Isoniazid,Pyrazinamide,Rifampin",NAT2,3
+Paclitaxel,EPHA5,3
+Platinum Compounds,HSPA5,3
+Direct Acting Antivirals,IFNL4,3
+Telmisartan,UGT1A3,3
+Telmisartan,SLCO1B3,3
+Cysteamine,CFTR,3
+Lumacaftor,CFTR,3
+Methylphenidate,CES1,3
+Methotrexate,"C18ORF56,TYMS",3
+Taxanes,,3
+Indomethacin,CYP2C9,3
+"Antiinflammatory Agents, Non-Steroids,Celecoxib,Diclofenac",CYP2C9,3
+Naproxen,CYP2C9,3
+"Irinotecan,Raltitrexed",TYMS,3
+Cavosonstat,CFTR,3
+Heroin,ALDH2,3
+"Ivacaftor,Tezacaftor",CFTR,3
+Enalapril,CES1,3
+Heroin,CES1,3
+Hmg-Coa Reductase Inhibitors,RYR1,3
+"Curcumin,Ivacaftor",CFTR,3
+"Penicillin G,Penicillin V",HLA-B,3
+Remifentanil,OPRM1,3
+Sofosbuvir,IFNL4,3
+Opioids,KCNJ6,3
+Methadone,CNR1,3
+Methadone,TPH2,3
+Methadone,OPRL1,3
+Clozapine,NFIB,3
+Methadone,NECTIN4,3
+Sufentanil,NFKBIA,3
+Anastrozole,CSMD1,3
+Anastrozole,DLG2,3
+Anastrozole,,3
+Heroin,DBH,3
+Propranolol,COMT,3
+Cyclophosphamide,ABCC4,3
+Methylphenidate,STRBP,3
+Methylphenidate,PYROXD2,3
+"Cyclophosphamide,Doxorubicin",ABCB1,3
+Pregabalin,SLC7A5,3
+Gabapentin,SLC7A5,3
+Propylthiouracil,HLA-B,3
+Carvedilol,ADRB1,3
+Fluoxetine,FKBP5,3
+Mirtazapine,FKBP5,3
+"Cyclophosphamide,Epirubicin",GSTP1,3
+"Capecitabine,Epirubicin,Platinum",GSTP1,3
+"Epirubicin,Fluorouracil,Oxaliplatin",NQO1,3
+Bucindolol,ADRB1,3
+Paliperidone,MC4R,3
+"Cyclophosphamide,Epirubicin,Fluorouracil",NQO1,3
+Haloperidol,MC4R,3
+Quetiapine,MC4R,3
+Risperidone,MC4R,3
+Amisulpride,MC4R,3
+Aripiprazole,MC4R,3
+Ataluren,CFTR,3
+Cetuximab,KRAS,3
+Fenofibrate,APOA5,3
+Opioids,BDNF-AS,3
+Opioids,GABRB3,3
+Opioids,DRD3,3
+Opioids,TACR1,3
+Opioids,ZNF804A,3
+Opioids,CNR1,3
+Opioids,"CYP2A7P1,CYP2B6",3
+Opioids,CYP2D6,3
+Opioids,EXOC4,3
+Opioids,TACR3,3
+Opioids,,3
+Rocuronium,"IAPP,SLCO1A2",3
+Tramadol,OPRM1,3
+Ibuprofen,PTGS2,3
+Mercaptopurine,FTO,3
+Azathioprine,FTO,3
+Morphine,OPRK1,3
+Butorphanol,OPRK1,3
+Butorphanol,COMT,3
+Atorvastatin,ABCA1,3
+Rosuvastatin,ABCA1,3
+Simvastatin,ABCA1,3
+Atorvastatin,CYP2D6,3
+Simvastatin,CYP2D6,3
+Rosuvastatin,CYP2D6,3
+Fluvastatin,CYP2D6,3
+Rosuvastatin,CETP,3
+Cotinine Glucuronide,UGT1A9,3
+Everolimus,CYP3A5,3
+Everolimus,MTOR,3
+Infliximab,HLA-B,3
+Infliximab,HLA-C,3
+Infliximab,HLA-DQB1,3
+Infliximab,HLA-DPB1,3
+Infliximab,HLA-DRB1,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,MICA,3
+"Ace Inhibitors, Plain",KCNMA1,3
+Voriconazole,SLCO2B1,3
+Methotrexate,ADORA2A-AS1,3
+"Cisplatin,Fluorouracil,Radiotherapy","APEX1,OSGEP",3
+"Cisplatin,Fluorouracil,Radiotherapy",XRCC1,3
+"Cisplatin,Fluorouracil,Radiotherapy",MUTYH,3
+Glyburide,NOS1AP,3
+Glimepiride,NOS1AP,3
+Glipizide,NOS1AP,3
+Oseltamivir,ABCB1,3
+Lamotrigine,ABCG2,3
+Lamotrigine,SLC22A1,3
+Lamotrigine,UGT2B7,3
+Antithyroid Preparations,HLA-DRB1,3
+Antithyroid Preparations,HLA-DQB1,3
+Antithyroid Preparations,HLA-DQA1,3
+Folfirinox,UGT1A1,3
+"Gemcitabine,Paclitaxel",CDA,3
+Carvedilol,CYP2D6,3
+Citalopram,CYP2D6,3
+Fluoxetine,CYP2D6,3
+Gefitinib,CYP2D6,3
+Methylphenidate,CYP2D6,3
+"Atomoxetine,Methylphenidate",CYP2D6,3
+Oxycodone,CYP2D6,3
+Sertraline,CYP2D6,3
+Risperidone,CYP2D6,3
+Venlafaxine,CYP2D6,3
+Isepamicin,"MT-ND1,MT-RNR1",3
+Micronomicin,"MT-ND1,MT-RNR1",3
+Aminoglycoside Antibacterials,MT-RNR1,3
+Aminoglycoside Antibacterials,"MT-ND1,MT-RNR1",3
+Aminoglycoside Antibacterials,,3
+Dihydrostreptomycin,MT-RNR1,3
+Streptomycin,MT-RNR1,3
+Gentamicin,MT-RNR1,3
+"Cyclosporine,Tacrolimus",CYP3A4,3
+Streptomycin,,3
+Kanamycin,,3
+Buprenorphine,CYP3A4,3
+Sufentanil,COMT,3
+Rosuvastatin,SLCO2B1,3
+Mercaptopurine,PACSIN2,3
+Azathioprine,PACSIN2,3
+Hmg-Coa Reductase Inhibitors,GNB3,3
+"Ace Inhibitors, Plain,Angiotensin Ii Antagonists,Beta Blocking Agents,Digoxin,Diuretics,Spironolactone",ADRB1,3
+"Cisplatin,Doxorubicin,Methotrexate",MTHFD1,3
+"Cisplatin,Doxorubicin,Methotrexate",ABCC2,3
+"Cisplatin,Doxorubicin,Methotrexate",GSTP1,3
+"Cisplatin,Doxorubicin,Methotrexate",GSTT1,3
+"Cisplatin,Doxorubicin,Methotrexate",CCND1,3
+Methotrexate,ABCC2,3
+"Cisplatin,Doxorubicin",ERCC1,3
+"Cisplatin,Doxorubicin",CYBA,3
+Doxorubicin,"TMEM43,XPC",3
+Doxorubicin,"ERCC1,POLR1G,PPP1R13L",3
+Doxorubicin,GSTP1,3
+"Cisplatin,Doxorubicin,Methotrexate","CLCN6,MTHFR",3
+"Cisplatin,Doxorubicin,Methotrexate",ERCC2,3
+Methotrexate,SOD2,3
+Irbesartan,AGT,3
+Irbesartan,AGTR1,3
+Irbesartan,ACE,3
+Diazepam,CYP2C19,3
+Sulfamethoxazole,G6PD,3
+Methotrexate,MTHFD1,3
+Beta Blocking Agents,,3
+Apixaban,ABCB1,3
+Pegaspargase,ARHGAP28,3
+Pegaspargase,HLA-DQB1,3
+Pegaspargase,HLA-DRB1,3
+Olmesartan,SLCO1B1,3
+Atrasentan,SLCO1B1,3
+Opioids,CNIH3,3
+Methotrexate,"ENOSF1,TYMS",3
+Morphine,TLR2,3
+"Cisplatin,Gemcitabine",ERCC1,3
+Tramadol,"CYP2A7P1,CYP2B6",3
+"Bupropion,Naltrexone","ANKK1,DRD2",3
+"Desflurane,Enflurane,Halothane,Isoflurane,Methoxyflurane,Sevoflurane,Succinylcholine",RYR1,3
+Fentanyl,ASTN2,3
+Antiepileptics,SCN2A,3
+Carbamazepine,SCN2A,3
+Lamotrigine,SCN2A,3
+Oxcarbazepine,SCN2A,3
+Phenytoin,SCN2A,3
+Topiramate,SCN2A,3
+"Morphine,Nortriptyline",ABCB1,3
+Irinotecan,VDR,3
+Flurbiprofen,CYP2C9,3
+Talinolol,ABCC2,3
+Thiotepa,GSTP1,3
+Fluorouracil,CCND1,3
+Pravastatin,ABCB1,3
+Clozapine,MC4R,3
+Olanzapine,MC4R,3
+Clozapine,GLP1R,3
+Olanzapine,GLP1R,3
+"Docetaxel,Doxorubicin",AKR1C3,3
+Doxorubicin,AKR1C3,3
+"Cyclophosphamide,Doxorubicin,Fluorouracil",ABCC4,3
+Levodopa,DRD3,3
+Methotrexate,ABCB1,3
+Methotrexate,SLCO1A2,3
+Bisphosphonates,,3
+"Folic Acid,Hydroxychloroquine,Methotrexate,Sulfasalazine",MTR,3
+Methotrexate,CCND1,3
+"Mercaptopurine,Methotrexate",GSTP1,3
+Disulfiram,OPRD1,3
+Mercaptopurine,SLCO1B1,3
+Cephalexin,,3
+Codeine,WBP2NL,3
+Meperidine,FIP1L1,3
+Codeine,"SEPTIN3,WBP2NL",3
+Oxycodone,"SEPTIN3,WBP2NL",3
+Hydrocodone,"SEPTIN3,WBP2NL",3
+Tramadol,"SEPTIN3,WBP2NL",3
+Meperidine,,3
+Meperidine,SERINC5,3
+Penicillin G,,3
+Penicillin V,,3
+Ketorolac,CYP2C9,3
+Naltrexone,,3
+Acamprosate,,3
+Carbamazepine,HLA-A,3
+Methadone,DRD1,3
+Oxycodone,CYP3A4,3
+Buprenorphine,,3
+Buprenorphine,ADAMTSL2,3
+Naltrexone,ADH1C,3
+Naltrexone,ADH1B,3
+Naltrexone,ALDH2,3
+Naltrexone,AKR1C4,3
+Cocaine,OPRK1,3
+Opioids,OPRK1,3
+Aspirin,EYA1,3
+Methadone,DAO,3
+Abiraterone,SRD5A2,3
+"Abiraterone,Prednisolone","DSE,TSPYL1",3
+Atorvastatin,ABCG2,3
+Simvastatin,ABCG2,3
+Fluvastatin,ABCG2,3
+"Folic Acid,Vitamin B-Complex, Plain",MTHFR,3
+Folic Acid,MTHFR,3
+"Interferon Alfa-2A, Recombinant,Ribavirin",HLA-B,3
+Sacubitril,CES1,3
+Sulfamethoxazole / Trimethoprim,GSTM1,3
+Sulfamethoxazole / Trimethoprim,NAT2,3
+Glucarpidase,"INSRR,NTRK1",3
+Glucarpidase,,3
+Glucarpidase,GATA3,3
+Quetiapine,CYP3A4,3
+Paclitaxel,CYP3A5,3
+"Aspirin,Clopidogrel","JMJD8,WDR24",3
+"Aspirin,Clopidogrel",EFR3A,3
+"Aspirin,Clopidogrel",NECAB1,3
+"Aspirin,Clopidogrel",AGAP3,3
+"Aspirin,Clopidogrel",ECHS1,3
+Diclofenac,CYP2C9,3
+Atorvastatin,KIF6,3
+"Aspirin,Clopidogrel",MYOM2,3
+Acetaminophen,HLA-DQB1,3
+Thioguanine,TPMT,3
+Tenofovir Disoproxil Fumarate,ABCC10,3
+Tenofovir Disoproxil Fumarate,ABCC4,3
+Digoxin,NOS1AP,3
+Highly Active Antiretroviral Therapy (Haart),ABCB1,3
+"Carboplatin,Paclitaxel",CYP3A5,3
+Methotrexate,AHRR,3
+Ketoprofen,CYP2C9,3
+Methoxsalen,CYP2A6,3
+"Naloxone,Oxycodone",OPRM1,3
+"Naloxone,Oxycodone",COMT,3
+Letrozole,CYP2A6,3
+Buprenorphine / Naloxone,UGT2B7,3
+Nifedipine,CYP3A4,3
+Clopidogrel,N6AMT1,3
+Clopidogrel,PTGS1,3
+Beta Blocking Agents,ADRA2C,3
+Beta Blocking Agents,GRK5,3
+Sorafenib,TNF,3
+Glucarpidase,SLCO1B1,3
+Glucarpidase,ABCC4,3
+"Atenolol,Verapamil",GRK4,3
+"Sulfonamides, Urea Derivatives",CYP2C19,3
+Clozapine,HLA-DRB1,3
+Carbamazepine,HLA-DRB1,3
+Sorafenib,PIK3R5,3
+Sorafenib,EGFR,3
+Sorafenib,VEGFB,3
+Sorafenib,EPAS1,3
+Regorafenib,KDR,3
+Sorafenib,PRKCE,3
+Sorafenib,ADAMTS18,3
+Sorafenib,MAP2K6,3
+Sorafenib,CDH13,3
+Sorafenib,WWOX,3
+Losartan,CAMK1D,3
+Sufentanil,CYP3A4,3
+Tacrolimus,CYP3A4,3
+Atorvastatin,CYP3A4,3
+Sevoflurane,"FASTKD3,MTRR",3
+Sevoflurane,GABRA2,3
+Sevoflurane,KCNK3,3
+Sevoflurane,"CYP2E1,DUX1",3
+Sevoflurane,CYP2E1,3
+Sevoflurane,KCNK2,3
+Sevoflurane,GRIN2B,3
+Methotrexate,HLA-C,3
+Nevirapine,HLA-DQB1,3
+Minocycline,HLA-B,3
+Azathioprine,ITPA,3
+"Aspirin,Clopidogrel",ZDHHC3,3
+Cyclosporine,CALM1,3
+Cyclosporine,,3
+Citalopram,HTR2A,3
+Escitalopram,HTR2A,3
+Paroxetine,HTR2A,3
+Selective Serotonin Reuptake Inhibitors,HTR2A,3
+Fluvoxamine,SLC6A4,3
+Paroxetine,SLC6A4,3
+Fluoxetine,SLC6A4,3
+Antidepressants,SLC6A4,3
+Selective Serotonin Reuptake Inhibitors,SLC6A4,3
+Escitalopram,CYP2D6,3
+Vincristine,CEP72,3
+Mianserin,CYP2D6,3
+Rabeprazole,CYP2C19,3
+Glucarpidase,ARID5B,3
+N-Desmethyltamoxifen,CYP2D6,3
+Fentanyl,CALCA,3
+Aspirin,CYP2D6,3
+"Capecitabine,Fluorouracil,Xelox",DPYD,3
+"Capecitabine,Fluorouracil",DPYD,3
+"Capecitabine,Fluorouracil",DPYS,3
+"Capecitabine,Fluorouracil",PPARD,3
+"Alkylating Agents,Cisplatin",ESR1,3
+"Succinylcholine,Volatile Anesthetics",RYR1,3
+"Mycophenolic Acid,Tacrolimus",ABCC2,3
+Antidepressants,ERICH3,3
+Pravastatin,KIF6,3
+Clozapine,CYP1A2,3
+"Capecitabine,Fluorouracil",MIR27A,3
+"Antivirals For Treatment Of Hiv Infections, Combinations,Drugs For Treatment Of Tuberculosis",NAT2,3
+Hydralazine,NAT2,3
+Dipyrone,NAT2,3
+Aripiprazole,ABCB1,3
+Antidepressants,ABCB1,3
+Qt-Prolonging Drugs,KCNE1,3
+Tenofovir,ABCC4,3
+Tenofovir,"IFNL3,IFNL4",3
+Rifampin,AADAC,3
+Mercaptopurine,"MED4,NUDT15",3
+"Platinum Compounds,Radiotherapy",MEG3,3
+"Ace Inhibitors, Plain",XPNPEP2,3
+Platinum Compounds,XRCC1,3
+Cyclophosphamide,"CYP2A7P1,CYP2B6",3
+"Follitropin Beta,Menotropins,Thyrotropin Alfa,Urofollitropin",FSHR,3
+"Follitropin Beta,Urofollitropin",FSHR,3
+Menotropins,FSHR,3
+Chorionic Gonadotropin,FSHR,3
+Dihydroergotamine,HTR1B,3
+Methysergide,HTR1B,3
+Ketanserin,HTR1B,3
+Sumatriptan,HTR1B,3
+Doxorubicin,ABCC1,3
+Rosuvastatin,ABCG2,3
+Pd-1/Pdl-1 (Programmed Cell Death Protein 1/Death Ligand 1) Inhibitors,IL7,3
+Elexacaftor / Tezacaftor / Ivacaftor,CFTR,3
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,HLA-DQA1,3
+Infliximab,,3
+Opioids,"CYP3A5,ZSCAN25",3
+Opioids,CYP1A2,3
+Opioids,CYP3A4,3
+Rizatriptan,DRD2,3
+Bevacizumab,KCNAB1,3
+"Azathioprine,Purine Analogues",ITPA,3
+Azathioprine,"DDRGK1,ITPA",3
+Erenumab,COMT,3
+Fremanezumab,COMT,3
+Galcanezumab,COMT,3
+Erenumab,,3
+Fremanezumab,,3
+Galcanezumab,,3
+Aspirin,TNF,3
+Diclofenac,"LST1,LTA,TNF",3
+Ibuprofen,"LST1,LTA,TNF",3
+Indomethacin,"LST1,LTA,TNF",3
+Ketorolac,"LST1,LTA,TNF",3
+Naproxen,"LST1,LTA,TNF",3
+Topiramate,ABCB1,3
+Nortriptyline,NOS3,3
+Cisplatin,ACYP2,3
+Fluorouracil,GSTP1,3
+Drugs Used In Alcohol Dependence,GATA4,3
+"Thiazides, Plain",SLCO2A1,3
+Hydroxyurea,MAP3K5,3
+Venlafaxine,HTR2A,3
+Enalapril,ACE,3
+"Anthracyclines And Related Substances,Daunorubicin,Doxorubicin",RARG,3
+Quetiapine,CYP3A5,3
+"Antiinflammatory Agents, Non-Steroids",HLA-DRB1,3
+Pravastatin,MMP3,3
+Risperidone,CNR1,3
+Aripiprazole,ANKK1,3
+Risperidone,"ANKK1,DRD2",3
+Risperidone,DRD2,3
+Bromperidol,DRD2,3
+Nemonapride,DRD2,3
+"Cytarabine,Daunorubicin,Dexrazoxane,Idarubicin",ABCB1,3
+Sulfamethoxazole / Trimethoprim,HLA-B,3
+Sulfamethoxazole / Trimethoprim,HLA-C,3
+Etoposide,SLIT1,3
+"Busulfan,Cyclophosphamide",CTH,3
+Busulfan,CYP2C9,3
+Busulfan,CYP2C19,3
+"Amitriptyline,Antidepressants,Citalopram,Paroxetine,Venlafaxine",ABCB1,3
+Carbamazepine,CYP1A2,3
+Antipsychotics,CYP1A2,3
+Dolutegravir,NR1I2,3
+"Berberine,Coptisine",CYP2D6,3
+"Codeine,N-Desmethyltamoxifen",CYP2D6,3
+Bufuralol,CYP2D6,3
+Sparteine,CYP2D6,3
+Dextromethorphan,CYP2D6,3
+"Aspirin,Clopidogrel","KRTAP10-4,TSPEAR",3
+Olanzapine,CYP2D6,3
+Lapatinib,HLA-DQA1,3
+Lapatinib,HLA-DRB1,3
+Acetaminophen,HLA-C,3
+Atorvastatin,CYP7A1,3
+"Sitagliptin,Vildagliptin",GLP1R,3
+Liraglutide,GLP1R,3
+Exenatide,GLP1R,3
+Sitagliptin,GLP1R,3
+Sitagliptin,KCNJ11,3
+Sitagliptin,KCNQ1,3
+"Levomethadone,Methadone,S-Eddp",UGT2B7,3
+Nevirapine,CYP3A5,4
+Mercaptopurine,MTHFR,4
+Antiepileptics,ABCB1,4
+Cyclophosphamide,XRCC1,4
+Paclitaxel,CYP2C8,4
+"Bisphosphonates,Pamidronate,Zoledronate",CYP2C8,4
+Leflunomide,CYP1A2,4
+Antipsychotics,CYP1A2,4
+Warfarin,EPHX1,4
+Lithium,CLOCK,4
+"Mycophenolate Mofetil,Mycophenolic Acid",IMPDH2,4
+Mycophenolate Mofetil,UGT1A9,4
+Antidepressants,GNB3,4
+Atorvastatin,SCAP,4
+Amlodipine,CYP3A4,4
+Fenofibrate,FABP1,4
+Fluoxetine,BDNF,4
+Gemcitabine,RRM1,4
+Benazepril,ADRB2,4
+Ranibizumab,VEGFA,4
+Propranolol,CYP2D6,4
+Mefloquine,G6PD,4
+"Cisplatin,Cyclophosphamide",RAD52,4
+Irinotecan,UGT1A9,4
+Chloroquine,G6PD,4
+"Antiepileptics,Carbamazepine,Phenobarbital,Phenytoin,Valproic Acid",SCN2A,4
+Antiepileptics,ABCC2,4
+Paroxetine,HTR3B,4
+"Antiepileptics,Carbamazepine,Oxcarbazepine",ABCC2,4
+"Citalopram,Escitalopram",,4
+"Carbamazepine,Phenytoin,Valproic Acid",ABCB1,4
+Capecitabine,ADCY2,4
+Tacrolimus,CYP3A5,4
+Carisoprodol,CYP2C19,4
+"Cyclosporine,Mycophenolate Mofetil",IMPDH2,4
+Clopidogrel,PON1,4
+Clopidogrel,P2RY12,4
+Carbamazepine,ABCB1,4
+Cisplatin,GSTT1,4
+Tenofovir,ABCC2,4
+Docetaxel,VEGFA,4
+Efavirenz,UGT2B7,4
+"Drugs For Treatment Of Tuberculosis,Ethambutol,Isoniazid,Pyrazinamide,Rifampin,Streptomycin",GSTM1,4
+"Drugs For Treatment Of Tuberculosis,Ethambutol,Isoniazid,Pyrazinamide,Rifampin,Streptomycin",GSTT1,4
+Atorvastatin,CETP,4
+Simvastatin,CETP,4
+Efavirenz,CYP2A6,4
+Photodynamic Therapy,CFH,4
+Gefitinib,ABCG2,4
+"Bevacizumab,Ranibizumab",HTRA1,4
+"Dolasetron,Granisetron",CYP2D6,4
+Simvastatin,CYP3A5,4
+Methadone,DRD2,4
+"Bevacizumab,Ranibizumab",CFH,4
+Mycophenolate Mofetil,IMPDH1,4
+Efavirenz,ABCB1,4
+"Citalopram,Escitalopram",TSPAN5,4
+"Hmg-Coa Reductase Inhibitors,Simvastatin",GATM,4
+Lithium,NTRK2,4
+Efavirenz,CYP3A5,4
+Anthracyclines And Related Substances,FMO3,4
+Anthracyclines And Related Substances,HNMT,4
+Anthracyclines And Related Substances,,4
+Anthracyclines And Related Substances,UGT1A6,4
+Anthracyclines And Related Substances,ADH7,4
+Anthracyclines And Related Substances,SLC22A2,4
+Anthracyclines And Related Substances,ABCB4,4
+Anthracyclines And Related Substances,ABCB1,4
+Anthracyclines And Related Substances,SLC28A3,4
+Anthracyclines And Related Substances,SLC10A2,4
+Anthracyclines And Related Substances,SLC28A1,4
+Anthracyclines And Related Substances,ABCC1,4
+Anthracyclines And Related Substances,SPG7,4
+Anthracyclines And Related Substances,CYP4F2,4
+Anthracyclines And Related Substances,SULT2B1,4
+Lamotrigine,HNF4A,4
+Docetaxel,ERCC2,4
+Ustekinumab,TNFAIP3,4
+"Adalimumab,Etanercept,Infliximab",FCGR2A,4
+Irinotecan,SLCO1B1,4
+"Capecitabine,Fluorouracil,Leucovorin,Oxaliplatin",ABCG2,4
+Fluorouracil,ABCB1,4
+"Cisplatin,Fluorouracil",ABCB1,4
+Tocilizumab,IL6R,4
+Sirolimus,CYP3A4,4
+Propofol,CYP2B6,4
+Tacrolimus,IL10,4
+"Salbutamol,Selective Beta-2-Adrenoreceptor Agonists",CRHR2,4
+Carbamazepine,HNF4A,4
+Methotrexate,SLCO1B1,4
+Lumefantrine,CYP3A5,4
+"Carbamazepine,Oxcarbazepine",SCN1A,4
+"Carbamazepine,Clobazam,Ethosuximide,Lamotrigine,Levetiracetam,Oxcarbazepine,Valproic Acid",SCN1A,4
+"Atazanavir,Ritonavir",ABCB1,4
+Nevirapine,HLA-B,4
+"Ace Inhibitors, Plain",KCNIP4,4
+Nevirapine,CYP2B6,4
+Buprenorphine,OPRD1,4
+Allopurinol,PSORS1C1,4
+Warfarin,NR1I3,4
+"Capecitabine,Fluorouracil",MTHFR,4
+Tacrolimus,ABCB1,4
+"Cyclosporine,Tacrolimus",CYP3A5,4
+Clopidogrel,ABCB1,4
+Acenocoumarol,GGCX,4
+Warfarin,GGCX,4
+Citalopram,BDNF,4
+Gemcitabine,SLC29A3,4
+Methotrexate,,4
+Methotrexate,PTPRM,4
+Warfarin,ABCB1,4
+Methotrexate,AMPD1,4
+Platinum Compounds,ERCC2,4
+"Adefovir Dipivoxil,Cidofovir,Tenofovir",SLC22A6,4
+Adefovir Dipivoxil,SLC22A6,4
+Lisinopril,ACE,4
+Risperidone,ABCB1,4
+Allopurinol,ABCG2,4
+Methylphenidate,SLC6A2,4
+Opioids,OPRM1,4
+Cocaine,OPRM1,4
+Nicotine,OPRM1,4
+Clopidogrel,CYP3A4,4
+Risperidone,COMT,4
+Fentanyl,ABCB1,4
+Morphine,ABCB1,4
+Heroin,OPRM1,4
+"Heroin,Methamphetamine",BDNF,4
+Drugs For Treatment Of Tuberculosis,CYP2E1,4
+Warfarin,CYP4F2,4
+Valproic Acid,CYP2C19,4
+Simvastatin,ABCB1,4
+Morphine,UGT2B7,4
+Cisplatin,LRP2,4
+Efavirenz,CYP2B6,4
+"Antidepressants,Citalopram,Escitalopram,Fluoxetine,Paroxetine",TPH1,4
+Carvedilol,UGT1A1,4
+Methadone,CYP2B6,4
+Methadone,CYP3A5,4
+Methadone,CYP2C9,4
+Methadone,CYP2C19,4
+"Artesunate,Chlorproguanil,Dapsone",G6PD,4
+Venlafaxine,CYP2C19,4
+Oxaliplatin,GSTP1,4
+Methylphenidate,ADRA2A,4
+Tacrolimus,POR,4
+Platinum Compounds,ERCC1,4
+"Drugs Used In Nicotine Dependence,Nicotine",OPRM1,4
+Clopidogrel,CYP2C9,4
+Azathioprine,ITPA,4
+Aspirin,ITGB3,4
+Tumor Necrosis Factor Alpha (Tnf-Alpha) Inhibitors,TNF,4
+Mercaptopurine,ITPA,4
+Risperidone,DRD2,4
+Methadone,CYP2D6,4
+Olanzapine,CYP3A5,4
+Naproxen,CYP2C9,4
+Fluorouracil,DPYD,4
+Ivacaftor,CFTR,4
+Sufentanil,OPRM1,4
+Naltrexone,OPRM1,4
+Rosuvastatin,SLCO1B1,4
+Atenolol,ADRB1,4
+Carvedilol,ADRB1,4
+"Cannabinoids,Cocaine,Ethanol,Nicotine,Opioids",OPRM1,4
+Ibuprofen,CYP2C8,4
+Morphine,COMT,4
+Everolimus,CYP3A4,4
+Morphine,OPRM1,4
+Pantoprazole,ABCB1,4
+Lamotrigine,UGT2B7,4
+Citalopram,CYP2D6,4
+Warfarin,CYP2C9,4
+Methotrexate,MTHFR,4
+Irinotecan,UGT1A1,4
+Sulfamethoxazole / Trimethoprim,G6PD,4
+Sulfametopyrazine,G6PD,4
+Methotrexate,SLC19A1,4
+Cisplatin,ERCC1,4
+Methotrexate,"C18ORF56,TYMS",4
+Methotrexate,ABCB1,4
+Warfarin,VKORC1,4
+Oxcarbazepine,HLA-B,4
+Methotrexate,TYMS,4
+Warfarin,NQO1,4
+Valproic Acid,UGT2B7,4
+Methotrexate,ABCG2,4
+Methotrexate,ABCC2,4
+Methotrexate,MTR,4
+Methotrexate,"FASTKD3,MTRR",4
+Carbamazepine,HLA-B,4
+Methadone,ABCB1,4
+Oxycodone,CYP2D6,4
+Oxycodone,OPRM1,4
+Oxycodone,COMT,4
+Methylphenidate,COMT,4
+Citalopram,CYP2C19,4
+Paclitaxel,ABCB1,4
+Docetaxel,ABCB1,4
+Beta Blocking Agents,ADRB1,4
+Beta Blocking Agents,GRK5,4
+Beta Blocking Agents,ADRB2,4
+Carbamazepine,HLA-A,4
+Fentanyl,CYP3A4,4
+Fluoxetine,HTR2A,4
+Antidepressants,HTR2A,4
+Sertraline,HTR2A,4
+Venlafaxine,HTR2A,4
+Fluvoxamine,HTR2A,4
+Paroxetine,HTR2A,4
+Escitalopram,HTR2A,4
+Citalopram,HTR2A,4
+Venlafaxine,SLC6A4,4
+Citalopram,SLC6A4,4
+Escitalopram,SLC6A4,4
+Sertraline,SLC6A4,4
+Fluoxetine,SLC6A4,4
+"Ace Inhibitors, Plain",BDKRB2,4
+Methotrexate,ATIC,4
+Simvastatin,SLCO1B1,4
+Atorvastatin,SLCO1B1,4
+Pravastatin,SLCO1B1,4
+Tenofovir,ABCC4,4
+Ethanol,OPRM1,4
+Cyclophosphamide,"CYP2A7P1,CYP2B6",4
+Methadone,OPRM1,4
+Methadone,,4
+Metformin,"ATM,C11ORF65",4
+Risperidone,"ANKK1,DRD2",4
+Simvastatin,CYP3A4,4
+Liraglutide,GLP1R,4
+"Sitagliptin,Vildagliptin","CTRB1,CTRB2",4
