@@ -2,7 +2,8 @@ from flask import Blueprint, request
 from flasgger import swag_from
 from marshmallow import ValidationError
 
-from backend.schemas.patient_schema import PatientSchema
+from backend.schemas.request_schema import PredictionRequestSchema
+
 from backend.services.prediction_service import prediction_service
 from backend.utils.response import success, error
 
@@ -12,7 +13,7 @@ prediction_bp = Blueprint(
     __name__
 )
 
-patient_schema = PatientSchema()
+request_schema = PredictionRequestSchema()
 
 
 # ============================================================
@@ -249,7 +250,7 @@ def predict():
 
         payload = request.get_json()
 
-        patient_schema.load(payload)
+        request_schema.load(payload)
 
         result = prediction_service.predict(payload)
 
