@@ -48,9 +48,14 @@ class Patient:
     primary_phenotype: str = ""
     primary_evidence: str = ""
 
-    disease_score: int = 0
-    pharmacogenomic_score: int = 0
-    polypharmacy_score: int = 0
+    gene_count: int = 0
+    variant_count: int = 0
+
+    clinical_score: int = 0
+    drug_burden_score: int = 0
+    genetic_score: int = 0
+    interaction_score: int = 0
+
     evidence_score: int = 0
 
     risk_score: float = 0.0

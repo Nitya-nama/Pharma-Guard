@@ -1,0 +1,332 @@
+Feature,Importance
+num__disease_count,0.10365886811027736
+num__drug_count,0.10050145974055688
+num__age,0.04999864784784582
+num__high_risk_disease,0.04997862963082013
+num__variant_count,0.048684736487813345
+cat__primary_evidence_1A,0.048284394295342245
+num__gene_count,0.04596721708110628
+num__bmi,0.045593691024007815
+cat__primary_evidence_3,0.04421057905498635
+num__heart_disease,0.03679353794577179
+cat__primary_variant_rs1799752,0.03520347564593235
+num__weight_kg,0.03273361399558725
+cat__primary_gene_CYP2C9,0.027856486619143507
+cat__primary_phenotype_Normal Metabolizer,0.02616828094609836
+cat__bmi_category_Obese,0.02315886412411114
+num__height_cm,0.019709909260332857
+num__hypertension,0.018722252022814117
+cat__age_group_60+,0.018498501395082415
+num__diabetes,0.01583965406843255
+num__kidney_disease,0.015671263924634467
+cat__smoking_status_Current,0.01175317952005304
+cat__smoking_status_Never,0.011719170268486111
+cat__bmi_category_Normal,0.010044799312503102
+cat__age_group_45-59,0.007879679285948241
+cat__bmi_category_Overweight,0.006620686088986519
+cat__age_group_18-29,0.005789050478848098
+cat__age_group_30-44,0.005715541161777301
+cat__physical_activity_Low,0.005161978151305455
+cat__alcohol_consumption_Regular,0.0050709254922535795
+cat__primary_gene_CYP2D6,0.0047318651459318595
+cat__alcohol_consumption_Never,0.004257624191424392
+cat__physical_activity_High,0.0041284060059168645
+cat__ethnicity_Asian,0.00411907190901504
+cat__ethnicity_Black,0.0041058652796399355
+cat__physical_activity_Moderate,0.004083714848089721
+cat__primary_evidence_2A,0.0039640652447275205
+cat__primary_gene_CYP3A5,0.003913773684966036
+cat__gender_Female,0.003778322293310547
+cat__alcohol_consumption_Occasional,0.003747605766055008
+cat__gender_Male,0.0035914566387196443
+num__liver_disease,0.003438412542093071
+"cat__primary_variant_CYP3A5*1, CYP3A5*3, CYP3A5*6, CYP3A5*7",0.0033223678078968637
+cat__primary_gene_SLCO1B1,0.0033186268329347154
+cat__smoking_status_Former,0.003268515433509111
+cat__ethnicity_White,0.0032452738610413657
+"cat__primary_phenotype_Heart transplantation,Hematopoietic stem cell transplantation,Kidney Transplantation,Liver transplantation,Lung transplantation",0.002672670119510711
+cat__primary_variant_rs4149056,0.0025938763687349447
+"cat__primary_phenotype_Chronic Obstructive Pulmonary Disease,Diabetes Mellitus, Type 2,Heart Failure",0.0025746152926823637
+cat__primary_gene_ACE,0.0024229720914597823
+cat__primary_gene_UGT1A1,0.0021363422961655377
+"cat__primary_variant_CYP2C9*1, CYP2C9*2, CYP2C9*3",0.002134794707060635
+"cat__primary_phenotype_adverse events,Discontinuation,Neutropenia",0.0020755936217107386
+cat__ethnicity_Other,0.001948426861912496
+cat__ethnicity_Hispanic,0.0017403719566999958
+"cat__primary_variant_UGT1A1*1, UGT1A1*28",0.0017379200677020486
+cat__primary_phenotype_statin-related myopathy,0.0014554536532969445
+"cat__primary_phenotype_Heart transplantation,Hematopoietic stem cell transplantation,Kidney Transplantation,Lung transplantation",0.0012572886478443646
+"cat__primary_variant_SLCO1B1*1, SLCO1B1*5, SLCO1B1*15",0.0010925322375265755
+cat__primary_gene_CYP2C19,0.0009479596686270266
+cat__primary_gene_GLP1R,0.0009422932658381766
+cat__primary_gene_NOS1AP,0.0009062862590821322
+"cat__primary_variant_CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*11",0.0009014735981488689
+cat__primary_phenotype_Epilepsy,0.0008813262976125436
+cat__primary_phenotype_Hypertension,0.0008613462315601596
+"cat__primary_phenotype_Major Depressive Disorder,Mental Disorders",0.0008268104721172554
+"cat__primary_variant_G6PD A- 202A_376G, G6PD B (reference), G6PD Mediterranean, Dallas, Panama, Sassari, Cagliari, Birmingham",0.0008124911024554775
+"cat__primary_phenotype_Diabetes Mellitus, Type 2",0.0007722190065246207
+cat__primary_phenotype_Standard Toxicity Risk,0.0007564891517774468
+"cat__primary_phenotype_Hemolysis,Methemoglobinemia",0.0007049137950333867
+cat__primary_gene_GNB3,0.0007032420987442273
+cat__primary_gene_G6PD,0.0006952715829623978
+cat__primary_gene_KCNH2,0.0006947710567587227
+"cat__primary_variant_CYP2D6*1, CYP2D6*4, CYP2D6*10",0.0006645008617997155
+"cat__primary_phenotype_Drug Reaction with Eosinophilia and Systemic Symptoms,Maculopapular Exanthema,Severe Cutaneous Adverse Reactions,Stevens-Johnson Syndrome,Toxic Epidermal Necrolysis",0.0006229884234804631
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*14",0.0006198462311567159
+cat__primary_variant_rs10494366,0.0006100263933171818
+cat__primary_phenotype_Hemorrhage,0.0005667122868755398
+cat__primary_gene_ABCB1,0.0005547790244193048
+"cat__primary_variant_CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*13",0.0005410156189962372
+cat__primary_gene_HLA-B,0.0005385399908075508
+cat__primary_phenotype_Diabetes Mellitus,0.0005330290219386511
+cat__primary_phenotype_Standard Dose Response,0.0005314803590642746
+cat__primary_variant_rs5443,0.0005277640630621407
+"cat__primary_variant_CYP2D6*1, CYP2D6*2, CYP2D6*2xN, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*9, CYP2D6*10",0.0004893845137054412
+cat__primary_gene_AGTR1,0.00047359039423954696
+cat__primary_variant_rs9923231,0.0004412921237818074
+cat__primary_phenotype_Normal Response,0.0004366406667338954
+cat__primary_gene_KCNJ11,0.00041560279925120563
+cat__primary_gene_VKORC1,0.0004112993603566857
+"cat__primary_phenotype_Psychotic Disorder,Schizophrenia",0.00041042589636370664
+cat__primary_variant_rs12946454,0.00039496344051293935
+cat__primary_phenotype_Pain,0.0003869120699897357
+"cat__primary_variant_CYP2D6*5, CYP2D6*17",0.0003669327632054119
+cat__primary_gene_SLC22A1,0.0003643282746983333
+"cat__primary_variant_HLA-B*15:02, HLA-B*15:11",0.00035352246075884297
+cat__primary_variant_rs5219,0.00035213919440529916
+cat__primary_gene_AGT,0.0003427817225271747
+cat__primary_variant_rs2241766,0.00033215830427122946
+cat__primary_gene_ADIPOQ,0.0003300713332714654
+cat__primary_phenotype_short qt syndrome 1,0.0003092510409040317
+cat__primary_gene_PLCD3,0.0003085194699532898
+"cat__primary_variant_CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*17",0.00030665767689486877
+cat__primary_gene_MT-RNR1,0.0002835093704426803
+cat__primary_variant_rs104894021,0.00027771276611249414
+"cat__primary_phenotype_Drug-induced liver injury,Toxic liver disease,Tuberculosis",0.0002753041286445074
+cat__primary_variant_rs5186,0.0002731151777019858
+cat__primary_gene_MTHFR,0.00027301197415975376
+cat__primary_variant_rs1801133,0.0002625999915692372
+cat__primary_phenotype_Acquired Long QT Syndrome (aLQTS),0.00026123173193409645
+cat__primary_phenotype_over-anticoagulation,0.0002479095197094426
+cat__primary_gene_NAT2,0.0002450137586573615
+"cat__primary_variant_NAT2*1, NAT2*4, NAT2*5, NAT2*6, NAT2*7, NAT2*14, NAT2*16",0.00024029451224284883
+"cat__primary_phenotype_Diabetes Mellitus, Type 2,Hypoglycemia",0.00023697532247285728
+cat__primary_variant_rs2268639,0.0002350952340498261
+cat__primary_phenotype_Ototoxicity,0.00023430064249273076
+cat__primary_evidence_1B,0.00023097796589819063
+"cat__primary_phenotype_Schizophrenia,Weight gain",0.00022657282526050116
+cat__primary_phenotype_Heart Failure,0.00021748892582142598
+"cat__primary_variant_CYP2C19*1, CYP2C19*2",0.00021706662813978929
+cat__primary_gene_ADRB2,0.00021492530147780993
+cat__primary_phenotype_Cardiac rhythm disease,0.00021473112452284718
+cat__primary_variant_rs1042713,0.0001989384532825915
+cat__primary_gene_LDLR,0.00019176454874278315
+cat__primary_phenotype_Attention Deficit Disorder with Hyperactivity,0.00018151000049689944
+cat__primary_phenotype_Asthma,0.0001797274819041186
+cat__primary_phenotype_Depressive Disorder,0.00017937386209953646
+cat__primary_phenotype_Cardiovascular Disease,0.00016548614333444496
+"cat__primary_variant_CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*4, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11",0.00016405505859732908
+cat__primary_gene_ADRB1,0.00014969321066470116
+cat__primary_variant_rs6923761,0.00014281934985174973
+cat__primary_variant_rs3765467,0.0001390017276864499
+"cat__primary_variant_CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*29",0.00013699716405418157
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*41",0.0001362085093451915
+"cat__primary_phenotype_Arthritis, Psoriatic,Drug Toxicity,Juvenile Rheumatoid Arthritis,Rheumatoid arthritis",0.00012873425476215327
+cat__primary_gene_ABCC4,0.00012637760480567413
+cat__primary_gene_AMPD1,0.00012288132455044
+cat__primary_phenotype_Torsades de Pointes,0.00012186920157288437
+cat__primary_variant_rs17602729,0.00012159181713874872
+"cat__primary_variant_CYP2D6*1, CYP2D6*4, CYP2D6*5, CYP2D6*10, CYP2D6*21, CYP2D6*36",0.0001199014954638241
+cat__primary_phenotype_Essential hypertension,0.00011688082389773082
+cat__primary_variant_rs2514036,0.00011246528766935477
+"cat__primary_variant_CYP2D6*1, CYP2D6*4, CYP2D6*4xN, CYP2D6*5, CYP2D6*10, CYP2D6*17, CYP2D6*92, CYP2D6*96",0.00011180029719744488
+"cat__primary_variant_CYP2C9*1, CYP2C9*3, CYP2C9*13",0.00011145700151545505
+"cat__primary_variant_CYP2C19*1, CYP2C19*2, CYP2C19*3",0.00011121927358164861
+cat__primary_variant_rs267606619,0.0001103367334837429
+cat__primary_variant_rs1045642,0.00011002872019697738
+cat__primary_variant_rs10918594,0.00010244071045662025
+cat__primary_phenotype_Mental Disorders,0.00010226870553571949
+cat__primary_variant_rs1801253,0.00010186766554019182
+"cat__primary_phenotype_Hypertension,Hypertrophy, Left Ventricular",9.389163462029593e-05
+cat__primary_gene_HLA-DRB3,9.308908703156635e-05
+cat__primary_variant_rs699,9.171492712179375e-05
+"cat__primary_phenotype_Acute lymphoblastic leukemia,Drug Toxicity,Leukopenia,Lymphoma,Mucositis,Myelosuppression,Neoplasms,Neutropenia,Osteosarcoma,Primary central nervous system lymphoma,Thrombocytopenia,Toxic liver disease",9.077099596410146e-05
+cat__bmi_category_Underweight,8.632844763906098e-05
+"cat__primary_variant_CYP2C9*1, CYP2C9*2, CYP2C9*3, CYP2C9*5, CYP2C9*6, CYP2C9*8, CYP2C9*11, CYP2C9*13, CYP2C9*14, CYP2C9*16, CYP2C9*29, CYP2C9*31, CYP2C9*33, CYP2C9*37, CYP2C9*39, CYP2C9*42, CYP2C9*43, CYP2C9*45, CYP2C9*50, CYP2C9*52, CYP2C9*55",8.443390310718918e-05
+cat__primary_variant_rs5182,8.098068953522226e-05
+cat__primary_phenotype_Long QT Syndrome,7.487779965678123e-05
+"cat__primary_variant_SLCO1B1*1, SLCO1B1*5, SLCO1B1*15, SLCO1B1*37",7.12600626849366e-05
+cat__primary_variant_rs5051,6.979021439852563e-05
+cat__primary_phenotype_Coronary Artery Disease,6.861159151721276e-05
+cat__primary_variant_rs12720441,6.793625000183165e-05
+cat__primary_gene_SCN4A,6.73145951644987e-05
+cat__primary_gene_ACY3,6.24698847638085e-05
+"cat__primary_phenotype_HIV infectious disease,Hyperbilirubinemia",5.9768089073024944e-05
+"cat__primary_phenotype_Hypercholesterolemia,Myocardial Infarction",5.337661541884113e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6",5.184658136374528e-05
+"cat__primary_variant_UGT1A1*1, UGT1A1*6, UGT1A1*28, UGT1A1*36, UGT1A1*37",4.416475799261525e-05
+cat__primary_phenotype_Unknown,4.213731657287228e-05
+"cat__primary_phenotype_Chronic myelogenous leukemia, BCR-ABL1 positive",4.07781873974061e-05
+cat__primary_phenotype_Hypercholesterolemia,4.059103037451138e-05
+cat__primary_variant_HLA-DRB3*01:01,3.973939597674684e-05
+cat__primary_phenotype_Schizophrenia,3.87978421419446e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*4xN, CYP2D6*5, CYP2D6*6",3.878684417791893e-05
+cat__primary_phenotype_Heparin-induced thrombocytopenia,3.8428145391791446e-05
+cat__primary_variant_rs2032582,3.796588077508918e-05
+cat__primary_variant_rs683369,3.733290131331228e-05
+cat__primary_phenotype_Vascular Diseases,3.635367622836375e-05
+cat__primary_phenotype_Shortened QT interval,3.597082547117847e-05
+"cat__primary_phenotype_Depressive Disorder,Major Depressive Disorder",3.4637543255328506e-05
+cat__primary_variant_rs1137617,3.353746902837677e-05
+cat__primary_phenotype_Major Depressive Disorder,3.20218199147821e-05
+cat__primary_variant_rs10800397,2.9143580820008034e-05
+"cat__primary_variant_SLCO1B1*1, SLCO1B1*5, SLCO1B1*9, SLCO1B1*14, SLCO1B1*15, SLCO1B1*37",2.8754951308164858e-05
+cat__primary_variant_rs688,2.839890587222405e-05
+cat__primary_variant_HLA-B*15:02,2.7223704385005283e-05
+cat__primary_phenotype_Liver Cirrhosis,2.4080921608136662e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*4",2.4079305337974076e-05
+cat__primary_phenotype_Myotonic Disorders,2.40710000413158e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*17, CYP2D6*40",2.3793127139468923e-05
+cat__primary_variant_rs14158,2.2371450497465707e-05
+"cat__primary_phenotype_Pain,Pain, Postoperative",2.227860651075521e-05
+cat__primary_phenotype_Breast Neoplasms,2.114446767001871e-05
+"cat__primary_phenotype_Chronic hepatitis C virus infection,HIV infectious disease",2.0646740809572647e-05
+cat__primary_variant_rs267606617,2.0481698700966112e-05
+cat__primary_variant_rs628031,2.0256483721398407e-05
+cat__primary_phenotype_Neutropenia,1.9426655114033588e-05
+cat__primary_variant_rs10919035,1.930023759633118e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10",1.8836133703176193e-05
+cat__primary_variant_rs1433099,1.820539890544922e-05
+cat__primary_phenotype_Erectile Dysfunction,1.801713743274719e-05
+cat__primary_variant_rs4762,1.60938487012759e-05
+"cat__primary_phenotype_Diabetes Mellitus, Type 2,Gastrointestinal toxicity",1.5504874513070882e-05
+cat__primary_variant_rs2285676,1.5151061768094277e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10",1.4624284658950499e-05
+cat__primary_phenotype_Neoplasms,1.4437167802430638e-05
+"cat__primary_phenotype_Psychotic Disorder,Schizoaffective disorder,Schizophrenia",1.441475966027417e-05
+"cat__primary_phenotype_Depressive Disorder,Mental Disorders",1.3895801051473854e-05
+cat__primary_variant_rs1567817380,1.3811069043597915e-05
+cat__primary_phenotype_Kidney Transplantation,1.3724940609761686e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*17",1.298264586644509e-05
+cat__primary_variant_rs275651,1.265838444873583e-05
+cat__primary_variant_rs2301339,1.2220323279909925e-05
+cat__primary_variant_rs622342,1.1890380417758324e-05
+"cat__primary_variant_CYP2D6*1, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*41",1.151302771749992e-05
+cat__primary_phenotype_Gastroesophageal Reflux,1.1470666238617225e-05
+cat__primary_variant_rs1678387,1.0878083247936332e-05
+"cat__primary_phenotype_Depressive Disorder,Obsessive-Compulsive Disorder",1.0006978507335899e-05
+cat__primary_phenotype_Opioid-Related Disorders,9.315302575850929e-06
+cat__primary_variant_rs72552763,9.15595762127648e-06
+cat__primary_phenotype_Vomiting,8.938327435879524e-06
+cat__primary_phenotype_Drug-induced liver injury,8.835732162159025e-06
+cat__primary_variant_rs1128503,8.625136117193139e-06
+cat__primary_variant_rs2282143,8.36984676295624e-06
+"cat__primary_phenotype_Drug Reaction with Eosinophilia and Systemic Symptoms,Severe Cutaneous Adverse Reactions,Stevens-Johnson Syndrome,Toxic Epidermal Necrolysis",8.348882834479932e-06
+"cat__primary_variant_CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*8, CYP2C19*10, CYP2C19*17, CYP2C19*19, CYP2C19*25, CYP2C19*26",8.12891698745926e-06
+"cat__primary_phenotype_Diabetes Mellitus,Edema,Hyperlipidemias",7.811612091281328e-06
+cat__primary_variant_rs121908547,7.561385707919914e-06
+cat__primary_variant_rs267606618,7.561078720745962e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*17, CYP2D6*29, CYP2D6*35, CYP2D6*41",7.379828723240701e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*2, CYP2D6*4, CYP2D6*5, CYP2D6*17, CYP2D6*41",7.31459790863191e-06
+cat__primary_phenotype_Osteonecrosis,7.2257838877146375e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2xN, CYP2D6*4, CYP2D6*5",7.0740559135640115e-06
+cat__primary_phenotype_HIV infectious disease,7.029648653702243e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN",6.97534925196557e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*17, CYP2D6*29, CYP2D6*36, CYP2D6*41",6.6557553816019885e-06
+cat__primary_variant_rs1801252,6.5001324149129735e-06
+cat__primary_variant_HLA-DRB3*02:02,6.342520303935069e-06
+cat__primary_variant_rs7317112,5.975549869870945e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*81",5.902647439612867e-06
+cat__primary_phenotype_Cluster Headache,5.026800441247273e-06
+"cat__primary_phenotype_Gastroesophageal Reflux,Helicobacter Infections",4.9925685073595024e-06
+cat__primary_phenotype_Acute coronary syndrome,4.927122296348126e-06
+cat__primary_phenotype_Acute lymphoblastic leukemia,4.414557656094026e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*3, CYP2D6*4, CYP2D6*5",3.8167998157704776e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*2, CYP2D6*5, CYP2D6*10, CYP2D6*36",3.693613550245177e-06
+cat__primary_variant_rs3742106,3.6755775537490886e-06
+cat__primary_variant_rs12721226,3.6040218043320115e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*14",3.537832084228836e-06
+cat__primary_variant_rs80338792,3.5277826017924385e-06
+"cat__primary_variant_CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*4, CYP2C19*5, CYP2C19*6, CYP2C19*8, CYP2C19*17",3.0880018907230614e-06
+cat__primary_variant_rs9282564,2.8419924120976346e-06
+cat__primary_variant_rs12208357,2.630893491552623e-06
+cat__primary_variant_HLA-B*57:01,2.5273985052144926e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*9, CYP2D6*10, CYP2D6*35, CYP2D6*35xN, CYP2D6*41",2.472982527136752e-06
+cat__primary_variant_rs1059751,2.4637023795534404e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*3, CYP2D6*4",2.3879032936858807e-06
+cat__primary_variant_rs943580,2.371382034019693e-06
+"cat__primary_phenotype_Cardiac rhythm disease,Tachycardia",2.34780060395528e-06
+cat__primary_variant_rs34059508,1.9908641704015064e-06
+cat__primary_variant_rs7079,1.963754830145006e-06
+cat__primary_variant_rs2738466,1.6525175965012186e-06
+cat__primary_variant_HLA-B*58:01,1.6218711884466517e-06
+"cat__primary_phenotype_Acute coronary syndrome,Cardiovascular Disease,Stroke,Transient Ischemic Attack",1.470629207734189e-06
+"cat__primary_phenotype_Drug Hypersensitivity,Drug Reaction with Eosinophilia and Systemic Symptoms,Severe Cutaneous Adverse Reactions,Stevens-Johnson Syndrome,Toxic Epidermal Necrolysis",1.3026410094704307e-06
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*9, CYP2D6*10, CYP2D6*14, CYP2D6*41",1.2957729864936387e-06
+cat__primary_variant_rs72552784,1.269000049168301e-06
+cat__primary_variant_rs5925,7.986648727161743e-07
+cat__primary_variant_rs11122576,6.354090452299667e-07
+cat__primary_variant_rs9516519,6.111043642406374e-07
+"cat__primary_phenotype_HIV infectious disease,Nephrotoxicity",6.096534362708978e-07
+"cat__primary_variant_CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*8, CYP2C19*9, CYP2C19*17",3.1137683316459515e-07
+"cat__primary_phenotype_Agitation,Alcohol-Related Disorders,Cardiotoxicity,Depression,Depressive Disorder,Drug Toxicity,dysphoria,Edema,Major Depressive Disorder,Nausea,Obsessive-Compulsive Disorder,Tachycardia,Vomiting",2.411926343021206e-07
+"cat__primary_phenotype_Colorectal Neoplasms,Hand-foot syndrome",1.465372669281228e-07
+cat__primary_variant_rs594709,1.3836771435499138e-07
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*9, CYP2D6*10, CYP2D6*17, CYP2D6*41",1.2383834268025266e-07
+"cat__primary_variant_CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*4",1.006308924072375e-07
+cat__primary_phenotype_Gastrointestinal Stromal Tumors,8.14755307340752e-08
+cat__primary_variant_rs34130495,7.971644424074959e-08
+cat__primary_variant_rs3765534,6.529910643855187e-08
+cat__primary_phenotype_Parkinson Disease,6.376571983952649e-08
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*4, CYP2D6*5, CYP2D6*10, CYP2D6*35xN",4.294801608989335e-08
+cat__primary_phenotype_Inflammatory Bowel Diseases,3.12915835293429e-08
+"cat__primary_phenotype_Acute lymphoblastic leukemia,Lymphoma,Mucositis,Osteosarcoma",0.0
+"cat__primary_variant_CYP2D6*1, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*7, CYP2D6*9, CYP2D6*10, CYP2D6*10x2, CYP2D6*11, CYP2D6*17, CYP2D6*21, CYP2D6*36, CYP2D6*41",0.0
+cat__primary_phenotype_Renal Cell Carcinoma,0.0
+cat__primary_variant_rs9561765,0.0
+cat__primary_variant_rs11064426,0.0
+"cat__primary_variant_CYP2C19*1, CYP2C19*2, CYP2C19*3, CYP2C19*9, CYP2C19*10, CYP2C19*17, CYP2C19*24, CYP2C19*26",0.0
+cat__primary_variant_rs16950650,0.0
+cat__primary_phenotype_Small cell carcinoma,0.0
+"cat__primary_variant_CYP2D6*1, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*10, CYP2D6*17",0.0
+cat__primary_variant_rs7787082,0.0
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2, CYP2D6*2xN, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*10, CYP2D6*17",0.0
+cat__primary_phenotype_Stevens-Johnson Syndrome,0.0
+cat__primary_variant_rs1922242,0.0
+cat__primary_variant_rs2235067,0.0
+cat__primary_variant_rs2229109,0.0
+cat__primary_variant_rs2235015,0.0
+cat__primary_variant_rs9561778,0.0
+"cat__primary_variant_CYP2D6*1, CYP2D6*1xN, CYP2D6*2xN",0.0
+cat__primary_variant_rs17160359,0.0
+"cat__primary_phenotype_Epilepsy,Severe Cutaneous Adverse Reactions,Stevens-Johnson Syndrome,Toxic Epidermal Necrolysis",0.0
+cat__primary_phenotype_Autism,0.0
+cat__primary_variant_rs11568658,0.0
+"cat__primary_phenotype_Esophagitis,Gastroesophageal Reflux,Helicobacter Infections,Peptic Ulcer Disease",0.0
+cat__primary_variant_rs12720066,0.0
+"cat__primary_phenotype_Gastroesophageal Reflux,Transplantation",0.0
+cat__primary_variant_rs3842,0.0
+"cat__primary_phenotype_HIV infectious disease,Toxic liver disease",0.0
+"cat__primary_phenotype_Depression,Depressive Disorder,Major Depressive Disorder",0.0
+cat__primary_variant_rs36056065,0.0
+cat__primary_variant_rs35167514,0.0
+"cat__primary_phenotype_Colorectal Neoplasms,Neutropenia",0.0
+"cat__primary_phenotype_Kidney Transplantation,Lung transplantation",0.0
+cat__primary_variant_rs11568695,0.0
+cat__primary_phenotype_Major Adverse Cardiac Events (MACE),0.0
+cat__primary_phenotype_Metastatic neoplasm,0.0
+"cat__primary_variant_CYP2D6*1, CYP2D6*2, CYP2D6*3, CYP2D6*4, CYP2D6*5, CYP2D6*6, CYP2D6*9, CYP2D6*10, CYP2D6*17, CYP2D6*29, CYP2D6*31, CYP2D6*35, CYP2D6*41",0.0
+"cat__primary_phenotype_Migraine with Aura,Migraine without Aura",0.0
+"cat__primary_phenotype_Multiple Myeloma,Progression-free survival",0.0
+cat__primary_phenotype_Myotonia,0.0
+"cat__primary_phenotype_Cardiotoxicity,Drug Toxicity",0.0
+cat__primary_phenotype_Nephrotic Syndrome,0.0
+cat__primary_phenotype_Nephrotoxicity,0.0
+cat__primary_variant_rs5050,0.0
+cat__primary_phenotype_Burkitt Lymphoma,0.0
+cat__primary_phenotype_Obesity,0.0
+cat__primary_phenotype_Open-angle glaucoma,0.0
+"cat__primary_phenotype_Breast Neoplasms,Neoplasms",0.0
+"cat__primary_phenotype_Breast Neoplasms,Drug Toxicity",0.0
+cat__primary_variant_rs17268282,0.0

@@ -95,14 +95,17 @@ class PatientGenerator:
             "heart_disease",
 
             "disease_count",
-
             "drug_count",
 
             "lifestyle_score",
-            "disease_score",
-            "polypharmacy_score",
-            "pharmacogenomic_score",
+            "clinical_score",
+            "drug_burden_score",
+            "genetic_score",
+            "interaction_score",
             "evidence_score",
+
+            "gene_count",
+            "variant_count",
 
             "primary_gene",
             "primary_variant",

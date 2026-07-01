@@ -1,51 +1,23 @@
-from ml.synthetic_data.core.constants import EVIDENCE_PRIORITY
-
-
-EVIDENCE_SCORES = {
-
-    "1A": 10,
-    "1B": 8,
-    "2A": 6,
-    "2B": 4,
-    "3": 2,
-    "4": 1
-
-}
+from ml.knowledge_base import kb
 
 
 class RiskEngine:
 
     def __init__(self):
 
-        pass
+        self.kb = kb
+
+    # -------------------------------------------------------
+    # Lifestyle
+    # -------------------------------------------------------
 
     def lifestyle_score(self, patient):
 
         score = 0
 
-        if patient.age >= 65:
-
-            score += 8
-
-        elif patient.age >= 50:
-
-            score += 5
-
-        elif patient.age >= 35:
-
-            score += 2
-
-        if patient.bmi >= 30:
-
-            score += 6
-
-        elif patient.bmi >= 25:
-
-            score += 3
-
         if patient.smoking_status == "Current":
 
-            score += 6
+            score += 8
 
         elif patient.smoking_status == "Former":
 
@@ -53,7 +25,7 @@ class RiskEngine:
 
         if patient.alcohol_consumption == "Regular":
 
-            score += 3
+            score += 4
 
         elif patient.alcohol_consumption == "Occasional":
 
@@ -61,171 +33,289 @@ class RiskEngine:
 
         if patient.physical_activity == "Low":
 
-            score += 4
+            score += 5
 
         elif patient.physical_activity == "Moderate":
 
             score += 2
 
-        return min(score, 25)
+        if patient.bmi >= 35:
 
-    def disease_score(self, patient):
+            score += 8
 
-        score = patient.disease_count * 5
-
-        if patient.heart_disease:
+        elif patient.bmi >= 30:
 
             score += 5
 
+        elif patient.bmi >= 25:
+
+            score += 2
+
+        return score
+    
+        # -------------------------------------------------------
+    # Clinical Score
+    # -------------------------------------------------------
+
+    def clinical_score(self, patient):
+
+        score = 0
+
+        if patient.diabetes:
+
+            score += 8
+
+        if patient.hypertension:
+
+            score += 7
+
+        if patient.heart_disease:
+
+            score += 12
+
         if patient.kidney_disease:
 
-            score += 3
+            score += 10
 
-        return min(score, 25)
+        if patient.liver_disease:
 
-    def polypharmacy_score(self, patient):
+            score += 6
+
+        score += patient.disease_count * 2
+
+        return score
+    
+        # -------------------------------------------------------
+    # Drug Burden
+    # -------------------------------------------------------
+
+    def drug_score(self, patient):
+
+        score = patient.drug_count * 3
 
         if patient.drug_count >= 5:
 
-            return 15
+            score += 6
 
-        if patient.drug_count == 4:
+        elif patient.drug_count >= 3:
 
-            return 12
+            score += 3
 
-        if patient.drug_count == 3:
+        return score
+    
+        # -------------------------------------------------------
+    # Pharmacogenomics
+    # -------------------------------------------------------
 
-            return 9
+    def genetics_score(self, patient):
 
-        if patient.drug_count == 2:
+        score = 0
 
-            return 6
+        score += patient.gene_count
 
-        if patient.drug_count == 1:
+        score += patient.variant_count
 
-            return 3
-
-        return 0
-
-    def pharmacogenomic_score(self, patient):
-
-        genes = len(patient.genes)
-
-        variants = len(patient.variants)
-
-        score = genes * 3
-
-        score += variants * 2
-
-        return min(score, 15)
+        return score
+    
+        # -------------------------------------------------------
+    # Evidence Score
+    # -------------------------------------------------------
 
     def evidence_score(self, patient):
 
-        if len(patient.evidence_levels) == 0:
+        score = 0
 
-            return 0
+        evidence_weight = {
 
-        scores = []
+            "1A": 8,
+            "1B": 6,
+            "2A": 5,
+            "2B": 4,
+            "3": 2,
+            "4": 1
 
-        for level in patient.evidence_levels:
+        }
 
-            scores.append(
+        for evidence in patient.evidence_levels:
 
-                EVIDENCE_SCORES.get(
+            score += evidence_weight.get(
 
-                    level,
+                evidence,
 
-                    1
-
-                )
+                1
 
             )
 
-        return max(scores)
+        return score
+    
+        # -------------------------------------------------------
+    # Interaction Score
+    # -------------------------------------------------------
 
-    def assign(self, patient):
+    def interaction_score(self, patient):
+
+        score = 0
+
+        # Diabetes + Kidney Disease
+        if patient.diabetes and patient.kidney_disease:
+            score += 10
+
+        # Diabetes + Hypertension
+        if patient.diabetes and patient.hypertension:
+            score += 6
+
+        # Hypertension + Heart Disease
+        if patient.hypertension and patient.heart_disease:
+            score += 8
+
+        # Heart Disease + Kidney Disease
+        if patient.heart_disease and patient.kidney_disease:
+            score += 8
+
+        # Polypharmacy
+        if patient.drug_count >= 5:
+            score += 8
+
+        elif patient.drug_count >= 3:
+            score += 4
+
+        # High PGx burden
+        if patient.gene_count >= 10:
+            score += 4
+
+        return score
+    
+        # -------------------------------------------------------
+    # Final Risk Score
+    # -------------------------------------------------------
+
+    def calculate_score(self, patient):
 
         patient.lifestyle_score = self.lifestyle_score(
-
             patient
-
         )
 
-        patient.disease_score = self.disease_score(
-
+        patient.clinical_score = self.clinical_score(
             patient
-
         )
 
-        patient.polypharmacy_score = self.polypharmacy_score(
-
+        patient.drug_burden_score = self.drug_score(
             patient
-
         )
 
-        patient.pharmacogenomic_score = self.pharmacogenomic_score(
-
+        patient.genetic_score = self.genetics_score(
             patient
-
         )
 
         patient.evidence_score = self.evidence_score(
-
             patient
+        )
 
+        patient.interaction_score = self.interaction_score(
+            patient
         )
 
         patient.risk_score = (
 
-            patient.lifestyle_score
+            patient.lifestyle_score +
 
-            + patient.disease_score
+            patient.clinical_score +
 
-            + patient.polypharmacy_score
+            patient.drug_burden_score +
 
-            + patient.pharmacogenomic_score
+            patient.genetic_score +
 
-            + patient.evidence_score
+            patient.evidence_score +
+
+            patient.interaction_score
 
         )
 
-        if patient.risk_score < 25:
+        return patient.risk_score
+    
+        # -------------------------------------------------------
+    # Risk Level
+    # -------------------------------------------------------
 
-            patient.risk_level = "Safe"
-
-        elif patient.risk_score < 50:
-
-            patient.risk_level = "Moderate"
-
-        elif patient.risk_score < 75:
-
-            patient.risk_level = "High"
-
+    def risk_level(self, patient):
+        if patient.risk_score >= 110:
+            return "Critical"
+        elif patient.risk_score >= 75:
+            return "High"
+        elif patient.risk_score >= 40:
+            return "Moderate"
         else:
+            return "Safe"
+    
+        # -------------------------------------------------------
+    # Confidence
+    # -------------------------------------------------------
 
-            patient.risk_level = "Critical"
+    def confidence(self, patient):
 
-        if patient.evidence_score == 0:
+        confidence = 0.50
 
-            patient.confidence = 0.50
+        confidence += min(
 
-        else:
+            patient.gene_count,
 
-            patient.confidence = round(
+            10
 
-                min(
+        ) * 0.02
 
-                    0.50 +
+        confidence += min(
 
-                    (patient.evidence_score / 20),
+            patient.drug_count,
 
-                    0.99
+            5
 
-                ),
+        ) * 0.02
 
-                2
+        confidence += min(
 
-            )
+            patient.disease_count,
+
+            5
+
+        ) * 0.03
+
+        return round(
+
+            min(
+
+                confidence,
+
+                0.99
+
+            ),
+
+            2
+
+        )
+        
+            # -------------------------------------------------------
+    # Public API
+    # -------------------------------------------------------
+
+    def assign(self, patient):
+
+        self.calculate_score(
+
+            patient
+
+        )
+
+        patient.risk_level = self.risk_level(
+
+            patient
+
+        )
+
+        patient.confidence = self.confidence(
+
+            patient
+
+        )
 
         return patient
 
@@ -233,42 +323,55 @@ class RiskEngine:
 risk_engine = RiskEngine()
 
 
+def assign_risk(patient):
+
+    return risk_engine.assign(
+
+        patient
+
+    )
+    
 if __name__ == "__main__":
 
     from ml.synthetic_data.generators.demographics import generate_demographics
-
     from ml.synthetic_data.generators.disease_generator import assign_diseases
+    from ml.synthetic_data.generators.drug_assigner import assign_drugs
+    from ml.synthetic_data.generators.genetics_generator import assign_genetics
 
-    from ml.synthetic_data.generators.drug_assigner import drug_assigner
+    for i in range(5):
 
-    from ml.synthetic_data.generators.genetics_generator import genetics_generator
+        patient = generate_demographics()
 
-    patient = generate_demographics()
+        patient = assign_diseases(patient)
 
-    patient = assign_diseases(
+        patient = assign_drugs(patient)
 
-        patient
+        patient = assign_genetics(patient)
 
-    )
+        patient = assign_risk(patient)
 
-    patient = drug_assigner.assign(
+        print()
 
-        patient
+        print("=" * 70)
+        print("PATIENT", i + 1)
+        print("=" * 70)
 
-    )
+        print("Diseases :", patient.diseases)
+        print("Drugs    :", patient.assigned_drugs)
+        print("Genes    :", patient.gene_count)
+        print("Variants :", patient.variant_count)
 
-    patient = genetics_generator.assign(
+        print()
 
-        patient
+        print("Lifestyle Score :", patient.lifestyle_score)
+        print("Clinical Score  :", patient.clinical_score)
+        print("Drug Score      :", patient.drug_burden_score)
+        print("Genetics Score  :", patient.genetic_score)
+        print("Evidence Score  :", patient.evidence_score)
+        print("Interaction     :", patient.interaction_score)
 
-    )
+        print()
 
-    patient = risk_engine.assign(
-
-        patient
-
-    )
-
-    print()
-
-    print(patient.to_dict())
+        print("Risk Score :", patient.risk_score)
+        print("Risk Level :", patient.risk_level)
+        print("Confidence :", patient.confidence)    

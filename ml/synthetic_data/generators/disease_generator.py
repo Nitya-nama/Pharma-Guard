@@ -3,119 +3,428 @@ import random
 from ml.synthetic_data.core.constants import DISEASES
 
 
-def _probability(patient):
+BASE_PROBABILITY = {
+    "Diabetes": 0.03,
+    "Hypertension": 0.05,
+    "Heart Disease": 0.01,
+    "Kidney Disease": 0.01,
+    "Liver Disease": 0.02
+}
 
-    score = {
-        "Diabetes": 0.05,
-        "Hypertension": 0.08,
-        "Heart Disease": 0.03,
-        "Kidney Disease": 0.02,
-        "Liver Disease": 0.02
-    }
 
-    age = patient.age
-    bmi = patient.bmi
+class DiseaseGenerator:
 
-    if age >= 60:
+    def __init__(self):
+        pass
 
-        score["Hypertension"] += 0.35
-        score["Heart Disease"] += 0.25
-        score["Kidney Disease"] += 0.20
-        score["Diabetes"] += 0.15
+    def _initialize_probability(self):
+        return BASE_PROBABILITY.copy()
 
-    elif age >= 45:
+    def _age_effect(self, patient, probability):
 
-        score["Hypertension"] += 0.20
-        score["Heart Disease"] += 0.15
-        score["Kidney Disease"] += 0.10
-        score["Diabetes"] += 0.10
+        age = patient.age
 
-    elif age >= 30:
+        if age >= 70:
 
-        score["Hypertension"] += 0.10
-        score["Diabetes"] += 0.05
+            probability["Diabetes"] += 0.22
+            probability["Hypertension"] += 0.35
+            probability["Heart Disease"] += 0.28
+            probability["Kidney Disease"] += 0.24
+            probability["Liver Disease"] += 0.06
 
-    if bmi >= 30:
+        elif age >= 60:
 
-        score["Diabetes"] += 0.30
-        score["Hypertension"] += 0.20
-        score["Heart Disease"] += 0.15
+            probability["Diabetes"] += 0.18
+            probability["Hypertension"] += 0.28
+            probability["Heart Disease"] += 0.22
+            probability["Kidney Disease"] += 0.18
+            probability["Liver Disease"] += 0.05
 
-    elif bmi >= 25:
+        elif age >= 45:
 
-        score["Diabetes"] += 0.15
-        score["Hypertension"] += 0.10
+            probability["Diabetes"] += 0.12
+            probability["Hypertension"] += 0.18
+            probability["Heart Disease"] += 0.12
+            probability["Kidney Disease"] += 0.10
 
-    if patient.smoking_status == "Current":
+        elif age >= 30:
 
-        score["Heart Disease"] += 0.25
-        score["Hypertension"] += 0.10
+            probability["Diabetes"] += 0.06
+            probability["Hypertension"] += 0.08
 
-    elif patient.smoking_status == "Former":
+    def _bmi_effect(self, patient, probability):
 
-        score["Heart Disease"] += 0.10
+        bmi = patient.bmi
 
-    if patient.alcohol_consumption == "Regular":
+        if bmi >= 35:
 
-        score["Liver Disease"] += 0.25
+            probability["Diabetes"] += 0.30
+            probability["Hypertension"] += 0.24
+            probability["Heart Disease"] += 0.18
 
-    if patient.physical_activity == "Low":
+        elif bmi >= 30:
 
-        score["Diabetes"] += 0.10
-        score["Hypertension"] += 0.10
+            probability["Diabetes"] += 0.22
+            probability["Hypertension"] += 0.18
+            probability["Heart Disease"] += 0.12
 
-    return score
+        elif bmi >= 25:
+
+            probability["Diabetes"] += 0.10
+            probability["Hypertension"] += 0.08
+
+    def _smoking_effect(self, patient, probability):
+
+        if patient.smoking_status == "Current":
+
+            probability["Heart Disease"] += 0.25
+            probability["Hypertension"] += 0.15
+            probability["Kidney Disease"] += 0.05
+
+        elif patient.smoking_status == "Former":
+
+            probability["Heart Disease"] += 0.10
+            probability["Hypertension"] += 0.05
+
+    def _alcohol_effect(self, patient, probability):
+
+        if patient.alcohol_consumption == "Regular":
+
+            probability["Liver Disease"] += 0.35
+            probability["Heart Disease"] += 0.05
+
+        elif patient.alcohol_consumption == "Occasional":
+
+            probability["Liver Disease"] += 0.08
+
+    def _activity_effect(self, patient, probability):
+
+        if patient.physical_activity == "Low":
+
+            probability["Diabetes"] += 0.12
+            probability["Hypertension"] += 0.12
+            probability["Heart Disease"] += 0.08
+
+        elif patient.physical_activity == "Moderate":
+
+            probability["Diabetes"] += 0.04
+            probability["Hypertension"] += 0.04
+
+    def _clip_probability(self, probability):
+
+        for disease in probability:
+
+            probability[disease] = max(
+                0.0,
+                min(
+                    probability[disease],
+                    0.95
+                )
+            )
+
+        return probability
+
+    def _assign_primary_diseases(self, probability):
+
+        diseases = []
+
+        for disease in DISEASES:
+
+            if random.random() < probability[disease]:
+
+                diseases.append(disease)
+
+        return diseases
+    
+    
+    def _apply_dependencies(self, diseases, probability):
+
+        if "Diabetes" in diseases:
+
+            probability["Hypertension"] += 0.22
+            probability["Kidney Disease"] += 0.18
+
+        if "Hypertension" in diseases:
+
+            probability["Heart Disease"] += 0.20
+            probability["Kidney Disease"] += 0.12
+
+        if "Heart Disease" in diseases:
+
+            probability["Kidney Disease"] += 0.08
+
+        if "Kidney Disease" in diseases:
+
+            probability["Heart Disease"] += 0.06
+
+        if "Liver Disease" in diseases:
+
+            probability["Diabetes"] += 0.04
+
+        probability = self._clip_probability(
+            probability
+        )
+
+        for disease in DISEASES:
+
+            if disease in diseases:
+                continue
+
+            if random.random() < probability[disease]:
+
+                diseases.append(
+                    disease
+                )
+
+        return diseases
+
+    def _multimorbidity(self, patient, diseases):
+
+        if patient.age >= 65 and len(diseases) >= 2:
+
+            if "Hypertension" not in diseases:
+
+                diseases.append(
+                    "Hypertension"
+                )
+
+        if patient.bmi >= 32:
+
+            if "Diabetes" in diseases:
+
+                if "Hypertension" not in diseases:
+
+                    diseases.append(
+                        "Hypertension"
+                    )
+
+        if patient.smoking_status == "Current":
+
+            if "Heart Disease" in diseases:
+
+                if "Hypertension" not in diseases:
+
+                    diseases.append(
+                        "Hypertension"
+                    )
+
+        if patient.age >= 70:
+
+            if len(diseases) == 1:
+
+                remaining = [
+
+                    disease
+
+                    for disease in DISEASES
+
+                    if disease not in diseases
+
+                ]
+
+                if len(remaining):
+
+                    diseases.append(
+
+                        random.choice(
+
+                            remaining
+
+                        )
+
+                    )
+
+        return list(
+
+            dict.fromkeys(
+
+                diseases
+
+            )
+
+        )
+
+    def assign(self, patient):
+
+        probability = self._initialize_probability()
+
+        self._age_effect(
+
+            patient,
+
+            probability
+
+        )
+
+        self._bmi_effect(
+
+            patient,
+
+            probability
+
+        )
+
+        self._smoking_effect(
+
+            patient,
+
+            probability
+
+        )
+
+        self._alcohol_effect(
+
+            patient,
+
+            probability
+
+        )
+
+        self._activity_effect(
+
+            patient,
+
+            probability
+
+        )
+
+        probability = self._clip_probability(
+
+            probability
+
+        )
+
+        diseases = self._assign_primary_diseases(
+
+            probability
+
+        )
+
+        diseases = self._apply_dependencies(
+
+            diseases,
+
+            probability
+
+        )
+
+        diseases = self._multimorbidity(
+
+            patient,
+
+            diseases
+
+        )
+
+        patient.diseases = diseases
+
+        patient.diabetes = "Diabetes" in diseases
+
+        patient.hypertension = "Hypertension" in diseases
+
+        patient.heart_disease = "Heart Disease" in diseases
+
+        patient.kidney_disease = "Kidney Disease" in diseases
+
+        patient.liver_disease = "Liver Disease" in diseases
+
+        patient.disease_count = len(
+
+            diseases
+
+        )
+
+        return patient
+
+
+disease_generator = DiseaseGenerator()
 
 
 def assign_diseases(patient):
 
-    probabilities = _probability(patient)
+    return disease_generator.assign(
 
-    patient.diseases = []
+        patient
 
-    for disease in DISEASES:
-
-        if random.random() < probabilities[disease]:
-
-            patient.diseases.append(
-                disease
-            )
-
-    patient.diabetes = "Diabetes" in patient.diseases
-
-    patient.hypertension = "Hypertension" in patient.diseases
-
-    patient.heart_disease = "Heart Disease" in patient.diseases
-
-    patient.kidney_disease = "Kidney Disease" in patient.diseases
-
-    patient.liver_disease = "Liver Disease" in patient.diseases
-
-    patient.disease_count = len(
-        patient.diseases
     )
-
-    return patient
 
 
 if __name__ == "__main__":
 
+    from collections import Counter
+
     from ml.synthetic_data.generators.demographics import generate_demographics
 
-    for _ in range(10):
+    disease_counter = Counter()
+
+    disease_count_counter = Counter()
+
+    total = 5000
+
+    for _ in range(total):
 
         patient = generate_demographics()
 
-        patient = assign_diseases(patient)
+        patient = assign_diseases(
 
-        print()
+            patient
 
-        print(patient.patient_id)
+        )
 
-        print(patient.age)
+        disease_count_counter[
 
-        print(patient.bmi)
+            patient.disease_count
 
-        print(patient.smoking_status)
+        ] += 1
 
-        print(patient.diseases)
+        for disease in patient.diseases:
+
+            disease_counter[
+
+                disease
+
+            ] += 1
+
+    print()
+
+    print("=" * 60)
+
+    print("Disease Frequency")
+
+    print("=" * 60)
+
+    print()
+
+    for disease, count in disease_counter.items():
+
+        print(
+
+            disease.ljust(20),
+
+            count
+
+        )
+
+    print()
+
+    print("=" * 60)
+
+    print("Disease Count Distribution")
+
+    print("=" * 60)
+
+    print()
+
+    for count, frequency in sorted(
+
+        disease_count_counter.items()
+
+    ):
+
+        print(
+
+            str(count).ljust(5),
+
+            frequency
+
+        )
