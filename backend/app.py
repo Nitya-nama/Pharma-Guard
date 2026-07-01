@@ -4,7 +4,7 @@ from flasgger import Swagger
 
 from backend.routes.prediction_routes import prediction_bp
 from backend.config import DEBUG, HOST, PORT
-
+from backend.routes.analytics_routes import analytics_bp
 
 app = Flask(__name__)
 
@@ -34,6 +34,10 @@ app.register_blueprint(
     url_prefix="/api"
 )
 
+app.register_blueprint(
+    analytics_bp,
+    url_prefix="/api"
+)
 
 @app.route("/")
 def home():

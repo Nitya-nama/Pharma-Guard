@@ -355,3 +355,48 @@ def predict_batch():
             500
 
         )
+        
+@prediction_bp.route("/history", methods=["GET"])
+def history():
+
+    return success(
+        prediction_service.history()
+    )
+    
+@prediction_bp.route("/history/<int:prediction_id>", methods=["GET"])
+def history_by_id(prediction_id):
+
+    result = prediction_service.history_by_id(
+        prediction_id
+    )
+
+    if result is None:
+
+        return error(
+            "Prediction not found",
+            404
+        )
+
+    return success(result)
+
+@prediction_bp.route("/history/<int:prediction_id>", methods=["DELETE"])
+def delete_prediction(prediction_id):
+
+    deleted = prediction_service.delete(
+        prediction_id
+    )
+
+    if not deleted:
+
+        return error(
+            "Prediction not found",
+            404
+        )
+
+    return success(
+        {
+            "deleted": True
+        }
+    )
+    
+                
