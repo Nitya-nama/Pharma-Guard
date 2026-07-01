@@ -142,22 +142,3 @@ class Preprocessor:
 
 
 preprocessor = Preprocessor()
-
-
-if __name__ == "__main__":
-
-    prep, X_train, X_test, y_train, y_test = preprocessor.prepare()
-
-    print()
-
-    print("=" * 60)
-
-    print("Preprocessor Ready")
-
-    print("=" * 60)
-
-    print()
-
-    print("Training :", len(X_train))
-
-    print("Testing  :", len(X_test))

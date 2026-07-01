@@ -30,10 +30,3 @@ def create_tables():
     connection.commit()
 
     connection.close()
-
-
-if __name__ == "__main__":
-
-    create_tables()
-
-    print("Database Created Successfully")

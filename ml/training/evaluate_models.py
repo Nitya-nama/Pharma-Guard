@@ -136,10 +136,3 @@ class ModelEvaluator:
         print("Saved to")
 
         print(output)
-
-
-if __name__ == "__main__":
-
-    evaluator = ModelEvaluator()
-
-    evaluator.run()

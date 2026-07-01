@@ -243,10 +243,3 @@ class FeatureEngineer:
         print(output)
 
         return df
-
-
-if __name__ == "__main__":
-
-    engineer = FeatureEngineer()
-
-    engineer.build()

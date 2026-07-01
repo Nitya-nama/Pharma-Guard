@@ -155,28 +155,3 @@ class PatientGenerator:
 
 
 generator = PatientGenerator()
-
-
-if __name__ == "__main__":
-
-    NUMBER_OF_PATIENTS = 10000
-
-    dataframe = generator.generate_dataset(
-
-        NUMBER_OF_PATIENTS
-
-    )
-
-    generator.export(
-
-        dataframe
-
-    )
-
-    print()
-
-    print(
-
-        dataframe.head()
-
-    )

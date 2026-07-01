@@ -169,14 +169,3 @@ def generate_demographics():
     )
 
     return patient
-
-
-if __name__ == "__main__":
-
-    for _ in range(5):
-
-        patient = generate_demographics()
-
-        print()
-
-        print(patient.to_dict())
