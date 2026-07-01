@@ -8,6 +8,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
+from ml.training.config import (FEATURE_COLUMNS,TARGET_COLUMN)
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -36,29 +38,17 @@ class Preprocessor:
         # Target
         # ----------------------------
 
-        y = df["risk_level"]
-
         # ----------------------------
-        # Remove Target Leakage
+        # Target
         # ----------------------------
 
-        leak_columns = [
+        y = df[TARGET_COLUMN]
 
-            "risk_level",
-            "risk_score",
+        # ----------------------------
+        # Input Features
+        # ----------------------------
 
-            # Derived directly from risk_score
-            "overall_health_index",
-
-            # Normalized versions of scores
-            "clinical_index",
-            "polypharmacy_index",
-            "pharmacogenomic_index",
-            "lifestyle_index"
-
-        ]
-
-        X = df.drop(columns=leak_columns)
+        X = df[FEATURE_COLUMNS]
 
         label_encoder = LabelEncoder()
 
