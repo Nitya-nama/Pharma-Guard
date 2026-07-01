@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
 from flasgger import Swagger
-
+from backend.utils.logger import logger
 from backend.routes.prediction_routes import prediction_bp
 from backend.config import DEBUG, HOST, PORT
 from backend.routes.analytics_routes import analytics_bp
@@ -50,6 +50,9 @@ def home():
 
 
 if __name__ == "__main__":
+    logger.info(
+        "Starting PharmaGuard API..."
+    )
 
     app.run(
         host=HOST,

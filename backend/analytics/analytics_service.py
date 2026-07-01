@@ -1,11 +1,12 @@
 import json
 
 from backend.database.database import get_connection
-
+from backend.utils.logger import logger
 
 class AnalyticsService:
 
     def summary(self):
+        logger.info("Analytics summary requested.")
 
         connection = get_connection()
 
@@ -79,6 +80,7 @@ class AnalyticsService:
         }
         
     def risk_distribution(self):
+        logger.info("Risk distribution requested.")
         connection = get_connection()
         cursor = connection.cursor()
         cursor.execute("""
@@ -101,6 +103,7 @@ class AnalyticsService:
         
         
     def daily_predictions(self):
+        logger.info("Daily predictions requested.")
 
         connection = get_connection()
 
@@ -142,6 +145,7 @@ class AnalyticsService:
         
         
     def confidence_distribution(self):
+        logger.info("Confidence distribution requested.")
 
         connection = get_connection()
 
@@ -182,6 +186,7 @@ class AnalyticsService:
         ]    
 
     def top_genes(self):
+        logger.info("Top genes requested.")
 
         import json
 
