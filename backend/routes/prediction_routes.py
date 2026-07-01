@@ -13,20 +13,6 @@ from backend.utils.response import (
     error
 )
 
-from flask import Flask
-from flask_cors import CORS
-
-app = Flask(__name__)
-
-CORS(
-    app,
-    resources={
-        r"/api/*": {
-            "origins": "*"
-        }
-    }
-)
-
 
 prediction_bp = Blueprint(
 
@@ -43,6 +29,52 @@ patient_schema = PatientSchema()
     methods=["POST"]
 )
 def predict():
+    
+    """
+        Predict patient risk level
+        ---
+        tags:
+        - Prediction
+
+        consumes:
+        - application/json
+
+        parameters:
+        - in: body
+            name: patient
+            required: true
+            schema:
+            type: object
+            properties:
+                age:
+                type: integer
+                example: 67
+                gender:
+                type: string
+                example: Male
+                ethnicity:
+                type: string
+                example: Asian
+                bmi:
+                type: number
+                example: 27.7
+                disease_count:
+                type: integer
+                example: 4
+                drug_count:
+                type: integer
+                example: 5
+
+        responses:
+        200:
+            description: Prediction generated successfully
+
+        400:
+            description: Validation error
+
+        500:
+            description: Internal server error
+    """
 
     try:
         payload = request.get_json()
