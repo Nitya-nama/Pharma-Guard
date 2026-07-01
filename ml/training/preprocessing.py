@@ -4,119 +4,99 @@ import joblib
 import pandas as pd
 
 from sklearn.compose import ColumnTransformer
-from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import OneHotEncoder
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DATASET = BASE_DIR / "data" / "synthetic" / "ml_training_dataset.csv"
-
-MODEL_DIR = BASE_DIR / "models"
-
-MODEL_DIR.mkdir(
-    exist_ok=True
+DATA = (
+    BASE_DIR
+    / "data"
+    / "synthetic"
+    / "ml_features.csv"
 )
 
+MODEL_DIR = BASE_DIR / "models"
+MODEL_DIR.mkdir(exist_ok=True)
 
-class DataPreprocessor:
+
+class Preprocessor:
 
     def __init__(self):
 
-        self.df = pd.read_csv(
-            DATASET
-        )
+        self.df = pd.read_csv(DATA)
 
     def prepare(self):
 
         df = self.df.copy()
 
-        X = df.drop(
-            columns=["risk_level"]
-        )
+        # ----------------------------
+        # Target
+        # ----------------------------
 
         y = df["risk_level"]
 
+        # ----------------------------
+        # Remove Target Leakage
+        # ----------------------------
+
+        leak_columns = [
+
+            "risk_level",
+            "risk_score",
+
+            # Derived directly from risk_score
+            "overall_health_index",
+
+            # Normalized versions of scores
+            "clinical_index",
+            "polypharmacy_index",
+            "pharmacogenomic_index",
+            "lifestyle_index"
+
+        ]
+
+        X = df.drop(columns=leak_columns)
+
+        label_encoder = LabelEncoder()
+
+        y = label_encoder.fit_transform(y)
+
         categorical = X.select_dtypes(
-            include=["object"]
+            include="object"
         ).columns.tolist()
 
-        numerical = X.select_dtypes(
-            exclude=["object"]
+        numeric = X.select_dtypes(
+            exclude="object"
         ).columns.tolist()
-
-        numeric_pipeline = Pipeline(
-
-            steps=[
-
-                (
-                    "imputer",
-
-                    SimpleImputer(
-
-                        strategy="median"
-
-                    )
-
-                )
-
-            ]
-
-        )
-
-        categorical_pipeline = Pipeline(
-
-            steps=[
-
-                (
-                    "imputer",
-
-                    SimpleImputer(
-
-                        strategy="most_frequent"
-
-                    )
-
-                ),
-
-                (
-                    "encoder",
-
-                    OneHotEncoder(
-
-                        handle_unknown="ignore"
-
-                    )
-
-                )
-
-            ]
-
-        )
 
         transformer = ColumnTransformer(
 
-            transformers=[
-
-                (
-
-                    "num",
-
-                    numeric_pipeline,
-
-                    numerical
-
-                ),
+            [
 
                 (
 
                     "cat",
 
-                    categorical_pipeline,
+                    OneHotEncoder(
+
+                        handle_unknown="ignore"
+
+                    ),
 
                     categorical
+
+                ),
+
+                (
+
+                    "num",
+
+                    "passthrough",
+
+                    numeric
 
                 )
 
@@ -130,25 +110,15 @@ class DataPreprocessor:
 
             y,
 
-            test_size=0.20,
+            test_size=0.2,
 
-            random_state=42,
+            stratify=y,
 
-            stratify=y
-
-        )
-
-        X_train = transformer.fit_transform(
-
-            X_train
+            random_state=42
 
         )
 
-        X_test = transformer.transform(
-
-            X_test
-
-        )
+        transformer.fit(X_train)
 
         joblib.dump(
 
@@ -158,23 +128,17 @@ class DataPreprocessor:
 
         )
 
-        print()
+        joblib.dump(
 
-        print("=" * 60)
+            label_encoder,
 
-        print("Preprocessing Complete")
+            MODEL_DIR / "label_encoder.pkl"
 
-        print("=" * 60)
-
-        print()
-
-        print("Training Samples :", X_train.shape)
-
-        print("Testing Samples  :", X_test.shape)
-
-        print()
+        )
 
         return (
+
+            transformer,
 
             X_train,
 
@@ -187,8 +151,23 @@ class DataPreprocessor:
         )
 
 
+preprocessor = Preprocessor()
+
+
 if __name__ == "__main__":
 
-    processor = DataPreprocessor()
+    prep, X_train, X_test, y_train, y_test = preprocessor.prepare()
 
-    processor.prepare()
+    print()
+
+    print("=" * 60)
+
+    print("Preprocessor Ready")
+
+    print("=" * 60)
+
+    print()
+
+    print("Training :", len(X_train))
+
+    print("Testing  :", len(X_test))
