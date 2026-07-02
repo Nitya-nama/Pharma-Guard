@@ -7,8 +7,10 @@ from backend.config import DEBUG, HOST, PORT
 from backend.routes.analytics_routes import analytics_bp
 from backend.routes.explainability_routes import explainability_bp
 import os
-app = Flask(__name__)
+from backend.database.models import create_tables
 
+app = Flask(__name__)
+create_tables()
 # CORS
 CORS(
     app,
@@ -59,10 +61,6 @@ if __name__ == "__main__":
     logger.info(
         "Starting PharmaGuard API..."
     )
-    
-    from backend.database.models import create_tables
-
-    create_tables()
 
     app.run(
 
