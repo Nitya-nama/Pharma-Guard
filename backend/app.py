@@ -59,6 +59,10 @@ if __name__ == "__main__":
     logger.info(
         "Starting PharmaGuard API..."
     )
+    
+    from backend.database.models import create_tables
+
+    create_tables()
 
     app.run(
 
