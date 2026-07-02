@@ -7,6 +7,8 @@ from backend.schemas.request_schema import PredictionRequestSchema
 from backend.services.prediction_service import prediction_service
 from backend.utils.response import success, error
 
+import traceback
+from backend.utils.logger import logger
 
 prediction_bp = Blueprint(
     "prediction",
@@ -270,12 +272,11 @@ def predict():
 
     except Exception as e:
 
+        logger.exception("Prediction failed")
+
         return error(
-
             str(e),
-
             500
-
         )
 
 
@@ -348,12 +349,11 @@ def predict_batch():
 
     except Exception as e:
 
+        logger.exception("Batch Prediction failed")
+
         return error(
-
             str(e),
-
             500
-
         )
         
 @prediction_bp.route("/history", methods=["GET"])

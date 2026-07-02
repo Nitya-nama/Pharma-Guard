@@ -2,7 +2,8 @@ from flask import Blueprint, request
 
 from backend.services.explainability_service import explainability_service
 from backend.utils.response import success, error
-
+import traceback
+from backend.utils.logger import logger
 explainability_bp = Blueprint(
     "explainability",
     __name__
@@ -46,6 +47,8 @@ def explain():
         return success(result)
 
     except Exception as e:
+
+        logger.exception("Prediction failed")
 
         return error(
             str(e),
