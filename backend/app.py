@@ -6,7 +6,7 @@ from backend.routes.prediction_routes import prediction_bp
 from backend.config import DEBUG, HOST, PORT
 from backend.routes.analytics_routes import analytics_bp
 from backend.routes.explainability_routes import explainability_bp
-
+import os
 app = Flask(__name__)
 
 # CORS
@@ -61,7 +61,11 @@ if __name__ == "__main__":
     )
 
     app.run(
-        host=HOST,
-        port=PORT,
-        debug=DEBUG
+
+        host="0.0.0.0",
+
+        port=int(os.environ.get("PORT", 5000)),
+
+        debug=False
+
     )
