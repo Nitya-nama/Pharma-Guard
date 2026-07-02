@@ -5,6 +5,7 @@ from backend.utils.logger import logger
 from backend.routes.prediction_routes import prediction_bp
 from backend.config import DEBUG, HOST, PORT
 from backend.routes.analytics_routes import analytics_bp
+from backend.routes.explainability_routes import explainability_bp
 
 app = Flask(__name__)
 
@@ -36,6 +37,11 @@ app.register_blueprint(
 
 app.register_blueprint(
     analytics_bp,
+    url_prefix="/api"
+)
+
+app.register_blueprint(
+    explainability_bp,
     url_prefix="/api"
 )
 
