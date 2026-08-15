@@ -1,0 +1,241 @@
+import React, { useState, useMemo } from 'react';
+import { 
+  HiSearch, 
+  HiChevronLeft, 
+  HiChevronRight, 
+  HiEye, 
+  HiTrash, 
+  HiSelector,
+  HiChevronUp,
+  HiChevronDown
+} from 'react-icons/hi';
+import { formatDate } from '../utils/calculations';
+
+export default function HistoryTable({ historyData = [], onView, onDelete }) {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(8);
+  const [sortField, setSortField] = useState('prediction_id');
+  const [sortDirection, setSortDirection] = useState('desc');
+
+  // Risk level badge mapping
+  const getRiskBadge = (level) => {
+    switch (level?.toLowerCase()) {
+      case 'critical':
+        return 'bg-red-100 text-red-700 border-red-200';
+      case 'high':
+        return 'bg-amber-100 text-amber-700 border-amber-200';
+      case 'moderate':
+        return 'bg-yellow-100 text-yellow-800 border-yellow-200';
+      case 'safe':
+      default:
+        return 'bg-emerald-100 text-emerald-700 border-emerald-200';
+    }
+  };
+
+  // Search filtering
+  const filteredData = useMemo(() => {
+    return historyData.filter((item) => {
+      const term = searchTerm.toLowerCase();
+      const idStr = String(item.id || item.prediction_id || '').toLowerCase();
+      const riskStr = String(item.risk_level || item.prediction || '').toLowerCase();
+      const geneStr = String(item.patient?.primary_gene || item.primary_gene || '').toLowerCase();
+      return idStr.includes(term) || riskStr.includes(term) || geneStr.includes(term);
+    });
+  }, [historyData, searchTerm]);
+
+  // Sorting
+  const sortedData = useMemo(() => {
+    return [...filteredData].sort((a, b) => {
+      let aVal = a[sortField] ?? a.prediction_id ?? a.id;
+      let bVal = b[sortField] ?? b.prediction_id ?? b.id;
+
+      if (sortField === 'confidence') {
+        aVal = parseFloat(a.confidence || 0);
+        bVal = parseFloat(b.confidence || 0);
+      } else if (sortField === 'created_at' || sortField === 'timestamp') {
+        aVal = new Date(a.created_at || a.timestamp || 0).getTime();
+        bVal = new Date(b.created_at || b.timestamp || 0).getTime();
+      }
+
+      if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
+      if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
+      return 0;
+    });
+  }, [filteredData, sortField, sortDirection]);
+
+  // Pagination
+  const totalPages = Math.ceil(sortedData.length / itemsPerPage) || 1;
+  const paginatedData = useMemo(() => {
+    const start = (currentPage - 1) * itemsPerPage;
+    return sortedData.slice(start, start + itemsPerPage);
+  }, [sortedData, currentPage, itemsPerPage]);
+
+  const handleSort = (field) => {
+    if (sortField === field) {
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortField(field);
+      setSortDirection('asc');
+    }
+  };
+
+  const renderSortIcon = (field) => {
+    if (sortField !== field) return <HiSelector className="w-4 h-4 text-slate-400 ml-1 inline" />;
+    return sortDirection === 'asc' ? (
+      <HiChevronUp className="w-4 h-4 text-blue-600 ml-1 inline" />
+    ) : (
+      <HiChevronDown className="w-4 h-4 text-blue-600 ml-1 inline" />
+    );
+  };
+
+  return (
+    <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden space-y-4">
+      
+      {/* Table Header Toolbar */}
+      <div className="p-4 sm:p-6 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h3 className="text-lg font-bold text-slate-900">Prediction Logs</h3>
+          <p className="text-xs text-slate-500">Historical records of generated patient risk evaluations</p>
+        </div>
+
+        <div className="relative w-full sm:w-72">
+          <HiSearch className="w-5 h-5 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
+          <input
+            type="text"
+            value={searchTerm}
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+              setCurrentPage(1);
+            }}
+            placeholder="Search ID, risk, gene..."
+            className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+          />
+        </div>
+      </div>
+
+      {/* Table Element */}
+      <div className="overflow-x-auto">
+        <table className="w-full text-left text-sm text-slate-600">
+          <thead className="bg-slate-50/80 text-xs font-bold text-slate-500 uppercase tracking-wider border-b border-slate-200">
+            <tr>
+              <th 
+                onClick={() => handleSort('prediction_id')} 
+                className="px-6 py-3.5 cursor-pointer hover:bg-slate-100/60 transition-colors"
+              >
+                Prediction ID {renderSortIcon('prediction_id')}
+              </th>
+              <th 
+                onClick={() => handleSort('risk_level')} 
+                className="px-6 py-3.5 cursor-pointer hover:bg-slate-100/60 transition-colors"
+              >
+                Risk Level {renderSortIcon('risk_level')}
+              </th>
+              <th 
+                onClick={() => handleSort('confidence')} 
+                className="px-6 py-3.5 cursor-pointer hover:bg-slate-100/60 transition-colors"
+              >
+                Confidence {renderSortIcon('confidence')}
+              </th>
+              <th 
+                onClick={() => handleSort('created_at')} 
+                className="px-6 py-3.5 cursor-pointer hover:bg-slate-100/60 transition-colors"
+              >
+                Timestamp {renderSortIcon('created_at')}
+              </th>
+              <th className="px-6 py-3.5 text-right">Actions</th>
+            </tr>
+          </thead>
+
+          <tbody className="divide-y divide-slate-100 font-medium">
+            {paginatedData.length > 0 ? (
+              paginatedData.map((row) => {
+                const id = row.id || row.prediction_id;
+                const risk = row.risk_level || row.prediction || 'Unknown';
+                const confidence = row.confidence ? (row.confidence * 100).toFixed(1) + '%' : 'N/A';
+                const dateStr = formatDate(row.created_at || row.timestamp);
+
+                return (
+                  <tr key={id} className="hover:bg-slate-50/80 transition-colors">
+                    <td className="px-6 py-4 font-bold text-slate-900">
+                      #{id}
+                    </td>
+
+                    <td className="px-6 py-4">
+                      <span className={`px-3 py-1 rounded-full text-xs font-bold border ${getRiskBadge(risk)}`}>
+                        {risk}
+                      </span>
+                    </td>
+
+                    <td className="px-6 py-4 text-slate-800 font-semibold">
+                      {confidence}
+                    </td>
+
+                    <td className="px-6 py-4 text-xs text-slate-500">
+                      {dateStr}
+                    </td>
+
+                    <td className="px-6 py-4 text-right space-x-2">
+                      <button
+                        onClick={() => onView(id)}
+                        className="p-2 bg-blue-50 text-blue-600 hover:bg-blue-100 rounded-lg transition-colors"
+                        title="View Prediction Details"
+                      >
+                        <HiEye className="w-4 h-4" />
+                      </button>
+
+                      <button
+                        onClick={() => onDelete(id)}
+                        className="p-2 bg-red-50 text-red-600 hover:bg-red-100 rounded-lg transition-colors"
+                        title="Delete Record"
+                      >
+                        <HiTrash className="w-4 h-4" />
+                      </button>
+                    </td>
+                  </tr>
+                );
+              })
+            ) : (
+              <tr>
+                <td colSpan="5" className="text-center py-12 text-slate-400">
+                  No prediction records found.
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Pagination Bar */}
+      <div className="p-4 sm:p-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs text-slate-500">
+          Showing <span className="font-semibold text-slate-800">{paginatedData.length}</span> of{' '}
+          <span className="font-semibold text-slate-800">{filteredData.length}</span> records
+        </p>
+
+        <div className="flex items-center space-x-2">
+          <button
+            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+            disabled={currentPage === 1}
+            className="p-2 rounded-xl border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed text-slate-600"
+          >
+            <HiChevronLeft className="w-5 h-5" />
+          </button>
+
+          <span className="text-xs font-semibold px-3 py-1 bg-slate-100 rounded-lg text-slate-700">
+            Page {currentPage} of {totalPages}
+          </span>
+
+          <button
+            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+            disabled={currentPage === totalPages}
+            className="p-2 rounded-xl border border-slate-200 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed text-slate-600"
+          >
+            <HiChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+      </div>
+
+    </div>
+  );
+}
