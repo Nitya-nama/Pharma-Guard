@@ -6,9 +6,9 @@ import ErrorAlert from '../components/ErrorAlert';
 import { 
   HiChip, 
   HiShieldCheck, 
-  HiViewGrid, 
   HiLockClosed 
 } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
 export default function AboutModel() {
   const { role, loginAsRole } = useAuth();
@@ -38,13 +38,17 @@ export default function AboutModel() {
 
   if (role !== 'admin') {
     return (
-      <div className="max-w-2xl mx-auto py-16 px-4 text-center space-y-6">
-        <div className="w-16 h-16 rounded-3xl bg-purple-50 text-purple-600 border border-purple-200 flex items-center justify-center mx-auto shadow-md">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="max-w-2xl mx-auto py-16 px-4 text-center space-y-6"
+      >
+        <div className="w-16 h-16 rounded-3xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 border border-purple-200 dark:border-purple-800 flex items-center justify-center mx-auto shadow-md">
           <HiLockClosed className="w-8 h-8" />
         </div>
         <div className="space-y-2">
-          <h2 className="text-2xl font-black text-slate-900">Admin Privileges Required</h2>
-          <p className="text-sm text-slate-600 max-w-md mx-auto">
+          <h2 className="text-2xl font-black text-slate-900 dark:text-white">Admin Privileges Required</h2>
+          <p className="text-sm text-slate-600 dark:text-slate-400 max-w-md mx-auto">
             Model Specifications & Architecture details are restricted to Administrator accounts only.
           </p>
         </div>
@@ -54,31 +58,36 @@ export default function AboutModel() {
         >
           Switch to Admin Role 🛡️
         </button>
-      </div>
+      </motion.div>
     );
   }
 
   const info = modelInfo || {
     model_name: 'PharmaGuard Risk Classifier',
     algorithm: 'XGBoost (Extreme Gradient Boosting)',
-    version: '1.0.0',
+    version: '2.5.0',
     feature_count: 24,
     risk_classes: ['Safe', 'Moderate', 'High', 'Critical'],
   };
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8 pb-16">
+    <motion.div 
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="max-w-4xl mx-auto space-y-8 pb-16"
+    >
       
       {/* Title */}
       <div className="space-y-2 text-center sm:text-left">
-        <div className="inline-flex items-center space-x-2 px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-xs font-bold border border-blue-200">
-          <HiChip className="w-4 h-4 text-blue-600" />
+        <div className="inline-flex items-center space-x-2 px-3 py-1 bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 rounded-full text-xs font-bold border border-blue-200 dark:border-blue-900">
+          <HiChip className="w-4 h-4 text-blue-600 dark:text-blue-400" />
           <span>Admin Machine Learning Specifications</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
           About Model Architecture
         </h1>
-        <p className="text-sm text-slate-600">
+        <p className="text-sm text-slate-600 dark:text-slate-400">
           Technical specifications of the deployed XGBoost predictive model and feature engineering pipeline.
         </p>
       </div>
@@ -91,7 +100,7 @@ export default function AboutModel() {
         <div className="space-y-8">
           
           {/* Header Card */}
-          <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl">
+          <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl border border-slate-800">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-6">
               <div className="flex items-center space-x-4">
                 <div className="p-3.5 bg-blue-600 rounded-2xl shadow-lg">
@@ -108,7 +117,7 @@ export default function AboutModel() {
               </div>
 
               <span className="px-4 py-1.5 bg-emerald-500/20 border border-emerald-400/30 text-emerald-400 rounded-full text-xs font-bold shrink-0">
-                v{info.version || '1.0.0'} Production
+                v{info.version || '2.5.0'} Production
               </span>
             </div>
 
@@ -131,23 +140,23 @@ export default function AboutModel() {
           </div>
 
           {/* Risk Classes Grid */}
-          <div className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4">
-            <h3 className="text-lg font-bold text-slate-900 flex items-center">
-              <HiShieldCheck className="w-5 h-5 mr-2 text-blue-600" />
+          <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+            <h3 className="text-lg font-bold text-slate-900 dark:text-white flex items-center">
+              <HiShieldCheck className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
               Risk Stratification Classes
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { name: 'Safe', color: 'bg-emerald-50 text-emerald-700 border-emerald-200', desc: 'Standard metabolizer, minimal ADR risk.' },
-                { name: 'Moderate', color: 'bg-yellow-50 text-yellow-800 border-yellow-200', desc: 'Slightly altered metabolism, standard dosing watch.' },
-                { name: 'High', color: 'bg-amber-50 text-amber-700 border-amber-200', desc: 'Impaired metabolism, alternative drug consideration.' },
-                { name: 'Critical', color: 'bg-red-50 text-red-700 border-red-200', desc: 'Severe adverse risk or toxicity, immediate clinical review.' },
+                { name: 'Safe', color: 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-900', desc: 'Standard metabolizer, minimal ADR risk.' },
+                { name: 'Moderate', color: 'bg-yellow-50 dark:bg-yellow-950/60 text-yellow-800 dark:text-yellow-300 border-yellow-200 dark:border-yellow-900', desc: 'Slightly altered metabolism, standard dosing watch.' },
+                { name: 'High', color: 'bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-900', desc: 'Impaired metabolism, alternative drug consideration.' },
+                { name: 'Critical', color: 'bg-red-50 dark:bg-red-950/60 text-red-700 dark:text-red-300 border-red-200 dark:border-red-900', desc: 'Severe adverse risk or toxicity, immediate clinical review.' },
               ].map((c) => (
-                <div key={c.name} className={`p-4 rounded-xl border ${c.color} space-y-1`}>
+                <motion.div key={c.name} whileHover={{ scale: 1.02 }} className={`p-4 rounded-xl border ${c.color} space-y-1`}>
                   <h4 className="text-base font-extrabold">{c.name}</h4>
                   <p className="text-xs opacity-90 leading-relaxed">{c.desc}</p>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -155,6 +164,6 @@ export default function AboutModel() {
         </div>
       )}
 
-    </div>
+    </motion.div>
   );
 }

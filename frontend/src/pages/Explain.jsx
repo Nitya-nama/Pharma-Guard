@@ -15,7 +15,7 @@ import {
   Pie, 
   Cell 
 } from 'recharts';
-import { HiLightBulb, HiSparkles, HiInformationCircle } from 'react-icons/hi';
+import { HiLightBulb, HiSparkles } from 'react-icons/hi';
 import { toast } from 'react-toastify';
 
 const DEFAULT_PATIENT = {
@@ -88,18 +88,18 @@ export default function Explain() {
   })) : [];
 
   return (
-    <div className="max-w-6xl mx-auto space-y-8 pb-16">
+    <div className="max-w-7xl mx-auto space-y-8 pb-16">
       
       {/* Title */}
       <div className="space-y-2 text-center sm:text-left">
-        <div className="inline-flex items-center space-x-2 px-3 py-1 bg-amber-50 text-amber-800 rounded-full text-xs font-bold border border-amber-200">
-          <HiLightBulb className="w-4 h-4 text-amber-600" />
+        <div className="inline-flex items-center space-x-2 px-3 py-1 bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 rounded-full text-xs font-bold border border-amber-200 dark:border-amber-900">
+          <HiLightBulb className="w-4 h-4 text-amber-600 dark:text-amber-400" />
           <span>SHAP (SHapley Additive exPlanations)</span>
         </div>
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
           Prediction Explainability
         </h1>
-        <p className="text-sm text-slate-600">
+        <p className="text-sm text-slate-600 dark:text-slate-400">
           Deconstruct model output features to understand individual clinical and genomic risk drivers.
         </p>
       </div>
@@ -118,14 +118,14 @@ export default function Explain() {
         <div className="space-y-8">
           
           {/* Summary Box */}
-          <div className="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 space-y-4 shadow-xl">
+          <div className="bg-slate-900 dark:bg-slate-900/90 text-white rounded-3xl p-6 sm:p-8 space-y-4 shadow-xl border border-slate-800">
             <div className="flex items-center justify-between border-b border-slate-800 pb-4">
               <div className="flex items-center space-x-3">
-                <div className="p-2.5 bg-blue-600 rounded-xl">
+                <div className="p-2.5 bg-blue-600 rounded-2xl">
                   <HiSparkles className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold">Model Decision Summary</h3>
+                  <h3 className="text-lg font-bold text-white">Model Decision Summary</h3>
                   <p className="text-xs text-slate-400">Natural Language SHAP Synthesis</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function Explain() {
 
           {/* Top Features Cards Grid */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-slate-900 flex items-center">
+            <h3 className="text-xl font-bold text-slate-900 dark:text-white flex items-center">
               <span>Top Clinical & Genetic Risk Factors</span>
             </h3>
 
@@ -163,8 +163,8 @@ export default function Explain() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-4">
             
             {/* SHAP Horizontal Bar Chart */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
-              <h4 className="text-base font-bold text-slate-900">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+              <h4 className="text-base font-bold text-slate-900 dark:text-white">
                 SHAP Impact Values (Feature Magnitude)
               </h4>
               <div className="h-72 w-full">
@@ -174,9 +174,9 @@ export default function Explain() {
                     data={barChartData} 
                     margin={{ top: 10, right: 20, left: 40, bottom: 0 }}
                   >
-                    <XAxis type="number" tick={{ fontSize: 12 }} />
-                    <YAxis dataKey="feature" type="category" tick={{ fontSize: 11, fontWeight: 600 }} width={110} />
-                    <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderRadius: '12px', color: '#fff' }} />
+                    <XAxis type="number" tick={{ fontSize: 12, fill: '#94a3b8' }} />
+                    <YAxis dataKey="feature" type="category" tick={{ fontSize: 11, fontWeight: 600, fill: '#94a3b8' }} width={110} />
+                    <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderRadius: '12px', color: '#fff', border: '1px solid #334155' }} />
                     <Bar dataKey="shap" radius={[0, 8, 8, 0]}>
                       {barChartData.map((entry, index) => (
                         <Cell key={`bar-${index}`} fill={entry.shap > 0 ? '#ef4444' : '#10b981'} />
@@ -188,8 +188,8 @@ export default function Explain() {
             </div>
 
             {/* Importance Pie Chart */}
-            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
-              <h4 className="text-base font-bold text-slate-900">
+            <div className="bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
+              <h4 className="text-base font-bold text-slate-900 dark:text-white">
                 Feature Importance Relative Share (%)
               </h4>
               <div className="h-72 w-full flex items-center justify-center">
@@ -208,7 +208,7 @@ export default function Explain() {
                         <Cell key={`pie-${index}`} fill={PIE_COLORS[index % PIE_COLORS.length]} />
                       ))}
                     </Pie>
-                    <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderRadius: '12px', color: '#fff' }} />
+                    <Tooltip contentStyle={{ backgroundColor: '#0f172a', borderRadius: '12px', color: '#fff', border: '1px solid #334155' }} />
                   </PieChart>
                 </ResponsiveContainer>
               </div>

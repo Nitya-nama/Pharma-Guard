@@ -5,7 +5,6 @@ import LoadingSpinner from '../components/LoadingSpinner';
 import ErrorAlert from '../components/ErrorAlert';
 import { 
   HiServer, 
-  HiCheckCircle, 
   HiRefresh, 
   HiChip, 
   HiDatabase, 
@@ -13,6 +12,7 @@ import {
   HiLockClosed
 } from 'react-icons/hi';
 import { toast } from 'react-toastify';
+import { motion } from 'framer-motion';
 
 export default function Status() {
   const { role, loginAsRole } = useAuth();
@@ -43,13 +43,17 @@ export default function Status() {
 
   if (role !== 'admin') {
     return (
-      <div className="max-w-2xl mx-auto py-16 px-4 text-center space-y-6">
-        <div className="w-16 h-16 rounded-3xl bg-purple-50 text-purple-600 border border-purple-200 flex items-center justify-center mx-auto shadow-md">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="max-w-2xl mx-auto py-16 px-4 text-center space-y-6"
+      >
+        <div className="w-16 h-16 rounded-3xl bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 border border-purple-200 dark:border-purple-800 flex items-center justify-center mx-auto shadow-md">
           <HiLockClosed className="w-8 h-8" />
         </div>
         <div className="space-y-2">
-          <h2 className="text-2xl font-black text-slate-900">Admin Privileges Required</h2>
-          <p className="text-sm text-slate-600 max-w-md mx-auto">
+          <h2 className="text-2xl font-black text-slate-900 dark:text-white">Admin Privileges Required</h2>
+          <p className="text-sm text-slate-600 dark:text-slate-400 max-w-md mx-auto">
             API Health & Live System Diagnostics are restricted to Administrator accounts only.
           </p>
         </div>
@@ -59,7 +63,7 @@ export default function Status() {
         >
           Switch to Admin Role 🛡️
         </button>
-      </div>
+      </motion.div>
     );
   }
 
@@ -95,28 +99,33 @@ export default function Status() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8 pb-16">
+    <motion.div 
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      className="max-w-4xl mx-auto space-y-8 pb-16"
+    >
       
       {/* Title Toolbar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <div className="inline-flex items-center space-x-2 px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full text-xs font-bold border border-emerald-200 mb-2">
-            <HiServer className="w-4 h-4 text-emerald-600" />
+          <div className="inline-flex items-center space-x-2 px-3 py-1 bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 rounded-full text-xs font-bold border border-emerald-200 dark:border-emerald-900 mb-2">
+            <HiServer className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
             <span>Admin System Diagnostics</span>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             API Health & Status
           </h1>
-          <p className="text-sm text-slate-600">
+          <p className="text-sm text-slate-600 dark:text-slate-400">
             Real-time status monitor for machine learning artifacts, API server, and preprocessors.
           </p>
         </div>
 
         <button
           onClick={fetchHealth}
-          className="inline-flex items-center justify-center px-4 py-2.5 bg-white border border-slate-200 text-slate-700 font-bold rounded-xl shadow-xs hover:bg-slate-50 transition-all shrink-0"
+          className="inline-flex items-center justify-center px-4 py-2.5 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 font-bold rounded-xl shadow-xs hover:bg-slate-50 dark:hover:bg-slate-800 transition-all shrink-0"
         >
-          <HiRefresh className="w-4 h-4 mr-2 text-blue-600" />
+          <HiRefresh className="w-4 h-4 mr-2 text-blue-600 dark:text-blue-400" />
           Ping System
         </button>
       </div>
@@ -129,7 +138,7 @@ export default function Status() {
         <div className="space-y-6">
           
           {/* Status Overview Card */}
-          <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 flex items-center justify-between shadow-xl">
+          <div className="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 flex items-center justify-between shadow-xl border border-slate-800">
             <div className="space-y-1">
               <span className="text-xs font-bold text-emerald-400 uppercase tracking-widest">
                 System Status
@@ -153,23 +162,23 @@ export default function Status() {
             {items.map((item, idx) => {
               const Icon = item.icon;
               return (
-                <div key={idx} className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-4">
+                <motion.div key={idx} whileHover={{ y: -4 }} className="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="p-3 bg-blue-50 text-blue-600 rounded-xl">
+                    <div className="p-3 bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 rounded-xl">
                       <Icon className="w-6 h-6" />
                     </div>
 
-                    <span className="inline-flex items-center px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded-full border border-emerald-200">
+                    <span className="inline-flex items-center px-3 py-1 bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 text-xs font-bold rounded-full border border-emerald-200 dark:border-emerald-800">
                       <span className="w-2 h-2 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
                       {item.status}
                     </span>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900">{item.title}</h3>
-                    <p className="text-xs text-slate-500 mt-0.5">{item.desc}</p>
+                    <h3 className="text-lg font-bold text-slate-900 dark:text-white">{item.title}</h3>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">{item.desc}</p>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
@@ -177,6 +186,6 @@ export default function Status() {
         </div>
       )}
 
-    </div>
+    </motion.div>
   );
 }

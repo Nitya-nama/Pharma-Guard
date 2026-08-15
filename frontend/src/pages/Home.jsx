@@ -18,158 +18,161 @@ import { motion } from 'framer-motion';
 export default function Home() {
   const API_URL = import.meta.env.VITE_API_URL || 'https://pharma-guard-ow5u.onrender.com';
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.12,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+  };
+
   return (
-    <div className="space-y-20 pb-16">
+    <motion.div 
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+      className="space-y-20 pb-16"
+    >
       
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-12 pb-16 sm:pt-20 sm:pb-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             {/* Left Content */}
-            <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
+            <motion.div variants={itemVariants} className="lg:col-span-7 space-y-6 text-center lg:text-left">
               
-              <motion.div 
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold"
-              >
-                <HiSparkles className="w-4 h-4 text-blue-600" />
+              <div className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/80 border border-blue-200 dark:border-blue-800 text-blue-700 dark:text-blue-300 text-xs font-bold shadow-xs">
+                <HiSparkles className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 <span>Next-Gen Pharmacogenomics AI Platform</span>
-              </motion.div>
+              </div>
 
-              <motion.h1 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight"
-              >
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
                 Precision Medicine & <br className="hidden sm:block" />
                 <span className="gradient-text">Pharmacogenomic Risk</span> AI
-              </motion.h1>
+              </h1>
 
-              <motion.p 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
-              >
+              <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                 PharmaGuard leverages machine learning algorithms and SHAP explainability to evaluate adverse drug reaction risks, patient genotype profiles, and multi-morbidity interactions in real time.
-              </motion.p>
+              </p>
 
               {/* Action Buttons */}
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2"
-              >
-                <Link
-                  to="/predict"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 rounded-2xl shadow-xl shadow-blue-500/25 hover:bg-blue-700 active:scale-95 transition-all"
-                >
-                  <HiShieldCheck className="w-5 h-5 mr-2" />
-                  Predict Risk Now
-                </Link>
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
+                  <Link
+                    to="/predict"
+                    className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-2xl shadow-xl shadow-blue-500/25 transition-all"
+                  >
+                    <HiShieldCheck className="w-5 h-5 mr-2" />
+                    Predict Risk Now
+                  </Link>
+                </motion.div>
 
-                <Link
-                  to="/analytics"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-800 bg-white border border-slate-200 rounded-2xl shadow-sm hover:bg-slate-50 transition-all"
-                >
-                  <HiChartBar className="w-5 h-5 mr-2 text-blue-600" />
-                  Analytics Dashboard
-                </Link>
+                <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
+                  <Link
+                    to="/analytics"
+                    className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-800 dark:text-slate-200 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-sm hover:bg-slate-50 dark:hover:bg-slate-800 transition-all"
+                  >
+                    <HiChartBar className="w-5 h-5 mr-2 text-blue-600 dark:text-blue-400" />
+                    Analytics Dashboard
+                  </Link>
+                </motion.div>
 
                 <a
                   href={`${API_URL}/apidocs`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 text-base font-semibold text-slate-600 hover:text-slate-900 transition-colors"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 text-base font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                 >
-                  <HiDocumentText className="w-5 h-5 mr-1.5 text-slate-400" />
+                  {/* <HiDocumentText className="w-5 h-5 mr-1.5 text-slate-400" />
                   API Docs
-                  <HiExternalLink className="w-4 h-4 ml-1 opacity-70" />
+                  <HiExternalLink className="w-4 h-4 ml-1 opacity-70" /> */}
                 </a>
-              </motion.div>
+              </div>
 
               {/* Metrics Highlights */}
-              <div className="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200/80">
+              <div className="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200/80 dark:border-slate-800">
                 <div>
-                  <p className="text-2xl sm:text-3xl font-black text-slate-900">94.8%</p>
-                  <p className="text-xs text-slate-500 font-medium">Model Accuracy</p>
+                  <p className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">94.8%</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Model Accuracy</p>
                 </div>
                 <div>
-                  <p className="text-2xl sm:text-3xl font-black text-slate-900">&lt; 150ms</p>
-                  <p className="text-xs text-slate-500 font-medium">Inference Latency</p>
+                  <p className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">&lt; 150ms</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Inference Latency</p>
                 </div>
                 <div>
-                  <p className="text-2xl sm:text-3xl font-black text-slate-900">SHAP</p>
-                  <p className="text-xs text-slate-500 font-medium">Explainable AI</p>
+                  <p className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white">SHAP</p>
+                  <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">Explainable AI</p>
                 </div>
               </div>
 
-            </div>
+            </motion.div>
 
-            {/* Right Card Mockup / Graphic */}
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="lg:col-span-5"
-            >
-              <div className="relative mx-auto max-w-md bg-white rounded-3xl p-6 border border-slate-200 shadow-2xl space-y-6">
-                
-                <div className="flex items-center justify-between border-b border-slate-100 pb-4">
+            {/* Right Card Mockup */}
+            <motion.div variants={itemVariants} className="lg:col-span-5">
+              <motion.div 
+                whileHover={{ y: -6 }}
+                transition={{ duration: 0.3 }}
+                className="relative mx-auto max-w-md bg-white dark:bg-slate-900 rounded-3xl p-6 border border-slate-200 dark:border-slate-800 shadow-2xl space-y-6"
+              >
+                <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold">
+                    <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold shadow-md">
                       PG
                     </div>
                     <div>
-                      <h3 className="text-sm font-bold text-slate-900">Live Risk Stratification</h3>
-                      <p className="text-xs text-slate-500">Patient CYP2C19 Annotation</p>
+                      <h3 className="text-sm font-bold text-slate-900 dark:text-white">Live Risk Stratification</h3>
+                      <p className="text-xs text-slate-500 dark:text-slate-400">Patient CYP2C19 Annotation</p>
                     </div>
                   </div>
-                  <span className="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-extrabold rounded-full">
+                  <span className="px-3 py-1 bg-emerald-100 dark:bg-emerald-950/80 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold rounded-full border border-emerald-200 dark:border-emerald-800">
                     SAFE
                   </span>
                 </div>
 
                 <div className="space-y-3">
-                  <div className="flex justify-between text-xs font-semibold text-slate-600">
+                  <div className="flex justify-between text-xs font-semibold text-slate-600 dark:text-slate-400">
                     <span>Target Phenotype</span>
-                    <span className="text-slate-900 font-bold">Poor Metabolizer</span>
+                    <span className="text-slate-900 dark:text-white font-bold">Poor Metabolizer</span>
                   </div>
-                  <div className="flex justify-between text-xs font-semibold text-slate-600">
+                  <div className="flex justify-between text-xs font-semibold text-slate-600 dark:text-slate-400">
                     <span>Evidence Rating</span>
-                    <span className="text-blue-600 font-bold">Level 1A (CPIC)</span>
+                    <span className="text-blue-600 dark:text-blue-400 font-bold">Level 1A (CPIC)</span>
                   </div>
                   <div className="space-y-1">
-                    <div className="flex justify-between text-xs font-semibold text-slate-600">
+                    <div className="flex justify-between text-xs font-semibold text-slate-600 dark:text-slate-400">
                       <span>Model Confidence</span>
-                      <span className="text-slate-900 font-bold">96.4%</span>
+                      <span className="text-slate-900 dark:text-white font-bold">96.4%</span>
                     </div>
-                    <div className="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
-                      <div className="bg-blue-600 h-full w-[96%] rounded-full"></div>
+                    <div className="w-full bg-slate-100 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden">
+                      <div className="bg-blue-600 dark:bg-blue-500 h-full w-[96%] rounded-full"></div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100 space-y-2">
-                  <p className="text-xs font-bold text-slate-700 uppercase">Top Contributor (SHAP)</p>
+                <div className="bg-slate-50 dark:bg-slate-800/80 p-4 rounded-2xl border border-slate-100 dark:border-slate-700/80 space-y-2">
+                  <p className="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase">Top Contributor (SHAP)</p>
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-slate-600">Primary Gene Variant</span>
-                    <span className="font-mono text-red-600 font-bold">+0.421 (High Risk)</span>
+                    <span className="text-slate-600 dark:text-slate-400">Primary Gene Variant</span>
+                    <span className="font-mono text-red-600 dark:text-red-400 font-bold">+0.421 (High Risk)</span>
                   </div>
                 </div>
 
                 <Link
                   to="/predict"
-                  className="w-full flex items-center justify-center py-3 bg-slate-900 text-white rounded-xl font-bold text-sm hover:bg-slate-800 transition-colors"
+                  className="w-full flex items-center justify-center py-3 bg-slate-900 dark:bg-blue-600 text-white rounded-xl font-bold text-sm hover:bg-slate-800 dark:hover:bg-blue-700 transition-colors shadow-md"
                 >
                   Run Patient Assessment
                 </Link>
 
-              </div>
+              </motion.div>
             </motion.div>
 
           </div>
@@ -177,51 +180,51 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm space-y-6">
+      <motion.section variants={itemVariants} className="w-full px-4 sm:px-8 lg:px-12">
+        <div className="bg-white dark:bg-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6">
           <div className="max-w-3xl space-y-3">
-            <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">About PharmaGuard</span>
-            <h2 className="text-3xl font-extrabold text-slate-900">
+            <span className="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-widest">About PharmaGuard</span>
+            <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white">
               Transforming Genetic Insights into Clinical Action
             </h2>
-            <p className="text-slate-600 leading-relaxed text-base">
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
               Pharmacogenomics (PGx) studies how genes affect a person's response to medications. PharmaGuard combines patient demographics, lifestyle factors, pre-existing conditions, and genomic variant profiles to predict drug efficacy and potential toxicity before treatment begins.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-            <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-2">
-              <HiBeaker className="w-8 h-8 text-blue-600" />
-              <h3 className="text-base font-bold text-slate-900">Genomic Precision</h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
+            <motion.div whileHover={{ scale: 1.02 }} className="p-6 bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-100 dark:border-slate-700/80 space-y-2">
+              <HiBeaker className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+              <h3 className="text-base font-bold text-slate-900 dark:text-white">Genomic Precision</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                 Evaluates primary gene variants (CYP2C19, CYP2D6, TPMT, DPYD) paired with metabolizer phenotype evidence ratings.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-2">
+            <motion.div whileHover={{ scale: 1.02 }} className="p-6 bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-100 dark:border-slate-700/80 space-y-2">
               <HiHeart className="w-8 h-8 text-red-500" />
-              <h3 className="text-base font-bold text-slate-900">Comorbidity Aware</h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white">Comorbidity Aware</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                 Incorporates multi-morbidity metrics (Diabetes, Hypertension, Liver/Kidney disease) to adjust risk scores.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100 space-y-2">
+            <motion.div whileHover={{ scale: 1.02 }} className="p-6 bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-100 dark:border-slate-700/80 space-y-2">
               <HiLightningBolt className="w-8 h-8 text-amber-500" />
-              <h3 className="text-base font-bold text-slate-900">SHAP Transparency</h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white">SHAP Transparency</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                 Eliminates black-box ML predictions by providing granular feature impact scores for every prediction.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Features Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <motion.section variants={itemVariants} className="w-full px-4 sm:px-8 lg:px-12 space-y-8">
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <h2 className="text-3xl font-extrabold text-slate-900">Core Features</h2>
-          <p className="text-slate-600 text-sm">Designed specifically for healthcare practitioners and researchers</p>
+          <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white">Core Features</h2>
+          <p className="text-slate-600 dark:text-slate-400 text-sm">Designed specifically for healthcare practitioners and researchers</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -233,24 +236,28 @@ export default function Home() {
           ].map((f, i) => {
             const Icon = f.icon;
             return (
-              <div key={i} className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3 hover:border-blue-300 transition-colors">
-                <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+              <motion.div 
+                key={i} 
+                whileHover={{ y: -4, scale: 1.02 }}
+                className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm space-y-3 hover:border-blue-400 transition-all"
+              >
+                <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-950/80 text-blue-600 dark:text-blue-400 flex items-center justify-center">
                   <Icon className="w-6 h-6" />
                 </div>
-                <h3 className="text-base font-bold text-slate-900">{f.title}</h3>
-                <p className="text-xs text-slate-500 leading-relaxed">{f.desc}</p>
-              </div>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white">{f.title}</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">{f.desc}</p>
+              </motion.div>
             );
           })}
         </div>
-      </section>
+      </motion.section>
 
       {/* How It Works Section */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 space-y-8">
+      <motion.section variants={itemVariants} className="w-full px-4 sm:px-8 lg:px-12">
+        <div className="bg-slate-900 dark:bg-slate-900/90 text-white rounded-3xl p-8 sm:p-12 space-y-8 border border-slate-800">
           <div className="text-center max-w-2xl mx-auto space-y-2">
             <span className="text-xs font-bold text-blue-400 uppercase tracking-widest">Workflow</span>
-            <h2 className="text-3xl font-extrabold">How PharmaGuard Works</h2>
+            <h2 className="text-3xl font-extrabold text-white">How PharmaGuard Works</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -259,32 +266,36 @@ export default function Home() {
               { step: '02', title: 'XGBoost ML Inference', desc: 'Engine calculates risk class probabilities and confidence scores.' },
               { step: '03', title: 'SHAP Feature Breakdown', desc: 'Review feature impact visualization to guide clinical treatment decisions.' },
             ].map((s, i) => (
-              <div key={i} className="space-y-3 border-t border-slate-800 pt-6">
+              <motion.div key={i} whileHover={{ scale: 1.02 }} className="space-y-3 border-t border-slate-800 pt-6">
                 <span className="text-3xl font-black text-blue-500 font-mono">{s.step}</span>
                 <h3 className="text-lg font-bold text-white">{s.title}</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">{s.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Technologies Used */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <motion.section variants={itemVariants} className="w-full px-4 sm:px-8 lg:px-12 space-y-6">
         <div className="text-center space-y-2">
-          <h2 className="text-2xl font-extrabold text-slate-900">Technologies Used</h2>
-          <p className="text-xs text-slate-500">Built on modern open-source web and machine learning stacks</p>
+          <h2 className="text-2xl font-extrabold text-slate-900 dark:text-white">Technologies Used</h2>
+          <p className="text-xs text-slate-500 dark:text-slate-400">Built on modern open-source web and machine learning stacks</p>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3">
-          {['React 18', 'Vite', 'Tailwind CSS', 'Axios', 'Recharts', 'XGBoost', 'SHAP', 'Flask', 'Marshmallow', 'Flasgger'].map((tech) => (
-            <span key={tech} className="px-4 py-2 bg-white border border-slate-200 rounded-xl text-xs font-bold text-slate-700 shadow-2xs">
+          {['React 18', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Axios', 'Recharts', 'XGBoost', 'SHAP', 'Flask', 'Marshmallow', 'Flasgger'].map((tech) => (
+            <motion.span 
+              key={tech} 
+              whileHover={{ scale: 1.05 }}
+              className="px-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 shadow-2xs"
+            >
               {tech}
-            </span>
+            </motion.span>
           ))}
         </div>
-      </section>
+      </motion.section>
 
-    </div>
+    </motion.div>
   );
 }

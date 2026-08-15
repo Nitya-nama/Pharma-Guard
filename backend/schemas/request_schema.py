@@ -1,7 +1,12 @@
-from marshmallow import Schema, fields, validate
+from marshmallow import Schema, fields, validate, EXCLUDE
 
 
 class PredictionRequestSchema(Schema):
+    class Meta:
+        unknown = EXCLUDE
+
+    patient_name = fields.String(allow_none=True, load_default="Patient")
+    patient_phone = fields.String(allow_none=True, load_default="")
 
     age = fields.Integer(required=True)
 

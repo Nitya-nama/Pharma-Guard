@@ -5,7 +5,6 @@ import {
   HiUser, 
   HiHeart, 
   HiBeaker, 
-  HiSparkles, 
   HiShieldCheck, 
   HiSearch, 
   HiChevronRight, 
@@ -66,7 +65,6 @@ export default function PredictionForm({ onSubmit, isLoading }) {
   const kidney_disease = watch('kidney_disease');
   const liver_disease = watch('liver_disease');
   const heart_disease = watch('heart_disease');
-  const primary_evidence = watch('primary_evidence');
 
   // Auto-calculate BMI
   useEffect(() => {
@@ -124,7 +122,7 @@ export default function PredictionForm({ onSubmit, isLoading }) {
     <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-6">
       
       {/* Search Data Bar */}
-      <div className="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div className="bg-white dark:bg-slate-900 rounded-2xl p-4 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-3">
         <div className="relative w-full sm:w-80">
           <HiSearch className="w-5 h-5 absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
@@ -132,14 +130,14 @@ export default function PredictionForm({ onSubmit, isLoading }) {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search patient variables (e.g. name, gene, smoking)..."
-            className="w-full pl-10 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs focus:bg-white focus:ring-2 focus:ring-blue-500 transition-all"
+            className="w-full pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-xs focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all text-slate-900 dark:text-white"
           />
         </div>
 
-        <div className="flex items-center space-x-2 text-xs text-slate-500">
-          <span className="font-semibold text-slate-700">Step {activeStep} of 3</span>
+        <div className="flex items-center space-x-2 text-xs text-slate-500 dark:text-slate-400">
+          <span className="font-semibold">Step {activeStep} of 3</span>
           {searchQuery && (
-            <span className="bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md font-bold">
+            <span className="bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded-md font-bold">
               Filtering enabled
             </span>
           )}
@@ -161,12 +159,12 @@ export default function PredictionForm({ onSubmit, isLoading }) {
                 isActive
                   ? 'bg-blue-600 text-white border-blue-600 shadow-md shadow-blue-500/20'
                   : isDone
-                  ? 'bg-slate-900 text-white border-slate-900'
-                  : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50'
+                  ? 'bg-slate-900 dark:bg-slate-800 text-white border-slate-900 dark:border-slate-700'
+                  : 'bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800'
               }`}
             >
               <div className={`p-2 rounded-xl shrink-0 ${
-                isActive ? 'bg-blue-500 text-white' : isDone ? 'bg-slate-800 text-emerald-400' : 'bg-slate-100 text-slate-600'
+                isActive ? 'bg-blue-500 text-white' : isDone ? 'bg-slate-800 dark:bg-slate-900 text-emerald-400' : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
               }`}>
                 <Icon className="w-5 h-5" />
               </div>
@@ -191,30 +189,30 @@ export default function PredictionForm({ onSubmit, isLoading }) {
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 10 }}
-            className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6"
+            className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6"
           >
-            <div className="flex items-center space-x-3 border-b border-slate-100 pb-4">
-              <div className="p-2.5 bg-blue-50 text-blue-600 rounded-xl">
+            <div className="flex items-center space-x-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+              <div className="p-2.5 bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 rounded-xl">
                 <HiIdentification className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-lg font-extrabold text-slate-900">1. Patient Identity & Demographics</h3>
-                <p className="text-xs text-slate-500">Contact information & physical baseline metrics</p>
+                <h3 className="text-lg font-extrabold text-slate-900 dark:text-white">1. Patient Identity & Demographics</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Contact information & physical baseline metrics</p>
               </div>
             </div>
 
-            {/* Patient Name & Phone Inputs */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-slate-50/60 p-4 rounded-2xl border border-slate-100">
+            {/* Patient Name & Phone Inputs (Flush Alignment) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {matchesSearch('patient name') && (
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center">
-                    <HiUser className="w-4 h-4 mr-1 text-blue-600" />
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1 flex items-center">
+                    <HiUser className="w-4 h-4 mr-1 text-blue-600 dark:text-blue-400" />
                     Patient Full Name *
                   </label>
                   <input
                     type="text"
                     {...register('patient_name', { required: 'Patient Name is required' })}
-                    className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all font-semibold text-slate-900 dark:text-white"
                     placeholder="e.g. Robert Chen"
                   />
                   {errors.patient_name && <p className="text-xs text-red-500 mt-1">{errors.patient_name.message}</p>}
@@ -223,14 +221,14 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
               {matchesSearch('phone number') && (
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase mb-1 flex items-center">
-                    <HiPhone className="w-4 h-4 mr-1 text-emerald-600" />
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1 flex items-center">
+                    <HiPhone className="w-4 h-4 mr-1 text-emerald-600 dark:text-emerald-400" />
                     Patient Phone Number *
                   </label>
                   <input
                     type="text"
                     {...register('patient_phone', { required: 'Phone Number is required' })}
-                    className="w-full px-3.5 py-2.5 bg-white border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all font-semibold text-slate-900 dark:text-white"
                     placeholder="e.g. +1 (555) 234-5678"
                   />
                   {errors.patient_phone && <p className="text-xs text-red-500 mt-1">{errors.patient_phone.message}</p>}
@@ -242,21 +240,21 @@ export default function PredictionForm({ onSubmit, isLoading }) {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {matchesSearch('age') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Age (Years) *</label>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Age (Years) *</label>
                   <input
                     type="number"
                     {...register('age', { required: 'Age is required', min: 1, max: 120 })}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all text-slate-900 dark:text-white"
                   />
                 </div>
               )}
 
               {matchesSearch('gender') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Gender *</label>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Gender *</label>
                   <select
                     {...register('gender')}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all text-slate-900 dark:text-white"
                   >
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
@@ -266,10 +264,10 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
               {matchesSearch('ethnicity') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Ethnicity *</label>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Ethnicity *</label>
                   <select
                     {...register('ethnicity')}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all text-slate-900 dark:text-white"
                   >
                     {ETHNICITY_OPTIONS.map((eth) => (
                       <option key={eth} value={eth}>{eth}</option>
@@ -280,37 +278,37 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
               {matchesSearch('height') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Height (cm) *</label>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Height (cm) *</label>
                   <input
                     type="number"
                     step="0.1"
                     {...register('height_cm', { required: 'Height is required' })}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all text-slate-900 dark:text-white"
                   />
                 </div>
               )}
 
               {matchesSearch('weight') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Weight (kg) *</label>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Weight (kg) *</label>
                   <input
                     type="number"
                     step="0.1"
                     {...register('weight_kg', { required: 'Weight is required' })}
-                    className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:bg-white focus:ring-2 focus:ring-blue-500 transition-all"
+                    className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:bg-white dark:focus:bg-slate-900 focus:ring-2 focus:ring-blue-500 transition-all text-slate-900 dark:text-white"
                   />
                 </div>
               )}
 
               {matchesSearch('bmi') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">BMI (Auto-Calculated)</label>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">BMI (Auto-Calculated)</label>
                   <input
                     type="number"
                     step="0.1"
                     readOnly
                     {...register('bmi')}
-                    className="w-full px-3.5 py-2.5 bg-blue-50/60 border border-blue-200 rounded-xl text-sm font-bold text-blue-700 cursor-not-allowed"
+                    className="w-full px-3.5 py-2.5 bg-blue-50/60 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 rounded-xl text-sm font-bold text-blue-700 dark:text-blue-300 cursor-not-allowed"
                   />
                 </div>
               )}
@@ -325,15 +323,15 @@ export default function PredictionForm({ onSubmit, isLoading }) {
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 10 }}
-            className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6"
+            className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6"
           >
-            <div className="flex items-center space-x-3 border-b border-slate-100 pb-4">
-              <div className="p-2.5 bg-red-50 text-red-600 rounded-xl">
+            <div className="flex items-center space-x-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+              <div className="p-2.5 bg-red-50 dark:bg-red-950/60 text-red-600 dark:text-red-400 rounded-xl">
                 <HiHeart className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-lg font-extrabold text-slate-900">2. Lifestyle & Comorbidity Profile</h3>
-                <p className="text-xs text-slate-500">Environmental factors & active chronic diseases</p>
+                <h3 className="text-lg font-extrabold text-slate-900 dark:text-white">2. Lifestyle & Comorbidity Profile</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Environmental factors & active chronic diseases</p>
               </div>
             </div>
 
@@ -341,8 +339,8 @@ export default function PredictionForm({ onSubmit, isLoading }) {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {matchesSearch('smoking') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Smoking Status</label>
-                  <select {...register('smoking_status')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Smoking Status</label>
+                  <select {...register('smoking_status')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
                     <option value="Never">Never</option>
                     <option value="Former">Former</option>
                     <option value="Current">Current</option>
@@ -352,8 +350,8 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
               {matchesSearch('alcohol') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Alcohol Consumption</label>
-                  <select {...register('alcohol_consumption')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Alcohol Consumption</label>
+                  <select {...register('alcohol_consumption')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
                     <option value="None">None</option>
                     <option value="Occasional">Occasional</option>
                     <option value="Moderate">Moderate</option>
@@ -364,8 +362,8 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
               {matchesSearch('activity') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Physical Activity</label>
-                  <select {...register('physical_activity')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Physical Activity</label>
+                  <select {...register('physical_activity')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
                     <option value="Low">Low</option>
                     <option value="Moderate">Moderate</option>
                     <option value="High">High</option>
@@ -376,7 +374,7 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
             {/* Checkboxes */}
             <div className="space-y-3 pt-2">
-              <label className="block text-xs font-bold text-slate-700 uppercase">Diagnosed Chronic Diseases</label>
+              <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase">Diagnosed Chronic Diseases</label>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
                 {[
                   { id: 'diabetes', label: 'Diabetes' },
@@ -385,9 +383,9 @@ export default function PredictionForm({ onSubmit, isLoading }) {
                   { id: 'liver_disease', label: 'Liver Disease' },
                   { id: 'heart_disease', label: 'Heart Disease' },
                 ].map((d) => (
-                  <label key={d.id} className="flex items-center p-3 border border-slate-200 rounded-xl hover:bg-slate-50 cursor-pointer">
+                  <label key={d.id} className="flex items-center p-3 border border-slate-200 dark:border-slate-800 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">
                     <input type="checkbox" {...register(d.id)} className="w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500" />
-                    <span className="ml-2.5 text-xs font-medium text-slate-800">{d.label}</span>
+                    <span className="ml-2.5 text-xs font-medium text-slate-800 dark:text-slate-200">{d.label}</span>
                   </label>
                 ))}
               </div>
@@ -395,13 +393,13 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div>
-                <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Disease Count (Auto)</label>
-                <input type="number" readOnly {...register('disease_count')} className="w-full px-3.5 py-2.5 bg-slate-100 border border-slate-200 rounded-xl text-sm font-bold text-slate-700 cursor-not-allowed" />
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Disease Count (Auto)</label>
+                <input type="number" readOnly {...register('disease_count')} className="w-full px-3.5 py-2.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm font-bold text-slate-700 dark:text-slate-300 cursor-not-allowed" />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Drug Count (Concomitant Medications) *</label>
-                <input type="number" {...register('drug_count', { required: 'Drug count required', min: 0, max: 30 })} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" />
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Drug Count (Concomitant Medications) *</label>
+                <input type="number" {...register('drug_count', { required: 'Drug count required', min: 0, max: 30 })} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white" />
               </div>
             </div>
           </motion.div>
@@ -414,23 +412,23 @@ export default function PredictionForm({ onSubmit, isLoading }) {
             initial={{ opacity: 0, x: -10 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 10 }}
-            className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6"
+            className="bg-white dark:bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800 shadow-sm space-y-6"
           >
-            <div className="flex items-center space-x-3 border-b border-slate-100 pb-4">
-              <div className="p-2.5 bg-purple-50 text-purple-600 rounded-xl">
+            <div className="flex items-center space-x-3 border-b border-slate-100 dark:border-slate-800 pb-4">
+              <div className="p-2.5 bg-purple-50 dark:bg-purple-950/60 text-purple-600 dark:text-purple-400 rounded-xl">
                 <HiBeaker className="w-6 h-6" />
               </div>
               <div>
-                <h3 className="text-lg font-extrabold text-slate-900">3. Pharmacogenomic Profile</h3>
-                <p className="text-xs text-slate-500">Gene variant annotations & metabolizer phenotype</p>
+                <h3 className="text-lg font-extrabold text-slate-900 dark:text-white">3. Pharmacogenomic Profile</h3>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Gene variant annotations & metabolizer phenotype</p>
               </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {matchesSearch('gene') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Primary Gene *</label>
-                  <select {...register('primary_gene')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Primary Gene *</label>
+                  <select {...register('primary_gene')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
                     {GENE_OPTIONS.map((g) => (
                       <option key={g} value={g}>{g}</option>
                     ))}
@@ -440,15 +438,15 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
               {matchesSearch('variant') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Primary Variant *</label>
-                  <input type="text" {...register('primary_variant', { required: 'Variant required' })} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" placeholder="e.g. CYP2C19*2" />
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Primary Variant *</label>
+                  <input type="text" {...register('primary_variant', { required: 'Variant required' })} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white" placeholder="e.g. CYP2C19*2" />
                 </div>
               )}
 
               {matchesSearch('phenotype') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Predicted Phenotype *</label>
-                  <select {...register('primary_phenotype')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Predicted Phenotype *</label>
+                  <select {...register('primary_phenotype')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
                     {PHENOTYPE_OPTIONS.map((p) => (
                       <option key={p} value={p}>{p}</option>
                     ))}
@@ -458,8 +456,8 @@ export default function PredictionForm({ onSubmit, isLoading }) {
 
               {matchesSearch('evidence') && (
                 <div>
-                  <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Evidence Level (CPIC) *</label>
-                  <select {...register('primary_evidence')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500">
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Evidence Level (CPIC) *</label>
+                  <select {...register('primary_evidence')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white">
                     {EVIDENCE_OPTIONS.map((e) => (
                       <option key={e} value={e}>Level {e}</option>
                     ))}
@@ -468,13 +466,13 @@ export default function PredictionForm({ onSubmit, isLoading }) {
               )}
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Gene Count *</label>
-                <input type="number" {...register('gene_count')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" />
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Gene Count *</label>
+                <input type="number" {...register('gene_count')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white" />
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">Variant Count *</label>
-                <input type="number" {...register('variant_count')} className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-blue-500" />
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 uppercase mb-1">Variant Count *</label>
+                <input type="number" {...register('variant_count')} className="w-full px-3.5 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:ring-2 focus:ring-blue-500 text-slate-900 dark:text-white" />
               </div>
             </div>
           </motion.div>
@@ -488,7 +486,7 @@ export default function PredictionForm({ onSubmit, isLoading }) {
           type="button"
           onClick={() => setActiveStep((s) => Math.max(s - 1, 1))}
           disabled={activeStep === 1}
-          className="px-5 py-3 bg-white border border-slate-200 text-slate-700 font-bold text-xs rounded-xl shadow-2xs hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center"
+          className="px-5 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 font-bold text-xs rounded-xl shadow-2xs hover:bg-slate-50 dark:hover:bg-slate-800 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center"
         >
           <HiChevronLeft className="w-4 h-4 mr-1" />
           Previous Step
